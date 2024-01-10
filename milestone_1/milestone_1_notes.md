@@ -20,6 +20,10 @@ Describe the purpose and requirements of the project, by:
 (Each of these things will be broken into their own section, below)
 
 ## Project Definition Statement
+_<30 words summarizing goal of system_
+
+**Attempt 1**
+Create an equipment preparation system for Terraria players that enables users to discover and create the best combination of equipment for their current in-game situation.
 
 ## Stakeholder interviews
 
