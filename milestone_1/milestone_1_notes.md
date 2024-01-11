@@ -46,13 +46,31 @@ A: It could help me understand my options at where I am in the game.
 Q: Limitations of current systems?
 A: Terraria wiki exists, but you have to browse the wiki. Stats arent shown in a concise form
 Q: What features do you want to see?
-A: Understand boss difficulties, crafting trees.
+A: Understand boss difficulties, and crafting trees.
 ## Functionality Requirements
+
 From home page
+- See all Items
+- Select Bosses you've beaten
+- Hard mode or not
+- Items have stats
+- Items show biomes
+- Filter for what you've done/completed
 
 User page
-
+- Create user
+- Edit current game status, biome, boss, hard mode or not.
+- See current stats with equiped items.
 
 ## Non-functionality Requirements
+Security
+- Website protects against XSS
+- Website inputs will protect against SQL injections
+- Fail2ban (wish list)
+Availability
+- 95% uptime
+Usability
+- Mobile/Desktop (wishlist)
+- Darkmode
 
 ## Lo-fi prototype
