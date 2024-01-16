@@ -1,0 +1,5 @@
+Generate a list of all fields to support your requirements. Separate into core data fields and derived data fields. Show list to stakeholders to verify that you have captured all the data they need.
+Identify the key entities (which will become tables) and associated attributes (which will become fields). Entities should typically have a single focal subject that may be a noun (e.g., Users, Classes, Places, Objects) or a verb (e.g., Purchases, Transactions, Events). Attributes should typically be assigned to just one entity, though foreign keys may be used in a secondary table (e.g., a userid in a Purchases table). Make sure you don’t have unnecessary duplication of fields. Make sure the field names are meaningful and consistently applied throughout.
+Identify a primary key for each table, as well as candidate keys. Also label foreign keys when appropriate.
+Identify the types of relationships between the entities (e.g., tables), and their attributes. And give them names. Identify their cardinality. Identify if they are binary, unary, etc.
+
