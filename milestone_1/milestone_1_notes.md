@@ -38,15 +38,25 @@ Data we would like to see
 
 Interview with Mr. Sam
 Q: Why do you like Terraria?
+
 A: Lots of bosses and lot of fun equipment. Kill things with yo-yo's
+
 Q: What is the hardest thing about Terraria?
+
 A: Acquiring stuff and getting ready for fights. Need to understand how to get ready.
+
 Q: What would you envision an app of this type could do for you?
+
 A: It could help me understand my options at where I am in the game.
+
 Q: Limitations of current systems?
+
 A: Terraria wiki exists, but you have to browse the wiki. Stats arent shown in a concise form
+
 Q: What features do you want to see?
+
 A: Understand boss difficulties, and crafting trees.
+
 ## Functionality Requirements
 
 Home Page Functionality
