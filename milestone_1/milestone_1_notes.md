@@ -49,18 +49,21 @@ Q: What features do you want to see?
 A: Understand boss difficulties, and crafting trees.
 ## Functionality Requirements
 
-From home page
-- See all Items
-- Select Bosses you've beaten
-- Hard mode or not
-- Items have stats
-- Items show biomes
-- Filter for what you've done/completed
+Home Page Functionality
+- Users can see a list of all items available for them to acquire and use under the condition that they have logged in and created a character profile.
+- The list of available items changes based on the information provided by users about their Terraria Character.
+- Users can view individual items with statistics about each item.
+- Users can select an item to add to their list of equipped items.
 
-User page
-- Create user
-- Edit current game status, biome, boss, hard mode or not.
-- See current stats with equiped items.
+Character Page Functionality
+- Users can record what bosses their character has defeated so far.
+- Users can record whether they have entered hardmode or not.
+- Users can record what biomes/regions they have discovered in their world so far.
+- Users can see the current character statistics with the items they have equipped.
+
+User page Funcionality
+- Users can create and select characters
+- Users can change their password
 
 ## Non-functionality Requirements
 Security
