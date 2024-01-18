@@ -1,0 +1,33 @@
+- Users
+  - User ID
+  - Username
+  - Password Hash
+  - **Players**
+- Players
+  - Player ID
+  - Name
+  - **Tools**
+  - **Armor**
+  - **Accessories**
+  - **Advancements**
+- Tools
+  - Tool ID
+  - Name
+  - Description
+  - Image URL
+  - Obtain Method
+- Armor
+  - Armor ID
+  - Name
+  - Description
+  - Image URL
+  - Defense
+  - Obtain Method
+- Accessories
+  - Accessory ID
+  - Name
+  - Description
+  - Obtain Method
+- Advancements
+  - Advancement ID
+  - Name
