@@ -36,3 +36,6 @@
 - Users can have 0 or 1 characters selected for viewing relevant items
 - Only administrators can add to the list of possible items and advancements
 - Usernames can only contain letters and numbers (no special chars)
+- Attempts to equip more items than is permitted will not replace prior equipped items (operation will produce an error instead)
+- If the user has 0 characters selected, they are unable to equip any items.
+- Users can have 0 or more advancements selected when filtering data output
