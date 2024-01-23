@@ -33,4 +33,6 @@
 - Users can create as many characters as they wish
 - New characters have no items assigned to them
 - Characters can equip, at maximum, 1 weapon, 3 armor pieces (head, chestplate, boots), and 6 equipments.
-- Players can have 0 or 1 characters selected for viewing relevant items
+- Users can have 0 or 1 characters selected for viewing relevant items
+- Only administrators can add to the list of possible items and advancements
+- Usernames can only contain letters and numbers (no special chars)
