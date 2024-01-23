@@ -17,6 +17,7 @@
 
 ### Create Business Rules
 
+**Prompt**
 - Consider what constraints you should place on users or your database fields. What data or actions should be allowed or denied? Under what circumstances? Go through each low-fidelity mockup screen, as well as each field in each table and each relationship to make sure you consider all key constraints. These will become business rules. Consider the following types of constraints:
   - Who can perform which actions?
   - Degree of Participation (is there a min or max number of relationships that must exist?)
@@ -26,3 +27,10 @@
 - Add the Business Rules to the Final Report write-up. (Ensure these are clear and specific, see project description)
 - Update your ER diagram and relational schema diagram to reflect any of the rules that can be reflected in them, but were not previously (e.g., required versus optional values; degree of participation…). Not all of your rules can be enforced in the database schema itself; some will be through validation code that you will write or stored procedures that are triggered. This will be done later. Update your Field Name descriptions from your prior assignment to reflect any field-level business rules that were not included originally (e.g., in the Data Type, Key? Optional? Restrictions, and Notes columns).
 - Submit the updated FinalReportTemplate.docx, including all sections from the prior assignment after updating them to reflect any changes you have made. It is meant to be a living document that is iteratively improved throughout the semester.
+
+**Response:**
+
+- Users can create as many characters as they wish
+- New characters have no items assigned to them
+- Characters can equip, at maximum, 1 weapon, 3 armor pieces (head, chestplate, boots), and 6 equipments.
+- Players can have 0 or 1 characters selected for viewing relevant items
