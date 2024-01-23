@@ -18,6 +18,7 @@
 ### Create Business Rules
 
 **Prompt**
+
 - Consider what constraints you should place on users or your database fields. What data or actions should be allowed or denied? Under what circumstances? Go through each low-fidelity mockup screen, as well as each field in each table and each relationship to make sure you consider all key constraints. These will become business rules. Consider the following types of constraints:
   - Who can perform which actions?
   - Degree of Participation (is there a min or max number of relationships that must exist?)
@@ -34,7 +35,7 @@
 - New characters have no items assigned to them
 - Characters can equip, at maximum, 1 weapon, 3 armor pieces (head, chestplate, boots), and 6 equipments.
 - Users can have 0 or 1 characters selected for viewing relevant items
-- Only administrators can add to the list of possible items and advancements
+- The list of items cannot be changed from the front end and will be managed directly in the database by site administrators when needed.
 - Usernames can only contain letters and numbers (no special chars)
 - Attempts to equip more items than is permitted will not replace prior equipped items (operation will produce an error instead)
 - If the user has 0 characters selected, they are unable to equip any items.
