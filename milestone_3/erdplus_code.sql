@@ -1,7 +1,10 @@
--- Comments are made with hyphens
+-- Some relations have "SERIAL UNIQUE" to make Primary key increment by 1
+-- Others don't have "SERIAL UNIQUE" b/c primary key is a composite key made of foreign keys
+
+-- TODO: Add relevant business logic. So checks about the # of items a player can have equipped, etc.
 CREATE TABLE Account
 (
-  UserId INT NOT NULL,
+  UserId SERIAL UNIQUE NOT NULL,
   Username VARCHAR NOT NULL,
   PasswordHash VARCHAR NOT NULL,
   PRIMARY KEY (UserId)
@@ -9,7 +12,7 @@ CREATE TABLE Account
 
 CREATE TABLE Weapon
 (
-  WeaponId INT NOT NULL,
+  WeaponId SERIAL UNIQUE NOT NULL,
   WeaponName VARCHAR NOT NULL,
   WeaponDesc VARCHAR NOT NULL,
   ImageURL VARCHAR NOT NULL,
@@ -20,7 +23,7 @@ CREATE TABLE Weapon
 
 CREATE TABLE Armor
 (
-  ArmorId INT NOT NULL,
+  ArmorId SERIAL UNIQUE NOT NULL,
   ArmorName VARCHAR NOT NULL,
   ArmorDesc VARCHAR NOT NULL,
   ImageURL VARCHAR NOT NULL,
@@ -33,7 +36,7 @@ CREATE TABLE Armor
 
 CREATE TABLE Accessory
 (
-  AccessoryId INT NOT NULL,
+  AccessoryId SERIAL UNIQUE NOT NULL,
   AccessoryName VARCHAR NOT NULL,
   AccessoryDesc VARCHAR NOT NULL,
   StatBonus VARCHAR,
@@ -44,7 +47,7 @@ CREATE TABLE Accessory
 
 CREATE TABLE Advancement
 (
-  AdvancementId INT NOT NULL,
+  AdvancementId SERIAL UNIQUE NOT NULL,
   Name VARCHAR NOT NULL,
   PRIMARY KEY (AdvancementId)
 );
@@ -78,7 +81,7 @@ CREATE TABLE UnlocksArmor
 
 CREATE TABLE Character
 (
-  CharId INT NOT NULL,
+  CharId SERIAL UNIQUE NOT NULL,
   CharName VARCHAR NOT NULL,
   UserId INT NOT NULL,
   WeaponId INT,
