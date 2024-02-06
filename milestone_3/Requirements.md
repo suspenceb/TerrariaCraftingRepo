@@ -15,13 +15,13 @@ Related Course Learning Outcomes
 
 Procedures
 
-- Download and install the most recent version of MySQL Server on the local machine of at least one group member.
-- Export the SQL schema queries that will build the database structure from the https://erdplus.com/ (Links to an external site.) website related to your existing design.
-- Make sure primary keys in your entities use SERIAL as column types so that they're auto-generated and auto-incremented. (This doesn't apply to entities that have primary composite keys)
-- Make sure primary keys are composite for many-to-many relationships. 
+-  XX Download and install the most recent version of MySQL Server on the local machine of at least one group member.
+-  XX Export the SQL schema queries that will build the database structure from the https://erdplus.com/ (Links to an external site.) website related to your existing design.
+-   XX  Make sure primary keys in your entities use SERIAL as column types so that they're auto-generated and auto-incremented. (This doesn't apply to entities that have primary composite keys)
+-   XX  Make sure primary keys are composite for many-to-many relationships. 
 -	Make any updates you need to enforce your business rules using CHECKs, foreign key constraints, etc.
 -	Populate the data with dummy data, so you can test queries and visualize the dataset.
--	Create an account on GitHub if you don't have one. Create a new repository and have all team members join it and make a change to demonstrate that they can contribute.
+-	XX  Create an account on GitHub if you don't have one. Create a new repository and have all team members join it and make a change to demonstrate that they can contribute.
 
   
 Migrations:
