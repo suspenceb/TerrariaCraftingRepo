@@ -5,7 +5,7 @@
 CREATE TABLE Account
 (
   UserId SERIAL UNIQUE NOT NULL,
-  Username VARCHAR NOT NULL,
+  Username VARCHAR(20) NOT NULL CHECK (LENGTH(Username) < 20),
   PasswordHash VARCHAR NOT NULL,
   PRIMARY KEY (UserId)
 );
@@ -82,7 +82,7 @@ CREATE TABLE UnlocksArmor
 CREATE TABLE Character
 (
   CharId SERIAL UNIQUE NOT NULL,
-  CharName VARCHAR NOT NULL,
+  CharName VARCHAR(20) NOT NULL CHECK (LENGTH(CharName) < 20),
   UserId INT NOT NULL,
   WeaponId INT,
   PRIMARY KEY (CharId),
