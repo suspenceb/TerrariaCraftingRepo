@@ -22,7 +22,7 @@ Crafting:: 6 Copper Bars
 4% critical chance
 21 Use time
 
-Meowmere
+Meowmere (hardmode post-Moon Lord)
 DESCRIPTION
 https://terraria.wiki.gg/images/6/63/Meowmere.png
 BOSS:: 22.2% chance Moon Lord
@@ -39,6 +39,7 @@ Crafting:: 15 Hellstone bars
 4% critical chance
 14 use time
 
+### Armor
 Meteor Helmet
 DESCRIPTION
 https://terraria.wiki.gg/images/3/36/Meteor_Helmet.png
@@ -63,3 +64,46 @@ Crafting:: 15 Meteorite Bars
 Pants
 9% increased magic damage
 
+Ninja Hood
+DESCRIPTION
+https://terraria.wiki.gg/images/c/c4/Ninja_Hood.png
+2 Defense
+BOSS::33.33% chance King Slime
+Helmet
+3% increased critical strike chance
+
+Ninja Shirt
+DESCRIPTION
+https://terraria.wiki.gg/images/f/f9/Ninja_Shirt.png
+4 Defense
+BOSS::33.33% chance King Slime
+Shirt
+3% increased critical strike chance
+
+Ninja Pants
+DESCRIPTION
+https://terraria.wiki.gg/images/a/ad/Ninja_Pants.png
+3 Defense
+BOSS::33.33% chance King Slime
+Pants
+3% increased critical strike chance
+
+### Accessories
+
+Band of Regeneration
+Slowly regenerates life
+Regenerate 1 health/second
+LOOT::Gold Chests in Underground and Cavern and in Living Mahogany Trees in the Underground Jungle.
+https://terraria.wiki.gg/images/0/0f/Band_of_Regeneration.png
+
+Discount Card (hardmode item)
+Shops prices lowered by 20%
+Shops prices lowered by 20%
+EVENT:: Pirate Invasion
+https://terraria.wiki.gg/images/e/ef/Discount_Card.png
+
+Yoyo Bag
+Gives the user master yoyo skills
+Allows the holder to use two yoyos, similar to the Yoyo Glove along with two Counterweights and also increases the yoyo's range
+CRAFTING:: 1x - White String, 1x - Yoyo Gove, 1x - Counterweight
+https://terraria.wiki.gg/images/8/8d/Yoyo_Bag.png
