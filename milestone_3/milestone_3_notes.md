@@ -39,6 +39,14 @@ Crafting:: 15 Hellstone bars
 4% critical chance
 14 use time
 
+Nettle Burst (Hardmode, post-Plantera)
+Ignores 10 points of enemy Defense
+BOSS:: Plantera
+35 damage
+1 knockback
+4% critical chance
+25 use time
+
 ### Armor
 Meteor Helmet
 DESCRIPTION
@@ -48,7 +56,7 @@ Crafting:: 10 Meteorite Bars
 Helmet
 9% increased magic damage
 
-Meteor Suit
+Meteor Suit (post Eater of Worlds/Brain of Cthulhu defeat)
 DESCRIPTION
 https://terraria.wiki.gg/images/b/be/Meteor_Suit.png
 6 Defense
