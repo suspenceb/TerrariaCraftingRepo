@@ -9,6 +9,8 @@ sudo mysqld_safe --skip-grant-tables &
 https://phoenixnap.com/kb/mysql-secure-installation
 
 
+- [ ] TODO: Document that for ArmorSlot, 1 = Pants 2 = Shirt 3 = Helmet. Consider converting it into an ENUM instead.
+
 ## Dummy Data
 
 ### Weapons
@@ -33,6 +35,7 @@ BOSS:: 22.2% chance Moon Lord
 
 Molten Hamaxe
 DESCRIPTION
+https://terraria.wiki.gg/images/d/d8/Molten_Hamaxe.png
 Crafting:: 15 Hellstone bars
 20 damage
 7 knockback
@@ -41,6 +44,7 @@ Crafting:: 15 Hellstone bars
 
 Nettle Burst (Hardmode, post-Plantera)
 Ignores 10 points of enemy Defense
+https://terraria.wiki.gg/images/9/98/Nettle_Burst.png
 BOSS:: Plantera
 35 damage
 1 knockback
@@ -48,7 +52,7 @@ BOSS:: Plantera
 25 use time
 
 ### Armor
-Meteor Helmet
+Meteor Helmet  (post Eater of Worlds/Brain of Cthulhu defeat)
 DESCRIPTION
 https://terraria.wiki.gg/images/3/36/Meteor_Helmet.png
 5 Defense
@@ -56,7 +60,7 @@ Crafting:: 10 Meteorite Bars
 Helmet
 9% increased magic damage
 
-Meteor Suit (post Eater of Worlds/Brain of Cthulhu defeat)
+Meteor Suit
 DESCRIPTION
 https://terraria.wiki.gg/images/b/be/Meteor_Suit.png
 6 Defense
