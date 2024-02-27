@@ -70,3 +70,21 @@ INSERT INTO "main"."Advancement"
 ("AdvancementId", "Name")
 VALUES (4, 'Defeat the Eater of Worlds/Brain of Cthulhu');
 
+-- UnlocksAccessory
+INSERT INTO "main"."UnlocksAccessory"
+("AdvancementId", "AccessoryId")
+VALUES (1, 2);
+
+-- UnlocksArmor
+INSERT INTO "main"."UnlocksArmor"
+("AdvancementId", "ArmorId")
+VALUES (4, 1);
+
+INSERT INTO "main"."UnlocksArmor"
+("AdvancementId", "ArmorId")
+VALUES (4, 2);
+
+INSERT INTO "main"."UnlocksArmor"
+("AdvancementId", "ArmorId")
+VALUES (4, 3);
+
