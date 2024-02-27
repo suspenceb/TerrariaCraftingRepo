@@ -119,3 +119,9 @@ Gives the user master yoyo skills
 Allows the holder to use two yoyos, similar to the Yoyo Glove along with two Counterweights and also increases the yoyo's range
 CRAFTING:: 1x - White String, 1x - Yoyo Gove, 1x - Counterweight
 https://terraria.wiki.gg/images/8/8d/Yoyo_Bag.png
+
+### Advancements
+Enter Hardmode
+Defeat Moon Lord
+Defeat Plantera
+Defeat the Eater of Worlds/Brain of Cthulhu

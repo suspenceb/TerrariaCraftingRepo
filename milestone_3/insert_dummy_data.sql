@@ -53,3 +53,20 @@ INSERT INTO "main"."Weapon"
 ("WeaponId", "WeaponName", "WeaponDesc", "ImageURL", "ObtainMethod", "StatDamage", "StatKnockback", "StatCritChance", "StatUseTime")
 VALUES (4, 'Nettle Burst', 'Ignores 10 points of enemy Defense', 'https://terraria.wiki.gg/images/9/98/Nettle_Burst.png', 'BOSS: Plantera', '35', '1', '4%', '25');
 
+-- Advancements
+INSERT INTO "main"."Advancement"
+("AdvancementId", "Name")
+VALUES (1, 'Enter Hardmode');
+
+INSERT INTO "main"."Advancement"
+("AdvancementId", "Name")
+VALUES (2, 'Defeat Moon Lord');
+
+INSERT INTO "main"."Advancement"
+("AdvancementId", "Name")
+VALUES (3, 'Defeat Plantera');
+
+INSERT INTO "main"."Advancement"
+("AdvancementId", "Name")
+VALUES (4, 'Defeat the Eater of Worlds/Brain of Cthulhu');
+
