@@ -104,3 +104,26 @@ VALUES (1, 4);
 INSERT INTO "main"."UnlocksWeapon"
 ("AdvancementId", "WeaponId")
 VALUES (3, 4);
+
+-- Account
+INSERT INTO "main"."Account"
+("UserId", "Username", "PasswordHash")
+VALUES (1, 'Albert', 'friedChicken');
+
+INSERT INTO "main"."Account"
+("UserId", "Username", "PasswordHash")
+VALUES (2, 'Jay', 'securityToken');
+
+-- Character
+INSERT INTO "main"."Character"
+("CharId", "CharName", "UserId", "WeaponId")
+VALUES (1, 'MonsterHunter', 1, 2);
+
+INSERT INTO "main"."Character"
+("CharId", "CharName", "UserId", "WeaponId")
+VALUES (2, 'Dave', 1, 3);
+
+INSERT INTO "main"."Character"
+("CharId", "CharName", "UserId")
+VALUES (3, 'BOI', 2);
+
