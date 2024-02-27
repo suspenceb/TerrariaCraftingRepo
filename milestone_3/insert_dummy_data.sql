@@ -35,3 +35,21 @@ VALUES (5, 'Ninja Shirt', 'DESCRIPTION', 'https://terraria.wiki.gg/images/f/f9/N
 INSERT INTO "main"."Armor"
 ("ArmorId", "ArmorName", "ArmorDesc", "ImageURL", "StatDefense", "ObtainMethod", "ArmorSlot", "StatBonus")
 VALUES (6, 'Ninja Pants', 'DESCRIPTION', 'https://terraria.wiki.gg/images/a/ad/Ninja_Pants.png', 3, 'BOSS::33.33% chance King Slime', 1, '3% increased critical strike chance');
+
+-- Weapons
+INSERT INTO "main"."Weapon"
+("WeaponId", "WeaponName", "WeaponDesc", "ImageURL", "ObtainMethod", "StatDamage", "StatKnockback", "StatCritChance", "StatUseTime")
+VALUES (1, 'Copper Broadsword', '', 'https://terraria.wiki.gg/images/c/cb/Copper_Broadsword.png', 'Crafting:: 6 Copper Bars', '9 Damage', '5.5 Knockback', '4%', '21');
+
+INSERT INTO "main"."Weapon"
+("WeaponId", "WeaponName", "WeaponDesc", "ImageURL", "ObtainMethod", "StatDamage", "StatKnockback", "StatCritChance", "StatUseTime")
+VALUES (2, 'Meowmere', 'DESCRIPTION', 'https://terraria.wiki.gg/images/6/63/Meowmere.png', 'BOSS:: 22.2% chance Moon Lord', '200', '6.5', '4%', '14');
+
+INSERT INTO "main"."Weapon"
+("WeaponId", "WeaponName", "WeaponDesc", "ImageURL", "ObtainMethod", "StatDamage", "StatKnockback", "StatCritChance", "StatUseTime")
+VALUES (3, 'Molten Hamaxe', 'DESCRIPTION', 'https://terraria.wiki.gg/images/d/d8/Molten_Hamaxe.png', 'Crafting:: 15 Hellstone bars', '20', '7', '4%', '14');
+
+INSERT INTO "main"."Weapon"
+("WeaponId", "WeaponName", "WeaponDesc", "ImageURL", "ObtainMethod", "StatDamage", "StatKnockback", "StatCritChance", "StatUseTime")
+VALUES (4, 'Nettle Burst', 'Ignores 10 points of enemy Defense', 'https://terraria.wiki.gg/images/9/98/Nettle_Burst.png', 'BOSS: Plantera', '35', '1', '4%', '25');
+
