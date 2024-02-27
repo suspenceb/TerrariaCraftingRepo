@@ -88,3 +88,19 @@ INSERT INTO "main"."UnlocksArmor"
 ("AdvancementId", "ArmorId")
 VALUES (4, 3);
 
+-- UnlocksWeapon
+INSERT INTO "main"."UnlocksWeapon"
+("AdvancementId", "WeaponId")
+VALUES (1, 2);
+
+INSERT INTO "main"."UnlocksWeapon"
+("AdvancementId", "WeaponId")
+VALUES (2, 2);
+
+INSERT INTO "main"."UnlocksWeapon"
+("AdvancementId", "WeaponId")
+VALUES (1, 4);
+
+INSERT INTO "main"."UnlocksWeapon"
+("AdvancementId", "WeaponId")
+VALUES (3, 4);
