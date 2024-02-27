@@ -117,13 +117,65 @@ VALUES (2, 'Jay', 'securityToken');
 -- Character
 INSERT INTO "main"."Character"
 ("CharId", "CharName", "UserId", "WeaponId")
-VALUES (1, 'MonsterHunter', 1, 2);
+VALUES (1, 'MonsterHunter', 1, 2); -- Belongs to Albert, has Meowmere
 
 INSERT INTO "main"."Character"
 ("CharId", "CharName", "UserId", "WeaponId")
-VALUES (2, 'Dave', 1, 3);
+VALUES (2, 'Dave', 1, 3); -- Belongs to Albert, has Molten Hamaxe
 
 INSERT INTO "main"."Character"
 ("CharId", "CharName", "UserId")
-VALUES (3, 'BOI', 2);
+VALUES (3, 'BOI', 2); -- Belongs to Jay, has no weapon
 
+-- Completes
+INSERT INTO "main"."Completes"
+("CharId", "AdvancementId")
+VALUES (1, 1); -- MonsterHunter has entered hardmode
+
+INSERT INTO "main"."Completes"
+("CharId", "AdvancementId")
+VALUES (1, 2); -- MonsterHUnter has defeated Moon Lord
+
+INSERT INTO "main"."Completes"
+("CharId", "AdvancementId")
+VALUES (2, 4); -- Dave has defeated Eater of Worlds
+
+-- Equips
+INSERT INTO "main"."Equips"
+("CharId", "AccessoryId")
+VALUES (1, 2); -- MonsterHunter has a Discout Card
+
+INSERT INTO "main"."Equips"
+("CharId", "AccessoryId")
+VALUES (1, 1); -- MonsterHunter has a Band of Regeneration
+
+INSERT INTO "main"."Equips"
+("CharId", "AccessoryId")
+VALUES (3, 3); -- BOI has a yo-yo bag
+
+-- Wears
+-- Give MonsterHunter full set of Ninja Armor
+INSERT INTO "main"."Wears"
+("CharId", "ArmorId")
+VALUES (1, 4);
+
+INSERT INTO "main"."Wears"
+("CharId", "ArmorId")
+VALUES (1, 5);
+
+INSERT INTO "main"."Wears"
+("CharId", "ArmorId")
+VALUES (1, 6);
+
+-- Give Dave a full set of Meteor Armor
+INSERT INTO "main"."Wears"
+("CharId", "ArmorId")
+VALUES (2, 1);
+
+INSERT INTO "main"."Wears"
+("CharId", "ArmorId")
+VALUES (2, 2);
+
+INSERT INTO "main"."Wears"
+("CharId", "ArmorId")
+VALUES (2, 3);
