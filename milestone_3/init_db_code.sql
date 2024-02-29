@@ -16,7 +16,7 @@ CREATE TABLE Weapon
   ImageURL VARCHAR(128) NOT NULL,
   ObtainMethod VARCHAR(256) NOT NULL,
   StatDamage VARCHAR(8),
-  StatKnockback VARCHAR(8) ,
+  StatKnockback VARCHAR(24),
   StatCritChance VARCHAR(8),
   StatUseTime VARCHAR(8),
   PRIMARY KEY (WeaponId)
