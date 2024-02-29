@@ -1,23 +1,23 @@
-DELETE FROM "main"."Wears";
+DELETE FROM Wears;
 
-DELETE FROM "main"."Equips";
+DELETE FROM Equips;
 
-DELETE FROM "main"."Completes";
+DELETE FROM Completes;
 
-DELETE FROM "main"."Character";
+DELETE FROM TerrariaCharacter;
 
-DELETE FROM "main"."Account";
+DELETE FROM Account;
 
-DELETE FROM "main"."UnlocksWeapon";
+DELETE FROM UnlocksWeapon;
 
-DELETE FROM "main"."UnlocksArmor";
+DELETE FROM UnlocksArmor;
 
-DELETE FROM "main"."UnlocksAccessory";
+DELETE FROM UnlocksAccessory;
 
-DELETE FROM "main"."Advancement";
+DELETE FROM Advancement;
 
-DELETE FROM "main"."Accessory";
+DELETE FROM Accessory;
 
-DELETE FROM "main"."Armor";
+DELETE FROM Armor;
 
-DELETE FROM "main"."Weapon";
+DELETE FROM Weapon;
