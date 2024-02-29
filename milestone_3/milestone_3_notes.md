@@ -134,7 +134,10 @@ _Information about all of the software you have used and how to connect to your 
     ssh username@<ip-address>
     ```
 3. Navigate to our Docker folder in `/docker`.
-
+4. Turn on the Database and PHPMyAdmin with `docker compose up -d` 
+   (It can be turned off with `docker compose down`)
+   (Information about the current images can be seen with `docker ps`)
+5. Connect to PHPMyAdmin with `http://<ip-address>:8000` in your browser.
 
 ## Server Config details
 
@@ -147,4 +150,6 @@ sudo usermod -a -G docker sam
 sudo usermod -a -G docker mgregg99
 sudo usermod -a -G docker student
 chgrp -R docker /docker
+
+sudo apt install mysql # Install a SQL client
 ```
