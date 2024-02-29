@@ -125,3 +125,26 @@ Enter Hardmode
 Defeat Moon Lord
 Defeat Plantera
 Defeat the Eater of Worlds/Brain of Cthulhu
+
+## Server Connection Instructions
+_Information about all of the software you have used and how to connect to your database, run the schema script_
+1. Connect to the IT&C VPN
+2. Open a command prompt and SSH into the server with:
+    ```bash
+    ssh username@<ip-address>
+    ```
+3. Navigate to our Docker folder in `/docker`.
+
+
+## Server Config details
+
+
+```bash
+# Add everyone to the `docker` group and change group control of that folder.
+sudo usermod -a -G docker ethan
+sudo usermod -a -G docker suspenceb
+sudo usermod -a -G docker sam
+sudo usermod -a -G docker mgregg99
+sudo usermod -a -G docker student
+chgrp -R docker /docker
+```
