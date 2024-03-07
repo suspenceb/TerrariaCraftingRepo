@@ -20,5 +20,9 @@ API: My Character
 - Receives: character name, armor, accessories, stats
 - SQL View: TODO - this would be ideal for an SQL VIEW.
 
+API: Account :: Add Character
+
+API: Account :: Password Reset
+
 
 
