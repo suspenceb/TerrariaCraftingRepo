@@ -20,18 +20,17 @@ Procedures
 -   XX  Make sure primary keys in your entities use SERIAL as column types so that they're auto-generated and auto-incremented. (This doesn't apply to entities that have primary composite keys)
 -   XX  Make sure primary keys are composite for many-to-many relationships. 
 -	Make any updates you need to enforce your business rules using CHECKs, foreign key constraints, etc.
--	Populate the data with dummy data, so you can test queries and visualize the dataset.
+-	XX Populate the data with dummy data, so you can test queries and visualize the dataset.
 -	XX  Create an account on GitHub if you don't have one. Create a new repository and have all team members join it and make a change to demonstrate that they can contribute.
 
   
 Migrations:
 
 
-- Create at least one INSERT script (e.g., to populate the database with dummy data) and one DELETE script (e.g., to depopulate the same data). These are called data migrations.
+X- Create at least one INSERT script (e.g., to populate the database with dummy data) and one DELETE script (e.g., to depopulate the same data). These are called data migrations.
 -	In the future, each change you make will be done via ALTER and ROLLBACK submissions. Later in the semester when you realize you have to modify the database structure, create ALTER scripts (e.g., to add columns) and a corresponding ROLLBACK script. Make sure you name them starting with numbers so you can keep track of the order. These are called schema migrations.
--	Document the information about connecting to GitHub in your Final Report Template.
--	Save the initial schema SQL files that build your database to the GitHub repo. This will serve as a backup. Make sure you do not share any confidential information, such as authentication information, publicly on GitHub.
--	Document the information about connecting to GitHub in your Final Report Template.
+X-	Document the information about connecting to GitHub in your Final Report Template.
+X-	Save the initial schema SQL files that build your database to the GitHub repo. This will serve as a backup. Make sure you do not share any confidential information, such as authentication information, publicly on GitHub.
 -	Document information about all of the software you have used and how to connect to your database, run the schema script, etc.
 - Please add the instructor and TAs to your github account if it is private. 
  
