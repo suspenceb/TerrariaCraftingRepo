@@ -91,19 +91,19 @@ classDiagram
 
 
 
-    style DBAccount fill:#800
-    style DBCharacter fill:#800
-    style DBWeapon fill:#800
-    style DBUnlocksWeapon fill:#800
-    style DBCompletes fill:#800
-    style DBAdvancement fill:#800
-    style DBEquips fill:#800
-    style DBAccessory fill:#800
-    style DBUnlocksAccessory fill:#800
-    style DBWears fill:#800
-    style DBArmor fill:#800
-    style DBUnlocksArmor fill:#800
-    style DBUserSession fill:#800
+    style DBAccount fill:#800,color:#FFF
+    style DBCharacter fill:#800,color:#FFF
+    style DBWeapon fill:#800,color:#FFF
+    style DBUnlocksWeapon fill:#800,color:#FFF
+    style DBCompletes fill:#800,color:#FFF
+    style DBAdvancement fill:#800,color:#FFF
+    style DBEquips fill:#800,color:#FFF
+    style DBAccessory fill:#800,color:#FFF
+    style DBUnlocksAccessory fill:#800,color:#FFF
+    style DBWears fill:#800,color:#FFF
+    style DBArmor fill:#800,color:#FFF
+    style DBUnlocksArmor fill:#800,color:#FFF
+    style DBUserSession fill:#800,color:#FFF
 
 
 
@@ -126,8 +126,8 @@ classDiagram
         List of Accessory Names + ID's
     }
 
-    style VIEWUsersCharacters fill:#880
-    style VIEWCharacterEquipment fill:#880
+    style VIEWUsersCharacters fill:#880,color:#FFF
+    style VIEWCharacterEquipment fill:#880,color:#FFF
 
 
     VIEW Users Characters --> API GET Account
@@ -253,21 +253,21 @@ classDiagram
 
 
 
-    style APIGETAccount fill:#080
-    style APIGETCharacter fill:#080
-    style APIGETItems fill:#080
-    style APIGETItemDetail fill:#080
-    style APIDELETECharacter fill:#080
-    style APIPOSTCharacter fill:#080
-    style APIPUTAccount fill:#080
-    style APIDELETEAccount fill:#080
-    style APIDELETELogin fill:#080
-    style APIDELETEEquipment fill:#080
-    style APIPOSTEquipment fill:#080
-    style APIPOSTLogin fill:#080
-    style APIPOSTAccount fill:#080
-    style APIPOSTResetPassword fill:#080
-    style APIGETAdvancements fill:#080
+    style APIGETAccount fill:#080,color:#FFF
+    style APIGETCharacter fill:#080,color:#FFF
+    style APIGETItems fill:#080,color:#FFF
+    style APIGETItemDetail fill:#080,color:#FFF
+    style APIDELETECharacter fill:#080,color:#FFF
+    style APIPOSTCharacter fill:#080,color:#FFF
+    style APIPUTAccount fill:#080,color:#FFF
+    style APIDELETEAccount fill:#080,color:#FFF
+    style APIDELETELogin fill:#080,color:#FFF
+    style APIDELETEEquipment fill:#080,color:#FFF
+    style APIPOSTEquipment fill:#080,color:#FFF
+    style APIPOSTLogin fill:#080,color:#FFF
+    style APIPOSTAccount fill:#080,color:#FFF
+    style APIPOSTResetPassword fill:#080,color:#FFF
+    style APIGETAdvancements fill:#080,color:#FFF
 
 
 
@@ -343,9 +343,9 @@ classDiagram
         Post Reset Password(Username)
     }
 
-    style FrontendAccount fill:#008
-    style FrontendCharacter fill:#008
-    style FrontendHome fill:#008
-    style FrontendItemDetail fill:#008
-    style FrontendLogin fill:#008
+    style FrontendAccount fill:#008,color:#FFF
+    style FrontendCharacter fill:#008,color:#FFF
+    style FrontendHome fill:#008,color:#FFF
+    style FrontendItemDetail fill:#008,color:#FFF
+    style FrontendLogin fill:#008,color:#FFF
 ```
