@@ -91,6 +91,22 @@ classDiagram
 
 
 
+    style DBAccount fill:#800
+    style DBCharacter fill:#800
+    style DBWeapon fill:#800
+    style DBUnlocksWeapon fill:#800
+    style DBCompletes fill:#800
+    style DBAdvancement fill:#800
+    style DBEquips fill:#800
+    style DBAccessory fill:#800
+    style DBUnlocksAccessory fill:#800
+    style DBWears fill:#800
+    style DBArmor fill:#800
+    style DBUnlocksArmor fill:#800
+    style DBUserSession fill:#800
+
+
+
 
     DB Character --> VIEW Users Characters
     DB Weapon --> VIEW Character Equipment
@@ -110,59 +126,62 @@ classDiagram
         List of Accessory Names + ID's
     }
 
-
-    VIEW Users Characters --> API-GET Account
-    VIEW Character Equipment --> API-GET Character
-
+    style VIEWUsersCharacters fill:#880
+    style VIEWCharacterEquipment fill:#880
 
 
-
-    DB Account --> API-GET Account
-    VIEW Users Characters --> API-GET Account
-    DB Character --> API-GET Character
-    VIEW Character Equipment --> API-GET Character
-    DB Weapon --> API-GET Character
-    DB Accessory --> API-GET Character
-    DB Armor --> API-GET Character
-    DB Weapon --> API-GET Items
-    DB Accessory --> API-GET Items
-    DB Armor --> API-GET Items
-    DB Weapon --> API-GET Item Detail
-    DB Accessory --> API-GET Item Detail
-    DB Armor --> API-GET Item Detail
-
-    DB Character --> API-DELETE Character
-    DB Character --> API-POST Character
-    DB Account --> API-PUT Account
-    DB Account --> API-DELETE Account
-    DB UserSession --> API-DELETE Login
-    DB Wears --> API-DELETE Equipment
-    DB Equips --> API-DELETE Equipment
-    DB Character --> API-DELETE Equipment
-    DB Wears --> API-POST Equipment
-    DB Equips --> API-POST Equipment
-    DB Character --> API-POST Equipment
-    DB UserSession --> API-POST Login
-    DB Account --> API-POST Account
-    DB Account --> API-POST Reset Password
-    DB UnlocksAccessory --> API-GET Item Detail
-    DB UnlocksAccessory --> API-GET Items
-    DB UnlocksArmor --> API-GET Item Detail
-    DB UnlocksArmor --> API-GET Items
-    DB Unlocks Weapon --> API-GET Item Detail
-    DB Unlocks Weapon --> API-GET Items
-    DB Advancement --> API-GET Advancements
+    VIEW Users Characters --> API GET Account
+    VIEW Character Equipment --> API GET Character
 
 
 
 
-    class API-GET Account{
+    DB Account --> API GET Account
+    VIEW Users Characters --> API GET Account
+    DB Character --> API GET Character
+    VIEW Character Equipment --> API GET Character
+    DB Weapon --> API GET Character
+    DB Accessory --> API GET Character
+    DB Armor --> API GET Character
+    DB Weapon --> API GET Items
+    DB Accessory --> API GET Items
+    DB Armor --> API GET Items
+    DB Weapon --> API GET Item Detail
+    DB Accessory --> API GET Item Detail
+    DB Armor --> API GET Item Detail
+
+    DB Character --> API DELETE Character
+    DB Character --> API POST Character
+    DB Account --> API PUT Account
+    DB Account --> API DELETE Account
+    DB UserSession --> API DELETE Login
+    DB Wears --> API DELETE Equipment
+    DB Equips --> API DELETE Equipment
+    DB Character --> API DELETE Equipment
+    DB Wears --> API POST Equipment
+    DB Equips --> API POST Equipment
+    DB Character --> API POST Equipment
+    DB UserSession --> API POST Login
+    DB Account --> API POST Account
+    DB Account --> API POST Reset Password
+    DB UnlocksAccessory --> API GET Item Detail
+    DB UnlocksAccessory --> API GET Items
+    DB UnlocksArmor --> API GET Item Detail
+    DB UnlocksArmor --> API GET Items
+    DB Unlocks Weapon --> API GET Item Detail
+    DB Unlocks Weapon --> API GET Items
+    DB Advancement --> API GET Advancements
+
+
+
+
+    class API GET Account{
         Username
         UserId
         List of Characters Names + ID's
     }
 
-    class API-GET Character{
+    class API GET Character{
         Name
         List of Armor Names + ID's
         Weapon Name + ID
@@ -170,11 +189,11 @@ classDiagram
         Statistics
     }
 
-    class API-GET Items{
+    class API GET Items{
         List of Filtered Items Names + ID's + ImageURL's
     }
 
-    class API-GET Item Detail{
+    class API GET Item Detail{
         Item Name
         Item Description
         Image URL
@@ -187,73 +206,92 @@ classDiagram
 
 
 
-    class API-DELETE Character{
+    class API DELETE Character{
         Delete Character(Character ID)
     }
 
-    class API-POST Character{
+    class API POST Character{
         Add Character(Character Name)
     }
 
-    class API-PUT Account{
+    class API PUT Account{
         Change Password(Old Password, New Password)
         Change Username(New Username)
     }
 
-    class API-DELETE Account{
+    class API DELETE Account{
         Delete Account()
     }
 
-    class API-DELETE Login{
+    class API DELETE Login{
         Logout()
     }
 
-    class API-DELETE Equipment{
+    class API DELETE Equipment{
         Unequip Item(CharacterId, Item Type, Item Id)
     }
 
-    class API-POST Equipment{
+    class API POST Equipment{
         Equip Item(CharacterId, Item Type, Item Id)
     }
 
-    class API-POST Login{
+    class API POST Login{
         Login(Username, Password)
     }
 
-    class API-POST Account{
+    class API POST Account{
         Register(Username, Password)
     }
 
-    class API-POST Reset Password{
+    class API POST Reset Password{
         Reset Password(Username)
     }
 
-    class API-GET Advancements{
+    class API GET Advancements{
         List of Advancements
     }
 
 
 
-    API-GET Account --> Frontend Account
-    API-GET Character --> Frontend Character
-    API-GET Items --> Frontend Home
-    API-GET Item Detail --> Frontend Item Detail
-    API-GET Advancements --> Frontend Home
+    style APIGETAccount fill:#080
+    style APIGETCharacter fill:#080
+    style APIGETItems fill:#080
+    style APIGETItemDetail fill:#080
+    style APIDELETECharacter fill:#080
+    style APIPOSTCharacter fill:#080
+    style APIPUTAccount fill:#080
+    style APIDELETEAccount fill:#080
+    style APIDELETELogin fill:#080
+    style APIDELETEEquipment fill:#080
+    style APIPOSTEquipment fill:#080
+    style APIPOSTLogin fill:#080
+    style APIPOSTAccount fill:#080
+    style APIPOSTResetPassword fill:#080
+    style APIGETAdvancements fill:#080
 
-    API-DELETE Character --> Frontend Account
-    API-POST Character --> Frontend Account
-    API-PUT Account --> Frontend Account
-    API-DELETE Account --> Frontend Account
-    API-DELETE Login --> Frontend Account
-    API-DELETE Equipment --> Frontend Character
-    API-DELETE Login --> Frontend Character
-    API-POST Equipment --> Frontend Home
-    API-DELETE Login --> Frontend Home
-    API-POST Equipment --> Frontend Item Detail
-    API-DELETE Login --> Frontend Item Detail
-    API-POST Login --> Frontend Login
-    API-POST Account --> Frontend Login
-    API-POST Reset Password --> Frontend Login
+
+
+
+    API GET Account --> Frontend Account
+    API GET Character --> Frontend Character
+    API GET Items --> Frontend Home
+    API GET Item Detail --> Frontend Item Detail
+    API GET Advancements --> Frontend Home
+
+    API DELETE Character --> Frontend Account
+    API POST Character --> Frontend Account
+    API PUT Account --> Frontend Account
+    API DELETE Account --> Frontend Account
+    API DELETE Login --> Frontend Account
+    API DELETE Equipment --> Frontend Character
+    API DELETE Login --> Frontend Character
+    API POST Equipment --> Frontend Home
+    API DELETE Login --> Frontend Home
+    API POST Equipment --> Frontend Item Detail
+    API DELETE Login --> Frontend Item Detail
+    API POST Login --> Frontend Login
+    API POST Account --> Frontend Login
+    API POST Reset Password --> Frontend Login
 
 
 
@@ -304,4 +342,10 @@ classDiagram
         Post Account - Register(Username, Password)
         Post Reset Password(Username)
     }
+
+    style FrontendAccount fill:#008
+    style FrontendCharacter fill:#008
+    style FrontendHome fill:#008
+    style FrontendItemDetail fill:#008
+    style FrontendLogin fill:#008
 ```
