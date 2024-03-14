@@ -1,12 +1,3 @@
--- THIS IS PSEUDO-SQL. Haven't checked syntax yet, just getting the gist.
-SELECT WeaponId, WeaponName, WeaponDesc, ImageURL, ObtainMethod AS "id", "name", "description", "imageURL", "ObtainMethod"
-FROM Weapon
-WHERE -- Weapon is currently equipped to the character
-UNION -- Probably UNION_ALL actually
-SELECT AccessoryId, AccessoryName, AccessoryDesc, ImageURL, ObtainMethod AS "id", "name", "description", "imageURL", "ObtainMethod"
-FROM Accessory
-where -- Accessory is currently equipped to the character
-
 -- The VIEWs that JOIN the tables of available items with the tables of what's actually equipped
 -- 0
 CREATE VIEW Wields AS
