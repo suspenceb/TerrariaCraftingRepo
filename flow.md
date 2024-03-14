@@ -4,6 +4,8 @@ This document describes how the flow of data works from the database, to a view,
 
 _Note for this diagram to render correctly, you must have the mermaid extension installed in your markdown viewer._
 
+This diagram may not render well in VSCode. You may prefer to view it online from the [mermaid live editor](https://mermaid-js.github.io/mermaid-live-editor/). Copy the code below into the live viewer.
+
 ```mermaid
 
 classDiagram
