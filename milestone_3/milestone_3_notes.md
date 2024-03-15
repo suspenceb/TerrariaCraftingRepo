@@ -11,6 +11,33 @@ https://phoenixnap.com/kb/mysql-secure-installation
 
 - [ ] TODO: Document that for ArmorSlot, 1 = Pants 2 = Shirt 3 = Helmet. Consider converting it into an ENUM instead.
 
+## Server Connection Instructions
+_Information about all of the software you have used and how to connect to your database, run the schema script_
+1. Connect to the IT&C VPN
+2. Open a command prompt and SSH into the server with:
+    ```bash
+    ssh username@<ip-address>
+    ```
+3. Navigate to our Docker folder in `/docker`.
+4. Turn on the Database and PHPMyAdmin with `docker compose up -d` 
+   (It can be turned off with `docker compose down`)
+   (Information about the current images can be seen with `docker ps`)
+5. Connect to PHPMyAdmin with `http://<ip-address>:8000` in your browser.
+
+## Server Config details
+
+```bash
+# Add everyone to the `docker` group and change group control of that folder.
+sudo usermod -a -G docker ethan
+sudo usermod -a -G docker suspenceb
+sudo usermod -a -G docker sam
+sudo usermod -a -G docker mgregg99
+sudo usermod -a -G docker student
+chgrp -R docker /docker
+
+sudo apt install mysql # Install a SQL client
+```
+
 ## Dummy Data
 
 ### Weapons
@@ -125,31 +152,3 @@ Enter Hardmode
 Defeat Moon Lord
 Defeat Plantera
 Defeat the Eater of Worlds/Brain of Cthulhu
-
-## Server Connection Instructions
-_Information about all of the software you have used and how to connect to your database, run the schema script_
-1. Connect to the IT&C VPN
-2. Open a command prompt and SSH into the server with:
-    ```bash
-    ssh username@<ip-address>
-    ```
-3. Navigate to our Docker folder in `/docker`.
-4. Turn on the Database and PHPMyAdmin with `docker compose up -d` 
-   (It can be turned off with `docker compose down`)
-   (Information about the current images can be seen with `docker ps`)
-5. Connect to PHPMyAdmin with `http://<ip-address>:8000` in your browser.
-
-## Server Config details
-
-
-```bash
-# Add everyone to the `docker` group and change group control of that folder.
-sudo usermod -a -G docker ethan
-sudo usermod -a -G docker suspenceb
-sudo usermod -a -G docker sam
-sudo usermod -a -G docker mgregg99
-sudo usermod -a -G docker student
-chgrp -R docker /docker
-
-sudo apt install mysql # Install a SQL client
-```
