@@ -6,27 +6,31 @@
 -- The VIEWs that JOIN the tables of existing items with the tables of what's actually equipped
 -- 0
 CREATE VIEW Wields AS
-SELECT CharId, WeaponId FROM Character
+SELECT CharId, WeaponId FROM TerrariaCharacter
 
 -- 1
 CREATE VIEW accessories_equipped AS
-SELECT * FROM Accessory, Equips
-WHERE Accessory.AccessoryId = Equips.AccessoryId;
+SELECT Equips.CharId, Accessory.AccessoryId, AccessoryName, AccessoryDesc, StatBonus, ObtainMethod, ImageURL
+FROM Accessory
+JOIN Equips ON Accessory.AccessoryId = Equips.AccessoryId;
 
 -- 2
 CREATE VIEW weapons_equipped AS
-SELECT * FROM Weapon, Wields
-WHERE Weapon.WeaponId = Wields.WeaponId;
+SELECT Wields.CharId, Weapon.WeaponId, WeaponName, WeaponDesc, ImageURL, ObtainMethod, StatDamage, StatKnockback, StatCritChance, StatUseTime
+FROM Weapon
+JOIN Wields ON Weapon.WeaponId = Wields.WeaponId;
 
 -- 3
 CREATE VIEW armors_equipped AS
-SELECT * FROM Armor, Wears
-WHERE Armor.ArmorId = Wears.ArmorId;
+SELECT Wears.CharId, Armor.ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus
+FROM Armor
+JOIN Wears ON Armor.ArmorId = Wears.ArmorId;
 
 -- The VIEWs that Rename everything to be Union Compatible
 -- 4
 CREATE VIEW weapons_equipped_unionable AS
-    SELECT WeaponId AS ItemId,
+    SELECT CharId,
+        WeaponId AS ItemId,
         'Weapon' AS ItemType,
         WeaponName AS ItemName,
         WeaponDesc AS ItemDesc,
@@ -36,13 +40,14 @@ CREATE VIEW weapons_equipped_unionable AS
         StatKnockback,
         StatCritChance,
         StatUseTime,
-        NULL AS StatBonus
+        NULL AS StatBonus,
         NULL AS StatDefense
-    FROM weapons_are_equipped;
+    FROM weapons_equipped;
 
 -- 5
 CREATE VIEW accessories_equipped_unionable AS
-    SELECT AccessoryId AS ItemId,
+    SELECT CharId,
+        AccessoryId AS ItemId,
         'Accessory' AS ItemType,
         AccessoryName AS ItemName,
         AccessoryDesc AS ItemDesc,
@@ -54,11 +59,12 @@ CREATE VIEW accessories_equipped_unionable AS
         NULL AS StatUseTime,
         StatBonus,
         NULL AS StatDefense
-    FROM Accessory;
+    FROM accessories_equipped;
 
 -- 6
 CREATE VIEW armors_equipped_unionable AS
-    SELECT ArmorId AS ItemId,
+    SELECT CharId,
+        ArmorId AS ItemId,
         'Armor' AS ItemType,
         ArmorName AS ItemName,
         ArmorDesc AS ItemDesc,
@@ -70,7 +76,7 @@ CREATE VIEW armors_equipped_unionable AS
         NULL AS StatUseTime,
         NULL AS StatBonus,
         StatDefense
-    FROM Armor;
+    FROM armors_equipped;
 
 
 -- The VIEW that UNIONs all the items into a single table
