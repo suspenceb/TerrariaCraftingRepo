@@ -128,7 +128,6 @@ classDiagram
     style VIEWCharacterEquipment fill:#880,color:#FFF
 
 
-    VIEW Character Equipment --> API GET Character
 
 
 
