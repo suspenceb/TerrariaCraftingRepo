@@ -1,0 +1,23 @@
+.alert {
+    padding: 10px; /* Padding for spacing inside the message box */
+    margin-bottom: 15px; /* Margin at the bottom to create space between the message and other content */
+    border-radius: 4px; /* Rounded corners for a softer look */
+}
+
+.alert.success {
+    color: #3c763d;
+    border: 1px solid #3c763d;
+    background-color: #dff0d8;
+}
+
+.alert.error {
+    color: red;
+    border: 1px solid red;
+    background-color: #ffdede;
+}
+
+.alert.info {
+    color: rgb(77, 103, 190);
+    border: 1px solid rgb(77, 103, 190);
+    background-color: #d0e1f5;
+}
