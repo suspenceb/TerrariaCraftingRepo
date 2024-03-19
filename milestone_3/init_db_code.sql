@@ -117,3 +117,11 @@ CREATE TABLE Wears
   FOREIGN KEY (CharId) REFERENCES TerrariaCharacter(CharId),
   FOREIGN KEY (ArmorId) REFERENCES Armor(ArmorId)
 );
+
+CREATE TABLE UserSession
+(
+  Token VARCHAR(256) UNIQUE NOT NULL,
+  UserId BIGINT UNSIGNED NOT NULL,
+  PRIMARY KEY (Token),
+  FOREIGN KEY (UserId) REFERENCES Account(UserId)
+);
