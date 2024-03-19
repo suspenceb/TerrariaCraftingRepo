@@ -110,7 +110,6 @@ classDiagram
 
 
 
-    DB Character --> VIEW Users Characters
     DB Weapon --> VIEW Character Equipment
     DB Accessory --> VIEW Character Equipment
     DB Armor --> VIEW Character Equipment
@@ -118,9 +117,6 @@ classDiagram
 
 
 
-    class VIEW Users Characters{
-        List of User's Character Names + ID's
-    }
 
     class VIEW Character Equipment{
         List of Armor Names + ID's
@@ -132,14 +128,13 @@ classDiagram
     style VIEWCharacterEquipment fill:#880,color:#FFF
 
 
-    VIEW Users Characters --> API GET Account
     VIEW Character Equipment --> API GET Character
 
 
 
 
     DB Account --> API GET Account
-    VIEW Users Characters --> API GET Account
+    DB Character --> API GET Account
     DB Character --> API GET Character
     VIEW Character Equipment --> API GET Character
     DB Weapon --> API GET Character
