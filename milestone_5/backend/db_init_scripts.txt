@@ -1,0 +1,8 @@
+CREATE DATABASE `itemdb`;
+
+CREATE TABLE `items` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `quantity` int NOT NULL,
+  PRIMARY KEY (`id`)
+);
