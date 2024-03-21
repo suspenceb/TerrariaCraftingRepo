@@ -2,3 +2,4 @@ secrets.txt
 .DS_Store
 .venv/
 Website/.env
+Website/__pycache__/
