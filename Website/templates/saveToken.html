@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}Redirecting...{% endblock %} {% block
+content%}
+<p>Redirecting...</p>
+<script>
+  window.onload = function () {
+    var token = "{{ token }}";
+    localStorage.setItem("token", token);
+    window.location.href = "/";
+  };
+</script>
+{% endblock %}

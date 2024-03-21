@@ -16,8 +16,7 @@ def login():
         if token is None:
             flash("Invalid username or password")
             return redirect(url_for("login"))
-        # return redirect()
-        return "Logged in"
+        return render_template("saveToken.html", token=token)
     
     return render_template("login.html")
 
