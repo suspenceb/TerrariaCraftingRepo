@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Account{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <div class="row align-items-start mt-4">
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        <h3 class="mb-5">Update Password</h3>
+        <form method="post">
+          <div class="container w-75">
+          <div class="form-group row mt-2 mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group row mt-2 mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPasswordconfirm" name="inputPasswordconfirm" placeholder="Password">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+        </div>
+        <div class="container mt-5">
+          <a href="/logout" class="btn btn-danger">Logout</a>
+        </div>
+          
+      </div>
+    </div>
+{% endblock %}

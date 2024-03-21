@@ -74,3 +74,50 @@ def delete_login(token):
     # Close the connection and return 1 if successful
     conn.close()
     return True
+
+
+# Gets the current logged in uses from the token. Returns dictionary with user id and username.
+# Returns None if the token does not exist in the datebase
+def get_loggedin_user(token) -> dict:
+
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Ensure the token exists
+    query = "SELECT UserId FROM UserSession WHERE Token = %s"
+    cursor.execute(query, (token, ))
+    userid = cursor.fetchone()[0]
+    if userid is None:
+        return None
+
+    query = "SELECT Username FROM Account WHERE UserId = %s"
+    cursor.execute(query, (userid, ))
+    username = cursor.fetchone()[0]
+
+    user = {
+        "userId": userid,
+        "username": username
+    }
+
+    # Close the connection and return the user id
+    conn.close()
+    return user 
+
+
+def update_password(userId, password):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Hash the password
+    hashed_password = hashlib.sha256(password.encode()).hexdigest()
+
+    # Query the database
+    query = "UPDATE Account SET PasswordHash = %s WHERE UserId = %s"
+    cursor.execute(query, (hashed_password, userId))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
