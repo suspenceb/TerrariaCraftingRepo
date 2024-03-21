@@ -4,7 +4,7 @@ content%}
 <script>
   window.onload = function () {
     var token = "{{ token }}";
-    localStorage.setItem("token", token);
+    document.cookie = "token=" + token;
     window.location.href = "/";
   };
 </script>
