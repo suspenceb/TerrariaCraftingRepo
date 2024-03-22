@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character
 
 
 load_dotenv()
@@ -39,19 +39,38 @@ def account():
     user = get_loggedin_user(request.cookies.get("token"))
     
     if request.method == "POST":
-        # Get the password and confirm password from the form
-        password = request.form["inputPassword"]
-        comfirm_password = request.form["inputPasswordconfirm"]
+        try:
+            # Get the password and confirm password from the form
+            password = request.form["inputPassword"]
+            comfirm_password = request.form["inputPasswordconfirm"]
 
-        # Check if the passwords match
-        if password != comfirm_password:
-            # If they don't match, flash a message and return the user to the account page
-            flash("Passwords do not match")
-        
-        # Update the password in the database
-        update_password(user["userId"], password)
+            # Check if the passwords match
+            if password != comfirm_password:
+                # If they don't match, flash a message
+                #  and return the user to the account page
+                flash("Passwords do not match")
+                
+            # Update the password in the database
+            update_password(user["userId"], password)
+        except:
+            pass
+        try:
+            newCharacter = request.form["charName"]
+            print(newCharacter)
 
-    return render_template("account.html", user=user)
+            # Add the new character to the database
+            add_character(user["userId"], newCharacter)
+        except:
+            pass
+
+        try:
+            charId = request.form["delete"]
+            delete_character(charId)
+
+        except:
+            pass
+
+    return render_template("account.html", user=user, characters=get_characters(user["userId"]))
 
 @app.route("/logout")
 def logout():

@@ -6,10 +6,41 @@
 <div class="container text-center">
     <div class="row align-items-start mt-4">
       <div class="col">
-        One of three columns
+        <h3>Character Information</h3>
+        <div class="container">
+          <form class="form-inline" method="post">
+            <div class="row">
+              <div class="col">
+                <label for="charName" class="sr-only">Character Name</label>
+                <input type="text" class="form-control" id="charName" name="charName" placeholder="Character Name">
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary mb-2">Add Character</button>
+              </div>
+          </div>
+          </form>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Character Name</th>
+                <th scope="col">Weapon ID</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+
+              </tr>
+            {% for char in characters %}
+              <tr>
+                <td>{{ char.charName }}</td>
+                <td>{{ char.weaponId }}</td>
+                <td><form method="post"><button class="btn"><i class="fa-regular fa-square-check"></i></button><input type="hidden" name="select" value="{{char.charId}}"></form></td>
+                <td><form method="post"><button class="btn"><i class="fa-solid fa-trash-can"></i></button><input type="hidden" name="delete" value="{{char.charId}}"></form></td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
       </div>
       <div class="col">
-        <h3 class="mb-5">Update Password</h3>
+        <h3>Update Password</h3>
         <form method="post">
           <div class="container w-75">
           <div class="form-group row mt-2 mb-3">
@@ -30,7 +61,6 @@
         <div class="container mt-5">
           <a href="/logout" class="btn btn-danger">Logout</a>
         </div>
-          
       </div>
     </div>
 {% endblock %}

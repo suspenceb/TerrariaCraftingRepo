@@ -121,3 +121,53 @@ def update_password(userId, password):
     # Close the connection and return 1 if successful
     conn.close()
     return True
+
+
+def get_characters(userId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT CharId, CharName, WeaponId FROM TerrariaCharacter WHERE UserId = %s"
+    cursor.execute(query, (userId, ))
+    characters = cursor.fetchall()
+
+    # Close the connection and return the characters
+    conn.close()
+    returnCharacters = []
+    for i in characters:
+        returnCharacters.append({
+            "charId": i[0],
+            "charName": i[1],
+            "weaponId": i[2]
+        })
+    return returnCharacters
+
+def add_character(userId, charName):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "INSERT INTO TerrariaCharacter (UserId, CharName) VALUES (%s, %s)"
+    cursor.execute(query, (userId, charName))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
+
+def delete_character(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "DELETE FROM TerrariaCharacter WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
