@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, test_token
 
 
 load_dotenv()
@@ -27,14 +27,21 @@ def login():
 
 @app.route("/")
 def index():
-    print(request.cookies.get("token"))
+    if test_token(request.cookies.get("token")) == False:
+        return redirect(url_for("login"))
+    
+    
     return render_template("index.html")
 
 @app.route("/account", methods=["GET", "POST"])
 def account():
-    # Check if the user is logged in
-    if request.cookies.get("token") is None:
+    # # Check if the user is logged in
+    # if request.cookies.get("token") is None:
+    #     return redirect(url_for("login"))
+
+    if test_token(request.cookies.get("token")) == False:
         return redirect(url_for("login"))
+    
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
     
@@ -75,8 +82,7 @@ def account():
 @app.route("/logout")
 def logout():
     # Check if the user is logged in
-    if request.cookies.get("token") is None:
-        # Redirect to the login page if the user is not logged in
+    if test_token(request.cookies.get("token")) == False:
         return redirect(url_for("login"))
     
     # Delete the login from the database

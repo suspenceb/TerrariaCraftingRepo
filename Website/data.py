@@ -171,3 +171,18 @@ def delete_character(charId):
     # Close the connection and return 1 if successful
     conn.close()
     return True
+
+def test_token(token):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Ensure the token exists
+    query = "SELECT Token FROM UserSession WHERE Token = %s"
+    cursor.execute(query, (token, ))
+    if cursor.fetchone() is None:
+        return False
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
