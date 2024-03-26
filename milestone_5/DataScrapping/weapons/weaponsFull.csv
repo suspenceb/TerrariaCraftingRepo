@@ -1,0 +1,572 @@
+ID,Name,Image URL,Damage,Damage Type,Knockback,Critical Strike Chance,Use Time,Hardmode
+1,Abigail's Flower,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4e/Abigail%27s_Flower.png/revision/latest?cb=20211118183533&format=original,6,Summon,2,0%,36,NO
+2,Adamantite Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/17/Adamantite_Chainsaw.png/revision/latest?cb=20200516182702&format=original,33,Melee,4.5,4%,15,YES
+3,Adamantite Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/26/Adamantite_Drill.png/revision/latest?cb=20200516182705&format=original,20,Melee,0.5,4%,15,YES
+4,Adamantite Glaive,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/57/Adamantite_Glaive.png/revision/latest?cb=20200516183255&format=original,49,Melee,6,4%,25,YES
+5,Adamantite Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9f/Adamantite_Pickaxe.png/revision/latest?cb=20221121021348&format=original,20,Melee,5,4%,25,YES
+6,Adamantite Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d8/Adamantite_Repeater.png/revision/latest?cb=20200516183357&format=original,42,Ranged,2.5,4%,18,YES
+7,Adamantite Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Adamantite_Sword.png/revision/latest?cb=20221121020309&format=original,61,Melee,6,4%,21,YES
+8,Adamantite Waraxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e2/Adamantite_Waraxe.png/revision/latest?cb=20200516183410&format=original,43,Melee,7,4%,35,YES
+9,Aerial Bane,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4b/Aerial_Bane.png/revision/latest?cb=20200516183438&format=original,39,Ranged,4.5,7%,30,YES
+10,Ale Tosser,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d1/Ale_Tosser.png/revision/latest?cb=20200516183954&format=original,20,Ranged,7,4%,40,NO
+11,Amarok,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/97/Amarok.png/revision/latest?cb=20200521003932&format=original,43,Melee,2.8,4%,25,YES
+12,Amazon,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/db/Amazon.png/revision/latest?cb=20200521003933&format=original,18,Melee,3.75,4%,25,NO
+13,Amber Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6f/Amber_Staff.png/revision/latest?cb=20200516184346&format=original,21,Magic,4.75,4%,28,NO
+14,Amethyst Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a1/Amethyst_Staff.png/revision/latest?cb=20200516184603&format=original,15,Magic,3.25,4%,37,NO
+15,Anchor,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c0/Anchor.png/revision/latest?cb=20200516184747&format=original,70,Melee,8,4%,20,YES
+16,Aqua Scepter,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/ff/Aqua_Scepter.png/revision/latest?cb=20200516185914&format=original,27,Magic,7,4%,16,NO
+17,Arkhalis,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cf/Arkhalis.png/revision/latest?cb=20200516190022&format=original,25,Melee,4,4%,25,YES
+18,Artery,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d6/Artery.png/revision/latest?cb=20200521003934&format=original,17,Melee,4,4%,25,NO
+19,Ash Wood Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0a/Ash_Wood_Bow.png/revision/latest?cb=20221115183258&format=original,10,Ranged,0,4%,25,NO
+20,Ash Wood Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e0/Ash_Wood_Hammer.png/revision/latest?cb=20221121012423&format=original,9,Melee,5.5,4%,30,NO
+21,Ash Wood Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0c/Ash_Wood_Sword.png/revision/latest?cb=20221114184423&format=original,13,Melee,5,4%,17,NO
+22,Axe of Regrowth,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/60/Axe_of_Regrowth.png/revision/latest?cb=20221122021420&format=original,20,Melee,5,4%,24,NO
+23,Ball O' Hurt,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/72/Ball_O%27_Hurt.png/revision/latest?cb=20200516190524&format=original,30,Melee,5.5,4%,45,NO
+24,Ballista Cane,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/22/Ballista_Cane.png/revision/latest?cb=20200516190527&format=original,74,Summon,4.7,0%,30,YES
+25,Ballista Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/99/Ballista_Rod.png/revision/latest?cb=20200516190529&format=original,30,Summon,4.7,0%,30,NO
+26,Ballista Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/12/Ballista_Staff.png/revision/latest?cb=20200516190530&format=original,156,Summon,4.7,0%,30,YES
+27,Bananarang,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Bananarang.png/revision/latest?cb=20200516190718&format=original,45,Melee,6.5,4%,11,YES
+28,Bat Bat,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/78/Bat_Bat.png/revision/latest?cb=20211118183535&format=original,36,Melee,5.5,4%,45,NO
+29,Bat Scepter,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/eb/Bat_Scepter.png/revision/latest?cb=20200516190857&format=original,45,Magic,3,4%,12,YES
+30,Beam Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4c/Beam_Sword.png/revision/latest?cb=20221121021046&format=original,52,Melee,6.5,4%,20,YES
+31,Bee Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/03/Bee_Gun.png/revision/latest?cb=20200516191158&format=original,9,Magic,0.25,4%,12,NO
+32,Bee Keeper,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/42/Bee_Keeper.png/revision/latest?cb=20200516191202&format=original,30,Melee,5.3,4%,20,NO
+33,Beenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/02/Beenade.png/revision/latest?cb=20200516191415&format=original,12,Ranged,1,4%,15,NO
+34,Betsy's Wrath,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e6/Betsy%27s_Wrath.png/revision/latest?cb=20200516191615&format=original,100,Magic,7,4%,20,YES
+35,Blade of Grass,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/85/Blade_of_Grass.png/revision/latest?cb=20221107130110&format=original,18,Melee,4.5,4%,20,NO
+36,Blade Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/89/Blade_Staff.png/revision/latest?cb=20200516192024&format=original,6,Summon,0,0%,36,YES
+37,Bladed Glove,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/20/Bladed_Glove.png/revision/latest?cb=20221121032306&format=original,14,Melee,4,4%,8,NO
+38,Bladetongue,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/98/Bladetongue.png/revision/latest?cb=20200516192046&format=original,55,Melee,5.75,4%,28,YES
+39,Blizzard Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f5/Blizzard_Staff.png/revision/latest?cb=20200516192439&format=original,58,Magic,4.5,4%,10,YES
+40,Blood Butcherer,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/62/Blood_Butcherer.png/revision/latest?cb=20200516192444&format=original,22,Melee,5,4%,25,NO
+41,Blood Lust Cluster,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fe/Blood_Lust_Cluster.png/revision/latest?cb=20221121021536&format=original,22,Melee,6,4%,32,NO
+42,Blood Rain Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1e/Blood_Rain_Bow.png/revision/latest?cb=20200516193453&format=original,14,Ranged,3,4%,19,NO
+43,Blood Thorn,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/67/Blood_Thorn.png/revision/latest?cb=20200516193502&format=original,34,Magic,1,4%,33,YES
+44,Blood Water,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ec/Blood_Water.png/revision/latest?cb=20200516193512&format=original,20,-,3,0%,15,NO
+45,Bloody Machete,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4c/Bloody_Machete.png/revision/latest?cb=20200516193534&format=original,20,Melee,5,4%,15,NO
+46,Blowgun,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/65/Blowgun.png/revision/latest?cb=20200516193610&format=original,27,Ranged,4,4%,35,NO
+47,Blowpipe,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/68/Blowpipe.png/revision/latest?cb=20200516193611&format=original,9,Ranged,3.5,4%,25,NO
+48,Blue Moon,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8a/Blue_Moon.png/revision/latest?cb=20200516195338&format=original,54,Melee,6,4%,45,NO
+49,Blue Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/06/Blue_Phaseblade.png/revision/latest?cb=20200516195342&format=original,26,Melee,3,4%,18,NO
+50,Blue Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/02/Blue_Phasesaber.png/revision/latest?cb=20221122021014&format=original,48,Melee,3,4%,16,YES
+51,Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3b/Bomb.png/revision/latest?cb=20200516195633&format=original,100,-,0,0%,25,NO
+52,Bomb Fish,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f1/Bomb_Fish.png/revision/latest?cb=20200516195624&format=original,100,-,0,0%,25,NO
+53,Bone,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2c/Bone.png/revision/latest?cb=20160525131636&format=original,20,Ranged,2.3,4%,12,NO
+54,Bone Javelin,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6a/Bone_Javelin.png/revision/latest?cb=20200516195735&format=original,20,Ranged,5,4%,25,NO
+55,Bone Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Bone_Pickaxe.png/revision/latest?cb=20221121031259&format=original,8,Melee,3,4%,19,NO
+56,Bone Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/29/Bone_Sword.png/revision/latest?cb=20221121021645&format=original,19,Melee,5.5,4%,22,NO
+57,Bone Throwing Knife,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dc/Bone_Throwing_Knife.png/revision/latest?cb=20200516195800&format=original,14,Ranged,1.5,4%,14,NO
+58,Book of Skulls,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f4/Book_of_Skulls.png/revision/latest?cb=20200516195830&format=original,29,Magic,3.5,4%,26,NO
+59,Boomstick,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e1/Boomstick.png/revision/latest?cb=20200516200137&format=original,14,Ranged,5.75,4%,40,NO
+60,Boreal Wood Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f9/Boreal_Wood_Bow.png/revision/latest?cb=20200516200358&format=original,6,Ranged,0,4%,29,NO
+61,Boreal Wood Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a4/Boreal_Wood_Hammer.png/revision/latest?cb=20221121011114&format=original,4,Melee,5.5,4%,33,NO
+62,Boreal Wood Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/27/Boreal_Wood_Sword.png/revision/latest?cb=20200516200627&format=original,8,Melee,6,4%,20,NO
+63,Bouncy Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Bouncy_Bomb.png/revision/latest?cb=20200516200927&format=original,100,-,0,0%,25,NO
+64,Bouncy Dynamite,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d7/Bouncy_Dynamite.png/revision/latest?cb=20200516200930&format=original,250,-,0,0%,40,NO
+65,Bouncy Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a3/Bouncy_Grenade.png/revision/latest?cb=20200516200935&format=original,65,Ranged/ Throwing,8,4%,40,NO
+66,Brand of the Inferno,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4e/Brand_of_the_Inferno.png/revision/latest?cb=20200516201106&format=original,95,Melee,6.5,4%,20,YES
+67,Breaker Blade,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/22/Breaker_Blade.png/revision/latest?cb=20221121020145&format=original,70,Melee,8,4%,35,YES
+68,Breathing Reed,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/91/Breathing_Reed.png/revision/latest?cb=20200516201129&format=original,10,Melee,4,4%,27,NO
+69,Bubble Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3c/Bubble_Gun.png/revision/latest?cb=20200516201628&format=original,70,Magic,3,4%,9,YES
+70,Bunny Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c2/Bunny_Cannon.png/revision/latest?cb=20200516202003&format=original,0,-,0,0%,15,YES
+71,Butcher's Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2d/Butcher%27s_Chainsaw.png/revision/latest?cb=20200516202414&format=original,120,Melee,8,4%,15,YES
+72,Cactus Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d4/Cactus_Pickaxe.png/revision/latest?cb=20200516203919&format=original,45,Melee,2,4%,25,NO
+73,Cactus Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/da/Cactus_Sword.png/revision/latest?cb=20200516203926&format=original,45,Melee,4.5,4%,30,NO
+74,Candy Cane Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Candy_Cane_Pickaxe.png/revision/latest?cb=20200516203954&format=original,7,Melee,2.5,4%,20,NO
+75,Candy Cane Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/14/Candy_Cane_Sword.png/revision/latest?cb=20200516203955&format=original,19,Melee,5.3,4%,27,NO
+76,Candy Corn Rifle,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fa/Candy_Corn_Rifle.png/revision/latest?cb=20200516204056&format=original,44,Ranged,2,10%,9,YES
+77,Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a6/Cannon.png/revision/latest?cb=20200516204100&format=original,1,-,0,0%,15,YES
+78,Cascade,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f8/Cascade.png/revision/latest?cb=20200521003943&format=original,27,Melee,4.3,4%,25,NO
+79,Celebration,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4e/Celebration.png/revision/latest?cb=20200516204145&format=original,25,Ranged,4,4%,30,YES
+80,Celebration Mk2,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/83/Celebration_Mk2.png/revision/latest?cb=20200730144203&format=original,50,Ranged,10,4%,6,YES
+81,Chain Guillotines,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/33/Chain_Guillotines.png/revision/latest?cb=20200516205211&format=original,59,Melee,3.25,4%,14,YES
+82,Chain Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3c/Chain_Gun.png/revision/latest?cb=20200516205213&format=original,31,Ranged,1.75,4%,4,YES
+83,Chain Knife,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/24/Chain_Knife.png/revision/latest?cb=20200516205214&format=original,12,Melee,3.5,4%,20,NO
+84,Charged Blaster Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1e/Charged_Blaster_Cannon.png/revision/latest?cb=20200516205222&format=original,100,Magic,2,4%,20,YES
+85,Chik,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1f/Chik.png/revision/latest?cb=20200521003943&format=original,39,Melee,3.3,4%,25,YES
+86,Chlorophyte Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/87/Chlorophyte_Chainsaw.png/revision/latest?cb=20210124104529&format=original,50,Melee,4.6,4%,15,YES
+87,Chlorophyte Claymore,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b3/Chlorophyte_Claymore.png/revision/latest?cb=20221121030848&format=original,95,Melee,6,4%,26,YES
+88,Chlorophyte Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/70/Chlorophyte_Drill.png/revision/latest?cb=20210124104531&format=original,35,Melee,1,4%,15,YES
+89,Chlorophyte Greataxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1c/Chlorophyte_Greataxe.png/revision/latest?cb=20200516205308&format=original,70,Melee,7,4%,30,YES
+90,Chlorophyte Jackhammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6d/Chlorophyte_Jackhammer.png/revision/latest?cb=20221121014452&format=original,45,Melee,5.2,4%,15,YES
+91,Chlorophyte Partisan,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/de/Chlorophyte_Partisan.png/revision/latest?cb=20200516205509&format=original,49,Melee,6.2,4%,23,YES
+92,Chlorophyte Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/03/Chlorophyte_Pickaxe.png/revision/latest?cb=20221121031015&format=original,40,Melee,5,4%,25,YES
+93,Chlorophyte Saber,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/49/Chlorophyte_Saber.png/revision/latest?cb=20200516205514&format=original,57,Melee,4,4%,16,YES
+94,Chlorophyte Shotbow,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/13/Chlorophyte_Shotbow.png/revision/latest?cb=20200516205515&format=original,34,Ranged,2.75,4%,19,YES
+95,Chlorophyte Warhammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/25/Chlorophyte_Warhammer.png/revision/latest?cb=20221121014251&format=original,80,Melee,8,4%,35,YES
+96,Christmas Tree Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b6/Christmas_Tree_Sword.png/revision/latest?cb=20200516205524&format=original,86,Melee,7,4%,23,YES
+97,Classy Cane,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7d/Classy_Cane.png/revision/latest?cb=20200516205533&format=original,16,Melee,3.5,4%,15,YES
+98,Clinger Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/81/Clinger_Staff.png/revision/latest?cb=20200516205542&format=original,43,Magic,8,4%,24,YES
+99,Clockwork Assault Rifle,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/39/Clockwork_Assault_Rifle.png/revision/latest?cb=20200516205544&format=original,17,Ranged,0,4%,12,YES
+100,Cobalt Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b9/Cobalt_Chainsaw.png/revision/latest?cb=20200516205622&format=original,23,Melee,2.75,4%,15,YES
+101,Cobalt Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6b/Cobalt_Drill.png/revision/latest?cb=20200516205625&format=original,10,Melee,0.5,4%,15,YES
+102,Cobalt Naginata,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/91/Cobalt_Naginata.png/revision/latest?cb=20200516205720&format=original,44,Melee,4,4%,28,YES
+103,Cobalt Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/33/Cobalt_Pickaxe.png/revision/latest?cb=20221121021222&format=original,10,Melee,5,4%,25,YES
+104,Cobalt Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4d/Cobalt_Repeater.png/revision/latest?cb=20200807040202&format=original,35,Ranged,1.5,4%,23,YES
+105,Cobalt Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d6/Cobalt_Sword.png/revision/latest?cb=20221121020439&format=original,40,Melee,5,4%,19,YES
+106,Cobalt Waraxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/56/Cobalt_Waraxe.png/revision/latest?cb=20200516205731&format=original,33,Melee,5,4%,35,YES
+107,Code 1,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/25/Code_1.png/revision/latest?cb=20200516205737&format=original,21,Melee,3.25,4%,25,NO
+108,Code 2,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8f/Code_2.png/revision/latest?cb=20200521003945&format=original,54,Melee,3.8,4%,25,YES
+109,Coin Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d0/Coin_Gun.png/revision/latest?cb=20200516205759&format=original,0,Ranged,2,4%,8,YES
+110,Combat Wrench,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4c/Combat_Wrench.png/revision/latest?cb=20200516205954&format=original,25,Melee,3.5,4%,15,NO
+111,Cool Whip,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Cool_Whip.png/revision/latest?cb=20200516210016&format=original,45,Summon,1.5,0%,30,YES
+112,Copper Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/21/Copper_Axe.png/revision/latest?cb=20200516210019&format=original,3,Melee,4.5,4%,30,NO
+113,Copper Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4c/Copper_Bow.png/revision/latest?cb=20200516210023&format=original,6,Ranged,0,4%,29,NO
+114,Copper Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cb/Copper_Broadsword.png/revision/latest?cb=20221122020515&format=original,45,Melee,5.5,4%,21,NO
+115,Copper Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4a/Copper_Hammer.png/revision/latest?cb=20221121011305&format=original,4,Melee,5.5,4%,33,NO
+116,Copper Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d7/Copper_Pickaxe.png/revision/latest?cb=20200516210046&format=original,4,Melee,2,4%,23,NO
+117,Copper Shortsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8b/Copper_Shortsword.png/revision/latest?cb=20200516210051&format=original,45,Melee,4,4%,13,NO
+118,Crimson Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/21/Crimson_Rod.png/revision/latest?cb=20200516210419&format=original,12,Magic,0,4%,24,NO
+119,Crystal Serpent,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Crystal_Serpent.png/revision/latest?cb=20200516210655&format=original,40,Magic,4.4,4%,29,YES
+120,Crystal Storm,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fb/Crystal_Storm.png/revision/latest?cb=20200516210811&format=original,32,Magic,5,4%,7,YES
+121,Crystal Vile Shard,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/32/Crystal_Vile_Shard.png/revision/latest?cb=20200516210819&format=original,25,Magic,3,4%,33,YES
+122,Cursed Flames,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/84/Cursed_Flames.png/revision/latest?cb=20200516210830&format=original,55,Magic,6.5,4%,15,YES
+123,Cutlass,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1e/Cutlass.png/revision/latest?cb=20200516210851&format=original,53,Melee,4,4%,16,YES
+124,Daedalus Stormbow,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b0/Daedalus_Stormbow.png/revision/latest?cb=20200516211038&format=original,38,Ranged,2.25,4%,19,YES
+125,Dao of Pow,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/34/Dao_of_Pow.png/revision/latest?cb=20200516211044&format=original,100,Melee,6,4%,45,YES
+126,Dark Harvest,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/18/Dark_Harvest.png/revision/latest?cb=20200516211057&format=original,100,Summon,3,0%,27,YES
+127,Dark Lance,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ef/Dark_Lance.png/revision/latest?cb=20200516211059&format=original,34,Melee,5,4%,22,NO
+128,Dart Pistol,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/73/Dart_Pistol.png/revision/latest?cb=20200516211129&format=original,28,Ranged,3.5,4%,22,YES
+129,Dart Rifle,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e9/Dart_Rifle.png/revision/latest?cb=20200516211133&format=original,52,Ranged,5.5,4%,38,YES
+130,Daybreak,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/77/Daybreak.png/revision/latest?cb=20200516211143&format=original,150,Melee,5,4%,16,YES
+131,Deadly Sphere Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a7/Deadly_Sphere_Staff.png/revision/latest?cb=20200516211214&format=original,40,Summon,2,0%,36,YES
+132,Death Sickle,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/64/Death_Sickle.png/revision/latest?cb=20221121031449&format=original,57,Melee,5,4%,25,YES
+133,Deathbringer Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/11/Deathbringer_Pickaxe.png/revision/latest?cb=20221121021459&format=original,12,Melee,3.5,4%,22,NO
+134,Demon Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/73/Demon_Bow.png/revision/latest?cb=20150702053548&format=original,14,Ranged,1,4%,25,NO
+135,Demon Scythe,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e2/Demon_Scythe.png/revision/latest?cb=20200516211312&format=original,35,Magic,5,4%,20,NO
+136,Desert Tiger Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e7/Desert_Tiger_Staff.png/revision/latest?cb=20200516211334&format=original,41,Summon,4,0%,36,YES
+137,Diamond Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b0/Diamond_Staff.png/revision/latest?cb=20160525133441&format=original,23,Magic,5.5,4%,26,NO
+138,Dirt Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/50/Dirt_Bomb.png/revision/latest?cb=20200516211401&format=original,100,-,0,0%,25,NO
+139,Drax,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/ca/Drax.png/revision/latest?cb=20200516211513&format=original,35,Melee,4.75,4%,15,YES
+140,Drippler Crippler,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/19/Drippler_Crippler.png/revision/latest?cb=20200516211520&format=original,110,Melee,6.5,4%,40,YES
+141,Dry Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9a/Dry_Bomb.png/revision/latest?cb=20200516211529&format=original,100,-,0,0%,25,NO
+142,Durendal,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f0/Durendal.png/revision/latest?cb=20200516211620&format=original,55,Summon,2,0%,28,YES
+143,Dynamite,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fc/Dynamite.png/revision/latest?cb=20211101205122&format=original,250,-,0,0%,40,NO
+144,Ebonwood Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a2/Ebonwood_Bow.png/revision/latest?cb=20200516211722&format=original,8,Ranged,0,4%,28,NO
+145,Ebonwood Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/56/Ebonwood_Hammer.png/revision/latest?cb=20221121011821&format=original,7,Melee,5.5,4%,30,NO
+146,Ebonwood Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ad/Ebonwood_Sword.png/revision/latest?cb=20200516211748&format=original,45,Melee,6,4%,19,NO
+147,Egg Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5a/Egg_Cannon.png/revision/latest?cb=20141102234948&format=original,16,Ranged,0.5,4%,,NO
+148,Electrosphere Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/da/Electrosphere_Launcher.png/revision/latest?cb=20200516211802&format=original,40,Ranged,2,4%,12,YES
+149,Elf Melter,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/de/Elf_Melter.png/revision/latest?cb=20200521003946&format=original,53,Ranged,0.425,4%,30,YES
+150,Emerald Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3b/Emerald_Staff.png/revision/latest?cb=20200516211901&format=original,19,Magic,4.25,4%,32,NO
+151,Enchanted Boomerang,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Enchanted_Boomerang.png/revision/latest?cb=20200516211915&format=original,17,Melee,8,4%,20,NO
+152,Enchanted Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b3/Enchanted_Sword_%28item%29.png/revision/latest?cb=20201004152143&format=original,23,Melee,4.25(Average)5.25(Average),4%,21,NO
+153,Eventide,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/24/Eventide.png/revision/latest?cb=20200516211951&format=original,50,Ranged,2,4%,30,YES
+154,Excalibur,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fa/Excalibur.png/revision/latest?cb=20200516211959&format=original,72,Melee,4.5,4%,20,YES
+155,Exotic Scimitar,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/36/Exotic_Scimitar.png/revision/latest?cb=20221122015509&format=original,20,Melee,4.25,4%,18,NO
+156,Explosive Bunny,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/27/Explosive_Bunny.png/revision/latest?cb=20200807035543&format=original,350,-,0,0%,20,NO
+157,Explosive Trap Cane,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6a/Explosive_Trap_Cane.png/revision/latest?cb=20200516212010&format=original,59,Summon,0.5,0%,30,YES
+158,Explosive Trap Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/bc/Explosive_Trap_Rod.png/revision/latest?cb=20200516212012&format=original,24,Summon,0.5,0%,30,NO
+159,Explosive Trap Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b9/Explosive_Trap_Staff.png/revision/latest?cb=20200516212014&format=original,126,Summon,0.5,0%,30,YES
+160,Falcon Blade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ab/Falcon_Blade.png/revision/latest?cb=20221122015255&format=original,25,Melee,6,4%,20,NO
+161,Fetid Baghnakhs,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0d/Fetid_Baghnakhs.png/revision/latest?cb=20221122015412&format=original,60,Melee,6,4%,8,YES
+162,Finch Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4e/Finch_Staff.png/revision/latest?cb=20200516212242&format=original,7,Summon,4,0%,36,NO
+163,Firecracker,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/Firecracker.png/revision/latest?cb=20200516212311&format=original,37,Summon,2,0%,30,YES
+164,Flairon,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2f/Flairon.png/revision/latest?cb=20200516212351&format=original,66,Melee,4.5,4%,20,YES
+165,Flamarang,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b8/Flamarang.png/revision/latest?cb=20200521003952&format=original,49,Melee,8,4%,20,NO
+166,Flameburst Cane,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/45/Flameburst_Cane.png/revision/latest?cb=20200516212442&format=original,42,Summon,3,0%,30,YES
+167,Flameburst Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0a/Flameburst_Rod.png/revision/latest?cb=20200516212443&format=original,17,Summon,3,0%,30,NO
+168,Flameburst Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e2/Flameburst_Staff.png/revision/latest?cb=20200516212444&format=original,88,Summon,3,0%,30,YES
+169,Flamelash,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0f/Flamelash.png/revision/latest?cb=20200521003953&format=original,32,Magic,6.5,4%,30,NO
+170,Flamethrower,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ad/Flamethrower.png/revision/latest?cb=20200807041304&format=original,35,Ranged,0.3,4%,30,YES
+171,Flaming Mace,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ea/Flaming_Mace.png/revision/latest?cb=20200516212451&format=original,18,Melee,4.6,4%,45,NO
+172,Flare Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/57/Flare_Gun.png/revision/latest?cb=20200516212452&format=original,2,-,0,0%,18,NO
+173,Flesh Grinder,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/57/Flesh_Grinder.png/revision/latest?cb=20221121013426&format=original,23,Melee,6,4%,40,NO
+174,Flintlock Pistol,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/da/Flintlock_Pistol.png/revision/latest?cb=20200516212550&format=original,13,Ranged,1,4%,16,NO
+175,Flinx Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/de/Flinx_Staff.png/revision/latest?cb=20201013174512&format=original,8,Summon,2,0%,36,NO
+176,Flower of Fire,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2b/Flower_of_Fire.png/revision/latest?cb=20200516212602&format=original,48,Magic,5.5,4%,16,NO
+177,Flower of Frost,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/09/Flower_of_Frost.png/revision/latest?cb=20200516212604&format=original,60,Magic,6.5,4%,12,YES
+178,Flower Pow,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/da/Flower_Pow.png/revision/latest?cb=20200516212606&format=original,130,Melee,6.5,4%,40,YES
+179,Flying Dragon,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/bc/Flying_Dragon.png/revision/latest?cb=20200516212613&format=original,180,Melee,5.5,4%,20,YES
+180,Flying Knife,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/17/Flying_Knife.png/revision/latest?cb=20200516212618&format=original,40,Melee,4.5,4%,15,YES
+181,Flymeal,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/21/Flymeal.png/revision/latest?cb=20221010164409&format=original,15,Melee,5,4%,17,NO
+182,Format:C,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/55/Format_C.png/revision/latest?cb=20200521003955&format=original,39,Melee,3.25,4%,25,YES
+183,Fossil Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b7/Fossil_Pickaxe.png/revision/latest?cb=20200516212642&format=original,8,Melee,4,4%,18,NO
+184,Frost Daggerfish,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/77/Frost_Daggerfish.png/revision/latest?cb=20200516212707&format=original,17,Ranged,3.5,4%,13,NO
+185,Frost Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/bb/Frost_Staff.png/revision/latest?cb=20200516212711&format=original,46,Magic,5,4%,12,YES
+186,Frostbrand,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3d/Frostbrand.png/revision/latest?cb=20221121020931&format=original,49,Melee,4.5,4%,23,YES
+187,Fruitcake Chakram,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e8/Fruitcake_Chakram.png/revision/latest?cb=20200516212805&format=original,19,Melee,8,4%,15,NO
+188,Gatligator,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/32/Gatligator.png/revision/latest?cb=20200516212824&format=original,21,Ranged,1.5,4%,7,YES
+189,Ghastly Glaive,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f1/Ghastly_Glaive.png/revision/latest?cb=20200516212836&format=original,45,Melee,7,4%,27,YES
+190,Gladius,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c5/Gladius.png/revision/latest?cb=20200516212910&format=original,15,Melee,3,4%,21,NO
+191,Gold Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/29/Gold_Axe.png/revision/latest?cb=20221122020808&format=original,7,Melee,4.5,4%,26,NO
+192,Gold Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/ff/Gold_Bow.png/revision/latest?cb=20200516213010&format=original,11,Ranged,0,4%,26,NO
+193,Gold Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/11/Gold_Broadsword.png/revision/latest?cb=20221122020904&format=original,15,Melee,6.5,4%,18,NO
+194,Gold Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8d/Gold_Hammer.png/revision/latest?cb=20221121013212&format=original,9,Melee,5.5,4%,28,NO
+195,Gold Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d3/Gold_Pickaxe.png/revision/latest?cb=20200516213313&format=original,6,Melee,2,4%,20,NO
+196,Gold Shortsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/07/Gold_Shortsword.png/revision/latest?cb=20200516213317&format=original,12,Melee,5,4%,11,NO
+197,Golden Shower,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/39/Golden_Shower.png/revision/latest?cb=20200516213405&format=original,30,Magic,4,4%,18,YES
+198,Golem Fist,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f8/Golem_Fist.png/revision/latest?cb=20200516213419&format=original,90,Melee,12,4%,24,YES
+199,Gradient,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/58/Gradient.png/revision/latest?cb=20200521003958&format=original,49,Melee,3.8,4%,25,YES
+200,Gravedigger's Shovel,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/73/Gravedigger%27s_Shovel.png/revision/latest?cb=20200516213534&format=original,12,Melee,3.5,4%,22,NO
+201,Gray Zapinator,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0a/Gray_Zapinator.png/revision/latest?cb=20200516213547&format=original,42,Magic,6,4%,36,NO
+202,Green Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/73/Green_Phaseblade.png/revision/latest?cb=20200516213701&format=original,26,Melee,3,4%,18,NO
+203,Green Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/78/Green_Phasesaber.png/revision/latest?cb=20221122021124&format=original,48,Melee,3,4%,16,YES
+204,Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fb/Grenade.png/revision/latest?cb=20200516213727&format=original,60,Ranged/ Throwing,8,4%,45,NO
+205,Grenade Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/67/Grenade_Launcher.png/revision/latest?cb=20200516213726&format=original,60,Ranged,4,4%,20,YES
+206,Gungnir,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5a/Gungnir.png/revision/latest?cb=20200516213746&format=original,61,Melee,6.4,4%,22,YES
+207,Haemorrhaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/18/Haemorrhaxe.png/revision/latest?cb=20221121014004&format=original,30,Melee,7,4%,27,YES
+208,Hallowed Jousting Lance,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c0/Hallowed_Jousting_Lance.png/revision/latest?cb=20200516213810&format=original,90,Melee,13,4%,24,YES
+209,Hallowed Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9f/Hallowed_Repeater.png/revision/latest?cb=20200516213818&format=original,50,Ranged,2.5,4%,17,YES
+210,Ham Bat,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b9/Ham_Bat.png/revision/latest?cb=20211118183600&format=original,57,Melee,6.5,4%,20,YES
+211,Hammush,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fc/Hammush.png/revision/latest?cb=20200516213827&format=original,26,Melee,7.5,4%,27,YES
+212,Handgun,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3e/Handgun.png/revision/latest?cb=20200516213830&format=original,26,Ranged,3,4%,15,NO
+213,Happy Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9e/Happy_Grenade.png/revision/latest?cb=20200516213845&format=original,30,Ranged/ Throwing,6,4%,20,NO
+214,Harpoon,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dc/Harpoon.png/revision/latest?cb=20200516213858&format=original,25,Ranged,6,4%,30,NO
+215,Heat Ray,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/13/Heat_Ray.png/revision/latest?cb=20200516213918&format=original,90,Magic,3,4%,10,YES
+216,Hel-Fire,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c3/Hel-Fire.png/revision/latest?cb=20200521003958&format=original,41,Melee,4.5,4%,25,YES
+217,Hellwing Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/df/Hellwing_Bow.png/revision/latest?cb=20200521004000&format=original,22,Ranged,5.5,4%,13,NO
+218,Hive-Five,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/55/HiveFive1.4.4.png/revision/latest?cb=20221004174830&format=original,24,Melee,3.75,4%,25,NO
+219,Holy Hand Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ad/Holy_Hand_Grenade.png/revision/latest?cb=20150206163708&format=original,600,-,?,0%,50,NO
+220,Holy Water,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/25/Holy_Water.png/revision/latest?cb=20200516214013&format=original,20,-,3,0%,15,YES
+221,Honey Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f0/Honey_Bomb.png/revision/latest?cb=20200516214021&format=original,100,-,0,0%,25,NO
+222,Hornet Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4f/Hornet_Staff.png/revision/latest?cb=20200516214127&format=original,45,Summon,2,0%,22,NO
+223,Houndius Shootius,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c8/Houndius_Shootius.png/revision/latest?cb=20211118183602&format=original,24,Summon,7.5,0%,30,NO
+224,Ice Blade,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c3/Ice_Blade.png/revision/latest?cb=20200516214144&format=original,17,Melee,4.75,6%,20,NO
+225,Ice Boomerang,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/14/Ice_Boomerang.png/revision/latest?cb=20200516214147&format=original,21,Melee,8.5,6%,20,NO
+226,Ice Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a3/Ice_Bow.png/revision/latest?cb=20200516214148&format=original,39,Ranged,4.5,4%,14,YES
+227,Ice Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/69/Ice_Rod.png/revision/latest?cb=20200730144854&format=original,28,Magic,2,4%,9,YES
+228,Ice Sickle,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ea/Ice_Sickle.png/revision/latest?cb=20200516214206&format=original,50,Melee,5.5,4%,25,YES
+229,Icemourne,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ea/Icemourne.png/revision/latest?cb=20131001073230&format=original,44,-,8,0%,32,NO
+230,Imp Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/72/Imp_Staff.png/revision/latest?cb=20200516214233&format=original,17,Summon,2,0%,36,NO
+231,Inferno Fork,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0f/Inferno_Fork.png/revision/latest?cb=20200731195340&format=original,70,Magic,5,4%,30,YES
+232,Influx Waver,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d2/Influx_Waver.png/revision/latest?cb=20200516214244&format=original,100,Melee,4.5,4%,20,YES
+233,Iron Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/81/Iron_Axe.png/revision/latest?cb=20221121015518&format=original,5,Melee,4.5,4%,27,NO
+234,Iron Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/62/Iron_Bow.png/revision/latest?cb=20200516214301&format=original,8,Ranged,0,4%,28,NO
+235,Iron Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cf/Iron_Broadsword.png/revision/latest?cb=20221121015053&format=original,45,Melee,5.5,4%,20,NO
+236,Iron Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0a/Iron_Hammer.png/revision/latest?cb=20221121011546&format=original,7,Melee,5.5,4%,30,NO
+237,Iron Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a2/Iron_Pickaxe.png/revision/latest?cb=20200516214316&format=original,5,Melee,2,4%,20,NO
+238,Iron Shortsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c8/Iron_Shortsword.png/revision/latest?cb=20200516214319&format=original,8,Melee,4,4%,12,NO
+239,Jack 'O Lantern Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9a/Jack_%27O_Lantern_Launcher.png/revision/latest?cb=20200516214329&format=original,65,Ranged,5,10%,25,YES
+240,Javelin,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1d/Javelin.png/revision/latest?cb=20200516214336&format=original,17,Ranged,4.75,4%,24,NO
+241,Jousting Lance,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c4/Jousting_Lance.png/revision/latest?cb=20200516214353&format=original,60,Melee,12,4%,24,YES
+242,Kaleidoscope,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/Kaleidoscope.png/revision/latest?cb=20200516214425&format=original,180,Summon,4,0%,30,YES
+243,Katana,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e9/Katana.png/revision/latest?cb=20221122015136&format=original,18,Melee,3.5,19%,20,NO
+244,Keybrand,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/02/Keybrand.png/revision/latest?cb=20221121020806&format=original,105,Melee,6.5,20%,20,YES
+245,KO Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/23/KO_Cannon.png/revision/latest?cb=20200516214447&format=original,40,Melee,6.5,4%,28,YES
+246,Kraken,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d3/Kraken.png/revision/latest?cb=20200521004004&format=original,95,Melee,4.3,14%,25,YES
+247,Laser Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/07/Laser_Drill.png/revision/latest?cb=20200516214530&format=original,35,Melee,4.75,4%,25,YES
+248,Laser Machinegun,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1c/Laser_Machinegun.png/revision/latest?cb=20200516214532&format=original,60,Magic,2,4%,20,YES
+249,Laser Rifle,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0d/Laser_Rifle.png/revision/latest?cb=20200516214535&format=original,29,Magic,2.5,4%,12,YES
+250,Last Prism,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0e/Last_Prism.png/revision/latest?cb=20200516214536&format=original,100,Magic,0.25,4%,10,YES
+251,Lava Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d1/Lava_Bomb.png/revision/latest?cb=20200516214542&format=original,100,-,0,0%,25,NO
+252,Lead Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c3/Lead_Axe.png/revision/latest?cb=20221122020025&format=original,6,Melee,4.5,4%,28,NO
+253,Lead Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d1/Lead_Bow.png/revision/latest?cb=20200516214611&format=original,9,Ranged,0,4%,27,NO
+254,Lead Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/53/Lead_Broadsword.png/revision/latest?cb=20221122020115&format=original,13,Melee,5.5,4%,20,NO
+255,Lead Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0b/Lead_Hammer.png/revision/latest?cb=20221121012324&format=original,8,Melee,5.5,4%,29,NO
+256,Lead Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/83/Lead_Pickaxe.png/revision/latest?cb=20200516214624&format=original,6,Melee,2,4%,19,NO
+257,Lead Shortsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/35/Lead_Shortsword.png/revision/latest?cb=20200516214625&format=original,9,Melee,4,4%,12,NO
+258,Leaf Blower,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4b/Leaf_Blower.png/revision/latest?cb=20200516214627&format=original,48,Magic,4,4%,7,YES
+259,Leather Whip,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/85/Leather_Whip.png/revision/latest?cb=20200516214634&format=original,14,Summon,1,0%,30,NO
+260,Life Drain,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/26/Life_Drain.png/revision/latest?cb=20200516214723&format=original,35,Magic,2.5,4%,12,YES
+261,Light Disc,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f4/Light_Disc.png/revision/latest?cb=20200516214730&format=original,60,Melee,8,4%,14,YES
+262,Light's Bane,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/13/Light%27s_Bane.png/revision/latest?cb=20200516214746&format=original,16,Melee,5,4%,20,NO
+263,Lightning Aura Cane,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d9/Lightning_Aura_Cane.png/revision/latest?cb=20200516214734&format=original,11,Summon,0.25,0%,30,YES
+264,Lightning Aura Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fa/Lightning_Aura_Rod.png/revision/latest?cb=20200516214736&format=original,4,Summon,0.25,0%,30,NO
+265,Lightning Aura Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dc/Lightning_Aura_Staff.png/revision/latest?cb=20200516214737&format=original,34,Summon,0.25,0%,30,YES
+266,Lucy the Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c2/Lucy_the_Axe.png/revision/latest?cb=20211118183603&format=original,27,Melee,5,14%,15,NO
+267,Lunar Flare,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/63/Lunar_Flare.png/revision/latest?cb=20200516214952&format=original,100,Magic,4.5,4%,10,YES
+268,Lunar Portal Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/87/Lunar_Portal_Staff.png/revision/latest?cb=20200516214955&format=original,100,Summon,7.5,0%,30,YES
+269,Mace,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/63/Mace.png/revision/latest?cb=20200516215001&format=original,18,Melee,4.6,4%,45,NO
+270,Magic Dagger,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/55/Magic_Dagger.png/revision/latest?cb=20200516215007&format=original,35,Magic,3.75,4%,8,YES
+271,Magic Missile,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Magic_Missile.png/revision/latest?cb=20200516215014&format=original,35,Magic,7.5,4%,22,NO
+272,Magical Harp,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3a/Magical_Harp.png/revision/latest?cb=20200516215024&format=original,42,Magic,2,4%,12,YES
+273,Magnet Sphere,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1a/Magnet_Sphere.png/revision/latest?cb=20200516215033&format=original,48,Magic,6,4%,20,YES
+274,Malaise,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d1/Malaise.png/revision/latest?cb=20200521004006&format=original,16,Melee,4.5,4%,25,NO
+275,Mandible Blade,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f3/Mandible_Blade.png/revision/latest?cb=20200516215052&format=original,16,Melee,4.5,4%,18,NO
+276,Marrow,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6a/Marrow.png/revision/latest?cb=20200516215125&format=original,53,Ranged,4.7,9%,19,YES
+277,Medusa Head,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9a/Medusa_Head.png/revision/latest?cb=20200821040311&format=original,40,Magic,2,4%,20,YES
+278,Megashark,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/36/Megashark.png/revision/latest?cb=20200516215241&format=original,25,Ranged,1,4%,7,YES
+279,Meowmere,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/63/Meowmere.png/revision/latest?cb=20200516215244&format=original,200,Melee,6.5,4%,14,YES
+280,Meteor Hamaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/38/Meteor_Hamaxe.png/revision/latest?cb=20221121013616&format=original,20,Melee,7,4%,30,NO
+281,Meteor Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/07/Meteor_Staff.png/revision/latest?cb=20200516215256&format=original,50,Magic,4.5,4%,10,YES
+282,Minishark,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/96/Minishark.png/revision/latest?cb=20200805024933&format=original,6,Ranged,0,4%,8,NO
+283,Molotov Cocktail,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fa/Molotov_Cocktail.png/revision/latest?cb=20200516215353&format=original,23,Ranged,7,4%,40,NO
+284,Molten Fury,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e4/Molten_Fury.png/revision/latest?cb=20200521004007&format=original,31,Ranged,2,4%,22,NO
+285,Molten Hamaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d8/Molten_Hamaxe.png/revision/latest?cb=20221121013821&format=original,20,Melee,7,4%,27,NO
+286,Molten Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d0/Molten_Pickaxe.png/revision/latest?cb=20221121020032&format=original,12,Melee,2,4%,23,NO
+287,Morning Star,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/bc/Morning_Star.png/revision/latest?cb=20200516215437&format=original,165,Summon,11,0%,35,YES
+288,Muramasa,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c2/Muramasa.png/revision/latest?cb=20221107152152&format=original,24,Melee,3,4%,18,NO
+289,Mushroom Spear,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6a/Mushroom_Spear.png/revision/latest?cb=20200516215545&format=original,60,Melee,6.2,4%,40,YES
+290,Musket,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2b/Musket.png/revision/latest?cb=20200516215706&format=original,31,Ranged,5.25,11%,32,NO
+291,Mythril Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/83/Mythril_Chainsaw.png/revision/latest?cb=20200516215717&format=original,29,Melee,3,4%,15,YES
+292,Mythril Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/68/Mythril_Drill.png/revision/latest?cb=20200516215720&format=original,15,Melee,0.5,4%,15,YES
+293,Mythril Halberd,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/12/Mythril_Halberd.png/revision/latest?cb=20200516215722&format=original,45,Melee,5,4%,26,YES
+294,Mythril Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ec/Mythril_Pickaxe.png/revision/latest?cb=20221121021310&format=original,15,Melee,5,4%,25,YES
+295,Mythril Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/87/Mythril_Repeater.png/revision/latest?cb=20200730143611&format=original,39,Ranged,2,4%,20,YES
+296,Mythril Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c8/Mythril_Sword.png/revision/latest?cb=20221121020541&format=original,50,Melee,6,4%,20,YES
+297,Mythril Waraxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/87/Mythril_Waraxe.png/revision/latest?cb=20200516215732&format=original,39,Melee,6,4%,35,YES
+298,Nail Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/79/Nail_Gun.png/revision/latest?cb=20200516215735&format=original,85,Ranged,0,4%,15,YES
+299,Nebula Arcanum,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/ce/Nebula_Arcanum.png/revision/latest?cb=20200516215744&format=original,70,Magic,5,4%,30,YES
+300,Nebula Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6b/Nebula_Axe.png/revision/latest?cb=20200516215746&format=original,100,Melee,6,4%,25,YES
+301,Nebula Blaze,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fc/Nebula_Blaze.png/revision/latest?cb=20200516215747&format=original,130,Magic,3,4%,12,YES
+302,Nebula Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/27/Nebula_Chainsaw.png/revision/latest?cb=20200516215749&format=original,80,Melee,4,4%,15,YES
+303,Nebula Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/da/Nebula_Drill.png/revision/latest?cb=20200516215750&format=original,50,Melee,0.5,4%,15,YES
+304,Nebula Hamaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d6/Nebula_Hamaxe.png/revision/latest?cb=20200516215756&format=original,60,Melee,7,4%,28,YES
+305,Nebula Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4b/Nebula_Hammer.png/revision/latest?cb=20200516215757&format=original,110,Melee,7,4%,30,YES
+306,Nebula Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6d/Nebula_Pickaxe.png/revision/latest?cb=20200516215803&format=original,80,Melee,5.5,4%,12,YES
+307,Nettle Burst,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/98/Nettle_Burst.png/revision/latest?cb=20200516215823&format=original,35,Magic,1,4%,25,YES
+308,Night's Edge,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/98/Night%27s_Edge.png/revision/latest?cb=20200516215831&format=original,40,Melee,4.5,4%,25,NO
+309,Nightglow,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/23/Nightglow.png/revision/latest?cb=20200516215828&format=original,50,Magic,2.5,4%,36,YES
+310,Nightmare Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a7/Nightmare_Pickaxe.png/revision/latest?cb=20221121015932&format=original,9,Melee,3,4%,20,NO
+311,Nimbus Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b7/Nimbus_Rod.png/revision/latest?cb=20200516215833&format=original,30,Magic,0,4%,22,YES
+312,North Pole,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d4/North_Pole.png/revision/latest?cb=20200516215838&format=original,80,Melee,6.7,4%,30,YES
+313,Obsidian Swordfish,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c9/Obsidian_Swordfish.png/revision/latest?cb=20200516215929&format=original,70,Melee,6.5,24%,20,YES
+314,Onyx Blaster,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6b/Onyx_Blaster.png/revision/latest?cb=20200730143917&format=original,24,Ranged,6.5,4%,48,YES
+315,Optic Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/Optic_Staff.png/revision/latest?cb=20200516220008&format=original,24,Summon,2,0%,36,YES
+316,Orange Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a0/Orange_Phaseblade.png/revision/latest?cb=20200516220021&format=original,26,Melee,3,4%,18,NO
+317,Orange Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/85/Orange_Phasesaber.png/revision/latest?cb=20221122021334&format=original,48,Melee,3,4%,16,YES
+318,Orange Zapinator,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1b/Orange_Zapinator.png/revision/latest?cb=20200516220029&format=original,100,Magic,6,4%,36,YES
+319,Orichalcum Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d9/Orichalcum_Chainsaw.png/revision/latest?cb=20200516220034&format=original,31,Melee,3.75,4%,15,YES
+320,Orichalcum Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6e/Orichalcum_Drill.png/revision/latest?cb=20200516220035&format=original,17,Melee,0.5,4%,15,YES
+321,Orichalcum Halberd,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/89/Orichalcum_Halberd.png/revision/latest?cb=20200516220037&format=original,46,Melee,5.5,4%,25,YES
+322,Orichalcum Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e9/Orichalcum_Pickaxe.png/revision/latest?cb=20221121022133&format=original,17,Melee,5,4%,25,YES
+323,Orichalcum Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/51/Orichalcum_Repeater.png/revision/latest?cb=20200516220049&format=original,40,Ranged,2,4%,19,YES
+324,Orichalcum Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c1/Orichalcum_Sword.png/revision/latest?cb=20221121022013&format=original,59,Melee,6,4%,22,YES
+325,Orichalcum Waraxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ae/Orichalcum_Waraxe.png/revision/latest?cb=20200516220054&format=original,41,Melee,6.5,4%,35,YES
+326,Paintball Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b0/Paintball_Gun.png/revision/latest?cb=20200516220136&format=original,12,Ranged,1.25,11%,24,NO
+327,Paladin's Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f7/Paladin%27s_Hammer.png/revision/latest?cb=20200521004011&format=original,90,Melee,9,4%,15,YES
+328,Palladium Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Palladium_Chainsaw.png/revision/latest?cb=20200516220149&format=original,26,Melee,2.9,4%,15,YES
+329,Palladium Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ec/Palladium_Drill.png/revision/latest?cb=20200516220153&format=original,12,Melee,0.5,4%,15,YES
+330,Palladium Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/74/Palladium_Pickaxe.png/revision/latest?cb=20221121021800&format=original,12,Melee,5,4%,25,YES
+331,Palladium Pike,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/79/Palladium_Pike.png/revision/latest?cb=20200516220202&format=original,44,Melee,4.5,4%,27,YES
+332,Palladium Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cf/Palladium_Repeater.png/revision/latest?cb=20200516220203&format=original,37,Ranged,1.75,4%,22,YES
+333,Palladium Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/Palladium_Sword.png/revision/latest?cb=20221121021849&format=original,49,Melee,5.5,4%,22,YES
+334,Palladium Waraxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1a/Palladium_Waraxe.png/revision/latest?cb=20200516220207&format=original,36,Melee,5.5,4%,35,YES
+335,Palm Wood Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/44/Palm_Wood_Bow.png/revision/latest?cb=20200516220215&format=original,6,Ranged,0,4%,29,NO
+336,Palm Wood Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/ca/Palm_Wood_Hammer.png/revision/latest?cb=20221121010956&format=original,4,Melee,5.5,4%,33,NO
+337,Palm Wood Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b3/Palm_Wood_Sword.png/revision/latest?cb=20200516220242&format=original,8,Melee,6,4%,19,NO
+338,Paper Airplane,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c4/Paper_Airplane.png/revision/latest?cb=20200730142110&format=original,4,Ranged,2,4%,17,NO
+339,Pearlwood Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/53/Pearlwood_Bow.png/revision/latest?cb=20200516220322&format=original,12,Ranged,0,4%,20,YES
+340,Pearlwood Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a5/Pearlwood_Hammer.png/revision/latest?cb=20221121012652&format=original,10,Melee,5.5,4%,29,YES
+341,Pearlwood Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9f/Pearlwood_Sword.png/revision/latest?cb=20200516220345&format=original,30,Melee,7,4%,15,YES
+342,Pew-matic Horn,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/48/Pew-matic_Horn.png/revision/latest?cb=20211118183609&format=original,20,Ranged,1,4%,15,NO
+343,Phantasm,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a7/Phantasm.png/revision/latest?cb=20200516220403&format=original,50,Ranged,2,4%,12,YES
+344,Phantom Phoenix,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a1/Phantom_Phoenix.png/revision/latest?cb=20200516220405&format=original,32,Ranged,2,4%,18,YES
+345,Phoenix Blaster,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/af/Phoenix_Blaster.png/revision/latest?cb=20200521004013&format=original,30,Ranged,2,4%,14,NO
+346,Pickaxe Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d7/Pickaxe_Axe.png/revision/latest?cb=20200516220420&format=original,35,Melee,4.75,4%,25,YES
+347,Picksaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c5/Picksaw.png/revision/latest?cb=20200516220424&format=original,34,Melee,5.5,4%,16,YES
+348,Piranha Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a5/Piranha_Gun.png/revision/latest?cb=20200516220555&format=original,38,Ranged,1,4%,30,YES
+349,Pirate Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3e/Pirate_Staff.png/revision/latest?cb=20200521004014&format=original,40,Summon,6,0%,36,YES
+350,Platinum Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/75/Platinum_Axe.png/revision/latest?cb=20221122015556&format=original,8,Melee,4.5,4%,25,NO
+351,Platinum Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/db/Platinum_Bow.png/revision/latest?cb=20200516220634&format=original,13,Ranged,0,4%,25,NO
+352,Platinum Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f9/Platinum_Broadsword.png/revision/latest?cb=20221122015700&format=original,16,Melee,6.5,4%,17,NO
+353,Platinum Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dd/Platinum_Hammer.png/revision/latest?cb=20221121013535&format=original,10,Melee,5.5,4%,27,NO
+354,Platinum Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1c/Platinum_Pickaxe.png/revision/latest?cb=20200516220650&format=original,7,Melee,2,4%,19,NO
+355,Platinum Shortsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/54/Platinum_Shortsword.png/revision/latest?cb=20200516220652&format=original,13,Melee,5,4%,10,NO
+356,Poison Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ed/Poison_Staff.png/revision/latest?cb=20200516220705&format=original,43,Magic,5.6,4%,36,YES
+357,Poisoned Knife,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/02/Poisoned_Knife.png/revision/latest?cb=20200516220706&format=original,14,Ranged,2.4,8%,15,NO
+358,Possessed Hatchet,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7b/Possessed_Hatchet.png/revision/latest?cb=20200516220716&format=original,80,Melee,5,4%,14,YES
+359,Proximity Mine Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/ff/Proximity_Mine_Launcher.png/revision/latest?cb=20200516220804&format=original,80,Ranged,4,4%,50,YES
+360,Psycho Knife,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f4/Psycho_Knife.png/revision/latest?cb=20200516220806&format=original,85,Melee,3.5,4%,8,YES
+361,Pulse Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/44/Pulse_Bow.png/revision/latest?cb=20200516220808&format=original,80,Ranged,3,11%,20,YES
+362,Purple Clubberfish,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1d/Purple_Clubberfish.png/revision/latest?cb=20200516220855&format=original,35,Melee,8,4%,35,NO
+363,Purple Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b1/Purple_Phaseblade.png/revision/latest?cb=20200516220910&format=original,26,Melee,3,4%,18,NO
+364,Purple Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/88/Purple_Phasesaber.png/revision/latest?cb=20221122021150&format=original,48,Melee,3,4%,16,YES
+365,Pwnhammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/de/Pwnhammer.png/revision/latest?cb=20221121013922&format=original,26,Melee,7.5,4%,27,YES
+366,Pygmy Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b1/Pygmy_Staff.png/revision/latest?cb=20200516220924&format=original,40,Summon,3,0%,28,YES
+367,Quad-Barrel Shotgun,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/04/Quad-Barrel_Shotgun.png/revision/latest?cb=20200516220928&format=original,14,Ranged,6.5,4%,55,NO
+368,Queen Spider Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/97/Queen_Spider_Staff.png/revision/latest?cb=20200516220935&format=original,26,Summon,7.5,0%,30,YES
+369,Rainbow Crystal Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/13/Rainbow_Crystal_Staff.png/revision/latest?cb=20200516220952&format=original,130,Summon,7.5,0%,30,YES
+370,Rainbow Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/ba/Rainbow_Gun.png/revision/latest?cb=20200516220956&format=original,45,Magic,2.5,4%,40,YES
+371,Rainbow Rod,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/34/Rainbow_Rod.png/revision/latest?cb=20200516220959&format=original,50,Magic,6,4%,25,YES
+372,Rally,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/07/Rally.png/revision/latest?cb=20200521004015&format=original,14,Melee,3.5,4%,25,NO
+373,Raven Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/10/Raven_Staff.png/revision/latest?cb=20200516221018&format=original,55,Summon,3,0%,28,YES
+374,Razorblade Typhoon,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e8/Razorblade_Typhoon.png/revision/latest?cb=20200516221020&format=original,85,Magic,5,4%,40,YES
+375,Razorpine,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6c/Razorpine.png/revision/latest?cb=20200516221022&format=original,48,Magic,3.25,4%,8,YES
+376,Reaver Shark,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3c/Reaver_Shark.png/revision/latest?cb=20200516221030&format=original,16,Melee,3,4%,22,NO
+377,Red Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7b/Red_Phaseblade.png/revision/latest?cb=20200516221113&format=original,26,Melee,3,4%,18,NO
+378,Red Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dd/Red_Phasesaber.png/revision/latest?cb=20221122021049&format=original,48,Melee,3,4%,16,YES
+379,Red Ryder,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/09/Red_Ryder.png/revision/latest?cb=20200807041733&format=original,20,Ranged,3.75,4%,38,NO
+380,Red's Throw,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5e/Red%27s_Throw.png/revision/latest?cb=20200521004016&format=original,70,Melee,4.5,4%,25,YES
+381,Resonance Scepter,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6c/Resonance_Scepter.png/revision/latest?cb=20201013181917&format=original,70,Magic,5,4%,25,YES
+382,Revolver,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6d/Revolver.png/revision/latest?cb=20200807040417&format=original,20,Ranged,4,9%,22,NO
+383,Rich Mahogany Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3b/Rich_Mahogany_Bow.png/revision/latest?cb=20200516221205&format=original,6,Ranged,0,4%,29,NO
+384,Rich Mahogany Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a0/Rich_Mahogany_Hammer.png/revision/latest?cb=20221121010701&format=original,4,Melee,5.5,4%,33,NO
+385,Rich Mahogany Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/87/Rich_Mahogany_Sword.png/revision/latest?cb=20200516221232&format=original,8,Melee,6,4%,19,NO
+386,Rocket Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Rocket_Launcher.png/revision/latest?cb=20200516221257&format=original,55,Ranged,4,4%,30,YES
+387,Rockfish,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/90/Rockfish.png/revision/latest?cb=20200516221259&format=original,24,Melee,6,4%,24,NO
+388,Roman candle,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/46/Roman_candle.png/revision/latest?cb=20161016115852&format=original,10,Magic,5,4%,0,NO
+389,Rotten Egg,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/03/Rotten_Egg.png/revision/latest?cb=20200516221310&format=original,13,Ranged,6.5,4%,19,NO
+390,Ruby Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c3/Ruby_Staff.png/revision/latest?cb=20200516221326&format=original,21,Magic,4.75,4%,28,NO
+391,Ruler,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/aa/Ruler.png/revision/latest?cb=20200516221332&format=original,12,Melee,0.5,4%,20,NO
+392,S.D.M.G,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/04/S.D.M.G..png/revision/latest?cb=20200521004017&format=original,85,Ranged,2.5,14%,5,YES
+393,Sandgun,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a6/Sandgun.png/revision/latest?cb=20200516221409&format=original,30,Ranged,5,4%,16,NO
+394,Sanguine Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3d/Sanguine_Staff.png/revision/latest?cb=20200516221447&format=original,35,Summon,3,0%,36,YES
+395,Sapphire Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/55/Sapphire_Staff.png/revision/latest?cb=20200516221506&format=original,18,Magic,4,4%,34,NO
+396,Sawtooth Shark,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b5/Sawtooth_Shark.png/revision/latest?cb=20200516221518&format=original,13,Melee,2.25,4%,15,NO
+397,Scarab Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/82/Scarab_Bomb.png/revision/latest?cb=20200516221520&format=original,100,-,0,0%,25,NO
+398,Scourge of the Corruptor,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8a/Scourge_of_the_Corruptor.png/revision/latest?cb=20200521004019&format=original,70,Melee,5,4%,20,YES
+399,Scythe,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Scythe.png/revision/latest?cb=20131001073234&format=original,39,-,6,0%,25,NO
+400,Seedler,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a0/Seedler.png/revision/latest?cb=20200516221550&format=original,50,Melee,6,4%,23,YES
+401,Sergeant United Shield,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/67/Sergeant_United_Shield.png/revision/latest?cb=20200516221554&format=original,92,Melee,2,4%,36,YES
+402,Shadewood Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/ff/Shadewood_Bow.png/revision/latest?cb=20200516221602&format=original,8,Ranged,0,4%,28,NO
+403,Shadewood Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/eb/Shadewood_Hammer.png/revision/latest?cb=20221121012146&format=original,7,Melee,5.5,4%,30,NO
+404,Shadewood Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/00/Shadewood_Sword.png/revision/latest?cb=20200516221630&format=original,45,Melee,6,4%,19,NO
+405,Shadow Jousting Lance,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/43/Shadow_Jousting_Lance.png/revision/latest?cb=20200516221644&format=original,130,Melee,14,4%,24,YES
+406,Shadowbeam Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b6/Shadowbeam_Staff.png/revision/latest?cb=20200521004020&format=original,80,Magic,3.25,4%,15,YES
+407,Shadowflame Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3c/Shadowflame_Bow.png/revision/latest?cb=20200516221654&format=original,47,Ranged,4.5,7%,20,YES
+408,Shadowflame Hex Doll,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/30/Shadowflame_Hex_Doll.png/revision/latest?cb=20200516221656&format=original,66,Magic,3.75,7%,21,YES
+409,Shadowflame Knife,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d2/Shadowflame_Knife.png/revision/latest?cb=20200516221657&format=original,38,Melee,5.75,7%,12,YES
+410,Sharanga,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/91/Sharanga.png/revision/latest?cb=20161201092514&format=original,36,Ranged,2,4%,,NO
+411,Shotgun,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/61/Shotgun.png/revision/latest?cb=20200516221734&format=original,24,Ranged,6.5,4%,45,YES
+412,Shroomerang,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/27/Shroomerang.png/revision/latest?cb=20200516221738&format=original,23,Melee,7,4%,20,NO
+413,Shroomite Digging Claw,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fc/Shroomite_Digging_Claw.png/revision/latest?cb=20200516221742&format=original,45,Melee,6,4%,12,YES
+414,Shuriken,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ac/Shuriken.png/revision/latest?cb=20200516221751&format=original,10,Ranged,0,4%,15,NO
+415,Sickle,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/02/Sickle.png/revision/latest?cb=20200516221752&format=original,9,Melee,2.25,4%,24,NO
+416,Silver Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/83/Silver_Axe.png/revision/latest?cb=20221122020601&format=original,6,Melee,4.5,4%,26,NO
+417,Silver Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e8/Silver_Bow.png/revision/latest?cb=20200516221817&format=original,9,Ranged,0,4%,27,NO
+418,Silver Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cb/Silver_Broadsword.png/revision/latest?cb=20221122020718&format=original,14,Melee,6,4%,20,NO
+419,Silver Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b9/Silver_Hammer.png/revision/latest?cb=20221121012819&format=original,9,Melee,5.5,4%,29,NO
+420,Silver Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/94/Silver_Pickaxe.png/revision/latest?cb=20200516221836&format=original,6,Melee,2,4%,19,NO
+421,Silver Shortsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/61/Silver_Shortsword.png/revision/latest?cb=20200516221837&format=original,9,Melee,4,4%,12,NO
+422,Sky Dragon's Fury,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/80/Sky_Dragon%27s_Fury.png/revision/latest?cb=20200516221920&format=original,140,Melee,5,4%,30,YES
+423,Sky Fracture,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/54/Sky_Fracture.png/revision/latest?cb=20200516221924&format=original,38,Magic,6,24%,12,YES
+424,Slap Hand,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/46/Slap_Hand.png/revision/latest?cb=20200516221950&format=original,55,Melee,20,19%,20,YES
+425,Sleepy Octopod,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/Sleepy_Octopod.png/revision/latest?cb=20200516221952&format=original,50,Melee,7,4%,30,YES
+426,Slime Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f1/Slime_Staff.png/revision/latest?cb=20200516222018&format=original,8,Summon,2,0%,28,NO
+427,Snapthorn,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a0/Snapthorn.png/revision/latest?cb=20200516222048&format=original,18,Summon,1.5,0%,30,NO
+428,Sniper Rifle,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cf/Sniper_Rifle.png/revision/latest?cb=20211107012501&format=original,185,Ranged,8,29%,36,YES
+429,Snowball,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/04/Snowball.png/revision/latest?cb=20201123183013&format=original,45,Ranged,5.75,4%,19,NO
+430,Snowball Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Snowball_Cannon.png/revision/latest?cb=20200516222107&format=original,45,Ranged,1,4%,19,NO
+431,Snowball Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dd/Snowball_Launcher.png/revision/latest?cb=20200516222109&format=original,-1,-,0,0%,15,NO
+432,Snowman Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/35/Snowman_Cannon.png/revision/latest?cb=20200516222115&format=original,67,Ranged,4,4%,15,YES
+433,Solar Eruption,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/10/Solar_Eruption.png/revision/latest?cb=20200516222124&format=original,105,Melee,2,4%,20,YES
+434,Solar Flare Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/59/Solar_Flare_Axe.png/revision/latest?cb=20200516222126&format=original,100,Melee,6,4%,25,YES
+435,Solar Flare Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2c/Solar_Flare_Chainsaw.png/revision/latest?cb=20200516222130&format=original,80,Melee,4,4%,15,YES
+436,Solar Flare Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ad/Solar_Flare_Drill.png/revision/latest?cb=20200516222131&format=original,50,Melee,0.5,4%,15,YES
+437,Solar Flare Hamaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e5/Solar_Flare_Hamaxe.png/revision/latest?cb=20200516222134&format=original,60,Melee,7,4%,28,YES
+438,Solar Flare Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/34/Solar_Flare_Hammer.png/revision/latest?cb=20200516222135&format=original,110,Melee,7,4%,30,YES
+439,Solar Flare Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/59/Solar_Flare_Pickaxe.png/revision/latest?cb=20200516222137&format=original,80,Melee,5.5,4%,12,YES
+440,Soul Scythe,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/44/Soul_Scythe.png/revision/latest?cb=20131001073235&format=original,55,-,8.75,0%,36,NO
+441,Space Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a8/Space_Gun.png/revision/latest?cb=20200516222211&format=original,17,Magic,0.75,4%,17,NO
+442,Spear,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4f/Spear.png/revision/latest?cb=20200516222222&format=original,8,Melee,6.5,4%,31,NO
+443,Spectre Hamaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7e/Spectre_Hamaxe.png/revision/latest?cb=20200521004026&format=original,60,Melee,7,4%,28,YES
+444,Spectre Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b1/Spectre_Pickaxe.png/revision/latest?cb=20221121031709&format=original,32,Melee,5.25,4%,24,YES
+445,Spectre Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e8/Spectre_Staff.png/revision/latest?cb=20200521004119&format=original,65,Magic,6,4%,24,YES
+446,Spider Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/65/Spider_Staff.png/revision/latest?cb=20200516222321&format=original,26,Summon,3,0%,36,YES
+447,Spiky Ball,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d9/Spiky_Ball.png/revision/latest?cb=20200516222334&format=original,16,Ranged,1,4%,15,NO
+448,Spinal Tap,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4d/Spinal_Tap.png/revision/latest?cb=20201013181953&format=original,27,Summon,2,0%,30,NO
+449,Spirit Flame,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ea/Spirit_Flame.png/revision/latest?cb=20200516222336&format=original,85,Magic,5,4%,22,YES
+450,Staff of Earth,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/92/Staff_of_Earth.png/revision/latest?cb=20200516222426&format=original,125,Magic,7.5,24%,24,YES
+451,Staff of Regrowth,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/18/Staff_of_Regrowth.png/revision/latest?cb=20200516222428&format=original,7,Melee,3,4%,25,NO
+452,Staff of the Frost Hydra,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/20/Staff_of_the_Frost_Hydra.png/revision/latest?cb=20200516222430&format=original,100,Summon,7.5,0%,30,YES
+453,Stake Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/04/Stake_Launcher.png/revision/latest?cb=20200516222432&format=original,75,Ranged,6.5,14%,12,YES
+454,Star Anise,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/90/Star_Anise.png/revision/latest?cb=20200516222438&format=original,14,Ranged,0,4%,15,NO
+455,Star Cannon,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/70/Star_Cannon.png/revision/latest?cb=20200516222439&format=original,55,Ranged,3,4%,12,NO
+456,Star Wrath,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/83/Star_Wrath.png/revision/latest?cb=20200516222455&format=original,170,Melee,6.5,4%,16,YES
+457,Stardust Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fd/Stardust_Axe.png/revision/latest?cb=20200516222458&format=original,100,Melee,6,4%,25,YES
+458,Stardust Cell Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2f/Stardust_Cell_Staff.png/revision/latest?cb=20200516222459&format=original,60,Summon,2,0%,36,YES
+459,Stardust Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/45/Stardust_Chainsaw.png/revision/latest?cb=20200516222500&format=original,80,Melee,4,4%,15,YES
+460,Stardust Dragon Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a9/Stardust_Dragon_Staff.png/revision/latest?cb=20200516222502&format=original,40,Summon,2,0%,36,YES
+461,Stardust Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/55/Stardust_Drill.png/revision/latest?cb=20200516222503&format=original,50,Melee,0.5,4%,15,YES
+462,Stardust Hamaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f9/Stardust_Hamaxe.png/revision/latest?cb=20200516222507&format=original,60,Melee,7,4%,28,YES
+463,Stardust Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/11/Stardust_Hammer.png/revision/latest?cb=20200516222508&format=original,110,Melee,7,4%,30,YES
+464,Stardust Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/ca/Stardust_Pickaxe.png/revision/latest?cb=20200516222513&format=original,80,Melee,5.5,4%,12,YES
+465,Starfury,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2d/Starfury.png/revision/latest?cb=20221121015812&format=original,25,Melee,5,4%,20,NO
+466,Starlight,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/15/Starlight.png/revision/latest?cb=20200516222520&format=original,80,Melee,4,14%,18,YES
+467,Stellar Tune,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/53/Stellar_Tune.png/revision/latest?cb=20200516222558&format=original,85,Magic,1.5,24%,12,YES
+468,Sticky Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/74/Sticky_Bomb.png/revision/latest?cb=20200516222600&format=original,100,-,0,0%,25,NO
+469,Sticky Dirt Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7c/Sticky_Dirt_Bomb.png/revision/latest?cb=20200516222601&format=original,100,-,0,0%,25,NO
+470,Sticky Dynamite,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7d/Sticky_Dynamite.png/revision/latest?cb=20200516222602&format=original,250,-,0,0%,40,NO
+471,Sticky Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9d/Sticky_Grenade.png/revision/latest?cb=20200516222604&format=original,60,Ranged/ Throwing,8,4%,45,NO
+472,Storm Spear,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2a/Storm_Spear.png/revision/latest?cb=20200516222625&format=original,14,Melee,6,4%,28,NO
+473,Stylish Scissors,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/90/Stylish_Scissors.png/revision/latest?cb=20200516222632&format=original,14,Melee,5,4%,12,NO
+474,Stynger,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8f/Stynger.png/revision/latest?cb=20200516222635&format=original,45,Ranged,5,4%,22,YES
+475,Sunfury,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a9/Sunfury.png/revision/latest?cb=20200521003921&format=original,64,Melee,6.75,11%,45,NO
+476,Super Star Shooter,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d3/Super_Star_Shooter.png/revision/latest?cb=20200516222703&format=original,60,Ranged,5,4%,18,YES
+477,Swordfish,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f7/Swordfish.png/revision/latest?cb=20200516222719&format=original,19,Melee,4.25,4%,20,NO
+478,Tactical Shotgun,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d0/Tactical_Shotgun.png/revision/latest?cb=20200516222726&format=original,29,Ranged,7,4%,34,YES
+479,Tempest Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e0/Tempest_Staff.png/revision/latest?cb=20200516222759&format=original,50,Summon,2,0%,36,YES
+480,Tendon Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/84/Tendon_Bow.png/revision/latest?cb=20200516222802&format=original,19,Ranged,1,4%,30,NO
+481,Tentacle Spike,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ab/Tentacle_Spike.png/revision/latest?cb=20211118183611&format=original,19,Melee,5.5,4%,23,NO
+482,Terra Blade,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4d/Terra_Blade.png/revision/latest?cb=20200516222805&format=original,85,Melee,6.5,4%,18,YES
+483,Terragrim,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0a/Terragrim.png/revision/latest?cb=20200516222810&format=original,17,Melee,3,4%,25,NO
+484,Terraprisma,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b0/Terraprisma.png/revision/latest?cb=20200516222812&format=original,90,Summon,4,0%,36,YES
+485,Terrarian,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a6/Terrarian.png/revision/latest?cb=20200516222815&format=original,190,Melee,6.5,14%,25,YES
+486,The Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8e/The_Axe.png/revision/latest?cb=20200516222819&format=original,72,Melee,7.25,4%,23,YES
+487,The Bee's Knees,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/21/The_Bee%27s_Knees.png/revision/latest?cb=20200516222820&format=original,23,Ranged,3,4%,23,NO
+488,The Breaker,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4b/The_Breaker.png/revision/latest?cb=20221121013316&format=original,24,Melee,6,4%,45,NO
+489,The Eye of Cthulhu,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c4/The_Eye_of_Cthulhu.png/revision/latest?cb=20200521003924&format=original,115,Melee,3.5,4%,25,YES
+490,The Horseman's Blade,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/93/The_Horseman%27s_Blade.png/revision/latest?cb=20200516222845&format=original,15,Melee,7.5,4%,26,YES
+491,The Meatball,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/The_Meatball.png/revision/latest?cb=20200516222848&format=original,34,Melee,5.5,4%,45,NO
+492,The Rotted Fork,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d7/The_Rotted_Fork.png/revision/latest?cb=20200516222854&format=original,17,Melee,5,4%,31,NO
+493,The Undertaker,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/83/The_Undertaker.png/revision/latest?cb=20200807041942&format=original,19,Ranged,2,4%,20,NO
+494,Thorn Chakram,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e8/Thorn_Chakram.png/revision/latest?cb=20200516222904&format=original,25,Melee,8,4%,15,NO
+495,Throwing Knife,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d1/Throwing_Knife.png/revision/latest?cb=20200516222909&format=original,12,Ranged,2,4%,15,NO
+496,Thunder Zapper,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/14/Thunder_Zapper.png/revision/latest?cb=20200516222911&format=original,20,Magic,3,4%,17,NO
+497,Tin Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7a/Tin_Axe.png/revision/latest?cb=20221122020210&format=original,4,Melee,4.5,4%,28,NO
+498,Tin Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5d/Tin_Bow.png/revision/latest?cb=20200516222925&format=original,7,Ranged,0,4%,28,NO
+499,Tin Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6d/Tin_Broadsword.png/revision/latest?cb=20221122020303&format=original,45,Melee,5.5,4%,20,NO
+500,Tin Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fc/Tin_Hammer.png/revision/latest?cb=20221121011418&format=original,6,Melee,5.5,4%,31,NO
+501,Tin Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/39/Tin_Pickaxe.png/revision/latest?cb=20200516222938&format=original,5,Melee,2,4%,21,NO
+502,Tin Shortsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/85/Tin_Shortsword.png/revision/latest?cb=20200516222942&format=original,7,Melee,4,4%,12,NO
+503,Titanium Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cc/Titanium_Chainsaw.png/revision/latest?cb=20200516222951&format=original,34,Melee,4.6,4%,15,YES
+504,Titanium Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/35/Titanium_Drill.png/revision/latest?cb=20200516222953&format=original,27,Melee,0.5,4%,15,YES
+505,Titanium Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/59/Titanium_Pickaxe.png/revision/latest?cb=20221121022520&format=original,27,Melee,5,4%,25,YES
+506,Titanium Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5a/Titanium_Repeater.png/revision/latest?cb=20200516223004&format=original,43,Ranged,2.5,4%,17,YES
+507,Titanium Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d3/Titanium_Sword.png/revision/latest?cb=20221121022238&format=original,61,Melee,6,4%,20,YES
+508,Titanium Trident,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6b/Titanium_Trident.png/revision/latest?cb=20200516223008&format=original,48,Melee,6.2,4%,23,YES
+509,Titanium Waraxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c6/Titanium_Waraxe.png/revision/latest?cb=20200516223011&format=original,44,Melee,7.5,4%,35,YES
+510,Tizona,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/25/Tizona.png/revision/latest?cb=20160624135548&format=original,55,Melee,5,4%,25,YES
+511,Tome of Infinite Wisdom,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9f/Tome_of_Infinite_Wisdom.png/revision/latest?cb=20200516223022&format=original,36,Magic,9,4%,25,YES
+512,Tonbogiri,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/58/Tonbogiri.png/revision/latest?cb=20140904212416&format=original,50,Melee,6.5,4%,15,YES
+513,Topaz Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9c/Topaz_Staff.png/revision/latest?cb=20200516223039&format=original,16,Magic,3.5,4%,36,NO
+514,Toxic Flask,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/87/Toxic_Flask.png/revision/latest?cb=20200516223046&format=original,52,Magic,4,4%,45,YES
+515,Toxikarp,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c9/Toxikarp.png/revision/latest?cb=20200516223050&format=original,43,Ranged,3,4%,10,YES
+516,Tragic Umbrella,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cc/Tragic_Umbrella.png/revision/latest?cb=20200516223054&format=original,15,Melee,5,4%,22,NO
+517,Trident,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9a/Trident.png/revision/latest?cb=20200516223121&format=original,14,Melee,6,4%,31,NO
+518,Trimarang,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e0/Trimarang.png/revision/latest?cb=20220930220537&format=original,21,Melee,4.5,4%,20,NO
+519,True Excalibur,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/51/True_Excalibur.png/revision/latest?cb=20200516223129&format=original,72,Melee,4.5,4%,18,YES
+520,True Night's Edge,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/28/True_Night%27s_Edge.png/revision/latest?cb=20200521003925&format=original,70,Melee,4.75,4%,32,YES
+521,Tsunami,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c4/Tsunami.png/revision/latest?cb=20200516223136&format=original,53,Ranged,2,4%,24,YES
+522,Tungsten Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/37/Tungsten_Axe.png/revision/latest?cb=20221122015810&format=original,7,Melee,4.5,4%,26,NO
+523,Tungsten Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1c/Tungsten_Bow.png/revision/latest?cb=20200516223144&format=original,10,Ranged,0,4%,26,NO
+524,Tungsten Broadsword,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/57/Tungsten_Broadsword.png/revision/latest?cb=20221122015926&format=original,14,Melee,6,4%,19,NO
+525,Tungsten Hammer,"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",9,Melee,5.5,4%,28,NO
+526,Tungsten Pickaxe,"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",6,Melee,2,4%,21,NO
+527,Tungsten Shortsword,"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",10,Melee,4,4%,11,NO
+528,Umbrella,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/06/Umbrella.png/revision/latest?cb=20200516223235&format=original,10,Melee,5,4%,22,NO
+529,Unholy Trident,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ae/Unholy_Trident.png/revision/latest?cb=20200516223242&format=original,88,Magic,6.5,4%,17,YES
+530,Unholy Water,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c9/Unholy_Water.png/revision/latest?cb=20200516223243&format=original,20,-,3,0%,15,NO
+531,Uzi,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/98/Uzi.png/revision/latest?cb=20200516223259&format=original,30,Ranged,3.5,4%,9,YES
+532,Valkyrie Yoyo,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1c/Valkyrie_Yoyo.png/revision/latest?cb=20200521003927&format=original,70,Melee,4.5,4%,25,YES
+533,Valor,"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",28,Melee,3.85,4%,25,NO
+534,Vampire Frog Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/37/Vampire_Frog_Staff.png/revision/latest?cb=20200516223310&format=original,11,Summon,5,0%,36,NO
+535,Vampire Knives,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7f/Vampire_Knives.png/revision/latest?cb=20200521003929&format=original,29,Melee,2.75,4%,16,YES
+536,Venom Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fa/Venom_Staff.png/revision/latest?cb=20200516223318&format=original,44,Magic,7,4%,30,YES
+537,Venus Magnum,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/de/Venus_Magnum.png/revision/latest?cb=20200516223318&format=original,50,Ranged,5.5,4%,9,YES
+538,Vilethorn,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5c/Vilethorn.png/revision/latest?cb=20200516223336&format=original,10,Magic,1,4%,28,NO
+539,Volcano,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cf/Volcano.png/revision/latest?cb=20220929110429&format=original,40,Melee,6.5,4%,40,NO
+540,Vortex Axe,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/df/Vortex_Axe.png/revision/latest?cb=20200516223358&format=original,100,Melee,6,4%,25,YES
+541,Vortex Beater,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b6/Vortex_Beater.png/revision/latest?cb=20200516223359&format=original,50,Ranged,2,4%,20,YES
+542,Vortex Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/32/Vortex_Chainsaw.png/revision/latest?cb=20200516223404&format=original,80,Melee,4,4%,15,YES
+543,Vortex Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/20/Vortex_Drill.png/revision/latest?cb=20200516223405&format=original,50,Melee,0.5,4%,15,YES
+544,Vortex Hamaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3b/Vortex_Hamaxe.png/revision/latest?cb=20200516223411&format=original,60,Melee,7,4%,28,YES
+545,Vortex Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/75/Vortex_Hammer.png/revision/latest?cb=20200516223413&format=original,110,Melee,7,4%,30,YES
+546,Vortex Pickaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fc/Vortex_Pickaxe.png/revision/latest?cb=20200516223419&format=original,80,Melee,5.5,4%,12,YES
+547,Vulcan Repeater,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/41/Vulcan_Repeater.png/revision/latest?cb=20130404143416&format=original,56,Ranged,2.5,4%,17,YES
+548,Waffle's Iron,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b0/Waffle%27s_Iron.png/revision/latest?cb=20221002175116&format=original,50,Melee,4.75,4%,23,NO
+549,Wand of Frosting,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f0/Wand_of_Frosting.png/revision/latest?cb=20221011234529&format=original,15,Magic,0,14%,26,NO
+550,Wand of Sparking,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/91/Wand_of_Sparking.png/revision/latest?cb=20200730145135&format=original,14,Magic,0,14%,26,NO
+551,War Axe of the Night,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/54/War_Axe_of_the_Night.png/revision/latest?cb=20221121015659&format=original,20,Melee,6,4%,30,NO
+552,Wasp Gun,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/be/Wasp_Gun.png/revision/latest?cb=20200516223445&format=original,31,Magic,0.25,4%,18,YES
+553,Water Bolt,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/53/Water_Bolt.png/revision/latest?cb=20200903160503&format=original,19,Magic,5,4%,17,NO
+554,Weather Pain,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5d/Weather_Pain.png/revision/latest?cb=20211118183619&format=original,13,Magic,1,4%,45,NO
+555,Wet Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Wet_Bomb.png/revision/latest?cb=20200516223517&format=original,100,-,0,0%,25,NO
+556,White Paper Airplane,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ae/White_Paper_Airplane.png/revision/latest?cb=20200730141803&format=original,4,Ranged,2,4%,17,NO
+557,White Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/White_Phaseblade.png/revision/latest?cb=20200516223536&format=original,26,Melee,3,4%,18,NO
+558,White Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6d/White_Phasesaber.png/revision/latest?cb=20221122021222&format=original,48,Melee,3,4%,16,YES
+559,Wooden Boomerang,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dc/Wooden_Boomerang.png/revision/latest?cb=20200516223637&format=original,39,Melee,5,4%,20,NO
+560,Wooden Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2e/Wooden_Bow.png/revision/latest?cb=20200516223638&format=original,4,Ranged,0,4%,30,NO
+561,Wooden Hammer,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/29/Wooden_Hammer.png/revision/latest?cb=20221121010450&format=original,2,Melee,5.5,4%,37,NO
+562,Wooden Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Wooden_Sword.png/revision/latest?cb=20200516223647&format=original,45,Melee,5,4%,20,NO
+563,Wooden Yoyo,https://static.wikia.nocookie.net/terraria_gamepedia/images/e/ea/Wooden_Yoyo.png/revision/latest?cb=20200521003930&format=original,9,Melee,2.5,4%,25,NO
+564,Xeno Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/47/Xeno_Staff.png/revision/latest?cb=20200516223729&format=original,36,Summon,2,0%,36,YES
+565,Xenopopper,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1b/Xenopopper.png/revision/latest?cb=20200516223731&format=original,45,Ranged,3,4%,21,YES
+566,Yelets,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c2/Yelets.png/revision/latest?cb=20200521003931&format=original,60,Melee,3.1,4%,25,YES
+567,Yellow Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7d/Yellow_Phaseblade.png/revision/latest?cb=20200516223753&format=original,26,Melee,3,4%,18,NO
+568,Yellow Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/02/Yellow_Phasesaber.png/revision/latest?cb=20221122021251&format=original,48,Melee,3,4%,16,YES
+569,Zapinator,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/df/Zapinator.png/revision/latest?cb=20110826153950&format=original,50,Magic,3,4%,7,YES
+570,Zenith,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/66/Zenith.png/revision/latest?cb=20200516223829&format=original,190,Melee,6.5,14%,30,YES
+571,Zombie Arm,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a9/Zombie_Arm.png/revision/latest?cb=20221121031211&format=original,15,Melee,5.5,4%,22,NO

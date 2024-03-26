@@ -1,0 +1,614 @@
+ID,Name,AdvancementID
+1,Abigail's Flower,NULL
+2,Adamantite Chainsaw,1
+3,Adamantite Drill,1
+4,Adamantite Glaive,1
+5,Adamantite Pickaxe,1
+6,Adamantite Repeater,1
+7,Adamantite Sword,1
+8,Adamantite Waraxe,1
+9,Aerial Bane,1
+10,Ale Tosser,NULL
+11,Amarok,1
+12,Amazon,NULL
+13,Amber Staff,NULL
+14,Amethyst Staff,NULL
+15,Anchor,1
+16,Aqua Scepter,NULL
+17,Arkhalis,1
+18,Artery,NULL
+19,Ash Wood Bow,NULL
+20,Ash Wood Hammer,NULL
+21,Ash Wood Sword,NULL
+22,Axe of Regrowth,NULL
+23,Ball O' Hurt,NULL
+24,Ballista Cane,1
+25,Ballista Rod,NULL
+26,Ballista Staff,1
+27,Bananarang,1
+28,Bat Bat,NULL
+29,Bat Scepter,1
+30,Beam Sword,1
+31,Bee Gun,6
+32,Bee Keeper,6
+33,Beenade,6
+34,Betsy's Wrath,1
+35,Blade of Grass,NULL
+36,Blade Staff,1
+36,Blade Staff,9
+37,Bladed Glove,NULL
+38,Bladetongue,1
+39,Blizzard Staff,1
+40,Blood Butcherer,NULL
+41,Blood Lust Cluster,NULL
+42,Blood Rain Bow,NULL
+43,Blood Thorn,1
+44,Blood Water,NULL
+45,Bloody Machete,NULL
+46,Blowgun,NULL
+47,Blowpipe,NULL
+48,Blue Moon,NULL
+49,Blue Phaseblade,NULL
+50,Blue Phasesaber,1
+51,Bomb,NULL
+52,Bomb Fish,NULL
+53,Bone,NULL
+54,Bone Javelin,NULL
+55,Bone Pickaxe,NULL
+56,Bone Sword,NULL
+57,Bone Throwing Knife,NULL
+58,Book of Skulls,NULL
+59,Boomstick,NULL
+60,Boreal Wood Bow,NULL
+61,Boreal Wood Hammer,NULL
+62,Boreal Wood Sword,NULL
+63,Bouncy Bomb,NULL
+64,Bouncy Dynamite,NULL
+65,Bouncy Grenade,NULL
+66,Brand of the Inferno,1
+67,Breaker Blade,1
+67,Breaker Blade,9
+68,Breathing Reed,NULL
+69,Bubble Gun,1
+69,Bubble Gun,16
+70,Bunny Cannon,1
+71,Butcher's Chainsaw,1
+72,Cactus Pickaxe,NULL
+73,Cactus Sword,NULL
+74,Candy Cane Pickaxe,NULL
+75,Candy Cane Sword,NULL
+76,Candy Corn Rifle,1
+77,Cannon,1
+78,Cascade,NULL
+79,Celebration,1
+80,Celebration Mk2,1
+80,Celebration Mk2,19
+81,Chain Guillotines,1
+82,Chain Gun,1
+83,Chain Knife,NULL
+84,Charged Blaster Cannon,1
+85,Chik,1
+86,Chlorophyte Chainsaw,1
+87,Chlorophyte Claymore,1
+88,Chlorophyte Drill,1
+89,Chlorophyte Greataxe,1
+90,Chlorophyte Jackhammer,1
+91,Chlorophyte Partisan,1
+92,Chlorophyte Pickaxe,1
+93,Chlorophyte Saber,1
+94,Chlorophyte Shotbow,1
+95,Chlorophyte Warhammer,1
+96,Christmas Tree Sword,1
+97,Classy Cane,1
+98,Clinger Staff,1
+99,Clockwork Assault Rifle,1
+99,Clockwork Assault Rifle,9
+100,Cobalt Chainsaw,1
+101,Cobalt Drill,1
+102,Cobalt Naginata,1
+103,Cobalt Pickaxe,1
+104,Cobalt Repeater,1
+105,Cobalt Sword,1
+106,Cobalt Waraxe,1
+107,Code 1,NULL
+108,Code 2,1
+109,Coin Gun,1
+110,Combat Wrench,NULL
+111,Cool Whip,1
+112,Copper Axe,NULL
+113,Copper Bow,NULL
+114,Copper Broadsword,NULL
+115,Copper Hammer,NULL
+116,Copper Pickaxe,NULL
+117,Copper Shortsword,NULL
+118,Crimson Rod,NULL
+119,Crystal Serpent,1
+120,Crystal Storm,1
+121,Crystal Vile Shard,1
+122,Cursed Flames,1
+123,Cutlass,1
+124,Daedalus Stormbow,1
+125,Dao of Pow,1
+126,Dark Harvest,1
+127,Dark Lance,NULL
+128,Dart Pistol,1
+129,Dart Rifle,1
+130,Daybreak,1
+131,Deadly Sphere Staff,1
+132,Death Sickle,1
+133,Deathbringer Pickaxe,NULL
+134,Demon Bow,NULL
+135,Demon Scythe,NULL
+136,Desert Tiger Staff,1
+137,Diamond Staff,NULL
+138,Dirt Bomb,NULL
+139,Drax,1
+140,Drippler Crippler,1
+141,Dry Bomb,NULL
+142,Durendal,1
+143,Dynamite,NULL
+144,Ebonwood Bow,NULL
+145,Ebonwood Hammer,NULL
+146,Ebonwood Sword,NULL
+147,Egg Cannon,NULL
+148,Electrosphere Launcher,1
+149,Elf Melter,1
+150,Emerald Staff,NULL
+151,Enchanted Boomerang,NULL
+152,Enchanted Sword,NULL
+153,Eventide,1
+153,Eventide,17
+154,Excalibur,1
+155,Exotic Scimitar,NULL
+156,Explosive Bunny,NULL
+157,Explosive Trap Cane,1
+158,Explosive Trap Rod,NULL
+159,Explosive Trap Staff,1
+160,Falcon Blade,NULL
+161,Fetid Baghnakhs,1
+162,Finch Staff,NULL
+163,Firecracker,1
+163,Firecracker,9
+164,Flairon,1
+164,Flairon,16
+165,Flamarang,NULL
+166,Flameburst Cane,1
+167,Flameburst Rod,NULL
+168,Flameburst Staff,1
+169,Flamelash,NULL
+170,Flamethrower,1
+171,Flaming Mace,NULL
+172,Flare Gun,NULL
+173,Flesh Grinder,NULL
+174,Flintlock Pistol,NULL
+175,Flinx Staff,NULL
+176,Flower of Fire,NULL
+177,Flower of Frost,1
+178,Flower Pow,1
+178,Flower Pow,14
+179,Flying Dragon,1
+180,Flying Knife,1
+181,Flymeal,NULL
+182,Format:C,1
+183,Fossil Pickaxe,NULL
+184,Frost Daggerfish,NULL
+185,Frost Staff,1
+186,Frostbrand,1
+187,Fruitcake Chakram,NULL
+188,Gatligator,1
+189,Ghastly Glaive,1
+190,Gladius,NULL
+191,Gold Axe,NULL
+192,Gold Bow,NULL
+193,Gold Broadsword,NULL
+194,Gold Hammer,NULL
+195,Gold Pickaxe,NULL
+196,Gold Shortsword,NULL
+197,Golden Shower,1
+198,Golem Fist,1
+198,Golem Fist,15
+199,Gradient,1
+200,Gravedigger's Shovel,NULL
+201,Gray Zapinator,NULL
+202,Green Phaseblade,NULL
+203,Green Phasesaber,1
+204,Grenade,NULL
+205,Grenade Launcher,1
+205,Grenade Launcher,14
+206,Gungnir,1
+207,Haemorrhaxe,1
+208,Hallowed Jousting Lance,1
+209,Hallowed Repeater,1
+210,Ham Bat,1
+211,Hammush,1
+212,Handgun,NULL
+213,Happy Grenade,NULL
+214,Harpoon,NULL
+215,Heat Ray,1
+215,Heat Ray,15
+216,Hel-Fire,1
+217,Hellwing Bow,NULL
+218,Hive-Five,NULL
+219,Holy Hand Grenade,NULL
+220,Holy Water,1
+221,Honey Bomb,NULL
+222,Hornet Staff,NULL
+223,Houndius Shootius,8
+224,Ice Blade,NULL
+225,Ice Boomerang,NULL
+226,Ice Bow,1
+227,Ice Rod,1
+228,Ice Sickle,1
+229,Icemourne,NULL
+230,Imp Staff,NULL
+231,Inferno Fork,1
+232,Influx Waver,1
+233,Iron Axe,NULL
+234,Iron Bow,NULL
+235,Iron Broadsword,NULL
+236,Iron Hammer,NULL
+237,Iron Pickaxe,NULL
+238,Iron Shortsword,NULL
+239,Jack 'O Lantern Launcher,1
+240,Javelin,NULL
+241,Jousting Lance,1
+242,Kaleidoscope,1
+242,Kaleidoscope,17
+243,Katana,NULL
+244,Keybrand,1
+245,KO Cannon,1
+246,Kraken,1
+247,Laser Drill,1
+248,Laser Machinegun,1
+249,Laser Rifle,1
+249,Laser Rifle,9
+250,Last Prism,1
+250,Last Prism,19
+251,Lava Bomb,NULL
+252,Lead Axe,NULL
+253,Lead Bow,NULL
+254,Lead Broadsword,NULL
+255,Lead Hammer,NULL
+256,Lead Pickaxe,NULL
+257,Lead Shortsword,NULL
+258,Leaf Blower,1
+258,Leaf Blower,14
+259,Leather Whip,NULL
+260,Life Drain,1
+261,Light Disc,1
+262,Light's Bane,NULL
+263,Lightning Aura Cane,1
+264,Lightning Aura Rod,NULL
+265,Lightning Aura Staff,1
+266,Lucy the Axe,8
+267,Lunar Flare,1
+267,Lunar Flare,19
+268,Lunar Portal Staff,1
+268,Lunar Portal Staff,19
+269,Mace,NULL
+270,Magic Dagger,1
+271,Magic Missile,NULL
+272,Magical Harp,1
+273,Magnet Sphere,1
+274,Malaise,NULL
+275,Mandible Blade,NULL
+276,Marrow,1
+277,Medusa Head,1
+278,Megashark,1
+279,Meowmere,1
+279,Meowmere,19
+280,Meteor Hamaxe,NULL
+281,Meteor Staff,1
+282,Minishark,NULL
+283,Molotov Cocktail,NULL
+284,Molten Fury,NULL
+285,Molten Hamaxe,NULL
+286,Molten Pickaxe,NULL
+287,Morning Star,1
+288,Muramasa,NULL
+289,Mushroom Spear,1
+290,Musket,NULL
+291,Mythril Chainsaw,1
+292,Mythril Drill,1
+293,Mythril Halberd,1
+294,Mythril Pickaxe,1
+295,Mythril Repeater,1
+296,Mythril Sword,1
+297,Mythril Waraxe,1
+298,Nail Gun,1
+299,Nebula Arcanum,1
+300,Nebula Axe,1
+301,Nebula Blaze,1
+302,Nebula Chainsaw,1
+303,Nebula Drill,1
+304,Nebula Hamaxe,1
+305,Nebula Hammer,1
+306,Nebula Pickaxe,1
+307,Nettle Burst,1
+307,Nettle Burst,14
+308,Night's Edge,NULL
+309,Nightglow,1
+309,Nightglow,17
+310,Nightmare Pickaxe,NULL
+311,Nimbus Rod,1
+312,North Pole,1
+313,Obsidian Swordfish,1
+314,Onyx Blaster,1
+315,Optic Staff,1
+316,Orange Phaseblade,NULL
+317,Orange Phasesaber,1
+318,Orange Zapinator,1
+319,Orichalcum Chainsaw,1
+320,Orichalcum Drill,1
+321,Orichalcum Halberd,1
+322,Orichalcum Pickaxe,1
+323,Orichalcum Repeater,1
+324,Orichalcum Sword,1
+325,Orichalcum Waraxe,1
+326,Paintball Gun,NULL
+327,Paladin's Hammer,1
+328,Palladium Chainsaw,1
+329,Palladium Drill,1
+330,Palladium Pickaxe,1
+331,Palladium Pike,1
+332,Palladium Repeater,1
+333,Palladium Sword,1
+334,Palladium Waraxe,1
+335,Palm Wood Bow,NULL
+336,Palm Wood Hammer,NULL
+337,Palm Wood Sword,NULL
+338,Paper Airplane,NULL
+339,Pearlwood Bow,1
+340,Pearlwood Hammer,1
+341,Pearlwood Sword,1
+342,Pew-matic Horn,8
+343,Phantasm,1
+344,Phantom Phoenix,1
+345,Phoenix Blaster,NULL
+346,Pickaxe Axe,1
+347,Picksaw,1
+347,Picksaw,15
+348,Piranha Gun,1
+349,Pirate Staff,1
+350,Platinum Axe,NULL
+351,Platinum Bow,NULL
+352,Platinum Broadsword,NULL
+353,Platinum Hammer,NULL
+354,Platinum Pickaxe,NULL
+355,Platinum Shortsword,NULL
+356,Poison Staff,1
+357,Poisoned Knife,NULL
+358,Possessed Hatchet,1
+358,Possessed Hatchet,15
+359,Proximity Mine Launcher,1
+360,Psycho Knife,1
+361,Pulse Bow,1
+362,Purple Clubberfish,NULL
+363,Purple Phaseblade,NULL
+364,Purple Phasesaber,1
+365,Pwnhammer,1
+365,Pwnhammer,9
+366,Pygmy Staff,1
+366,Pygmy Staff,14
+367,Quad-Barrel Shotgun,NULL
+368,Queen Spider Staff,1
+369,Rainbow Crystal Staff,1
+369,Rainbow Crystal Staff,19
+370,Rainbow Gun,1
+371,Rainbow Rod,1
+372,Rally,NULL
+373,Raven Staff,1
+374,Razorblade Typhoon,1
+374,Razorblade Typhoon,16
+375,Razorpine,1
+376,Reaver Shark,NULL
+377,Red Phaseblade,NULL
+378,Red Phasesaber,1
+379,Red Ryder,NULL
+380,Red's Throw,1
+381,Resonance Scepter,1
+382,Revolver,NULL
+383,Rich Mahogany Bow,NULL
+384,Rich Mahogany Hammer,NULL
+385,Rich Mahogany Sword,NULL
+386,Rocket Launcher,1
+387,Rockfish,NULL
+388,Roman candle,NULL
+389,Rotten Egg,NULL
+390,Ruby Staff,NULL
+391,Ruler,NULL
+392,S.D.M.G,1
+392,S.D.M.G,19
+393,Sandgun,NULL
+394,Sanguine Staff,1
+395,Sapphire Staff,NULL
+396,Sawtooth Shark,NULL
+397,Scarab Bomb,NULL
+398,Scourge of the Corruptor,1
+399,Scythe,NULL
+400,Seedler,1
+400,Seedler,14
+401,Sergeant United Shield,1
+402,Shadewood Bow,NULL
+403,Shadewood Hammer,NULL
+404,Shadewood Sword,NULL
+405,Shadow Jousting Lance,1
+406,Shadowbeam Staff,1
+407,Shadowflame Bow,1
+408,Shadowflame Hex Doll,1
+409,Shadowflame Knife,1
+410,Sharanga,NULL
+411,Shotgun,1
+412,Shroomerang,NULL
+413,Shroomite Digging Claw,1
+414,Shuriken,NULL
+415,Sickle,NULL
+416,Silver Axe,NULL
+417,Silver Bow,NULL
+418,Silver Broadsword,NULL
+419,Silver Hammer,NULL
+420,Silver Pickaxe,NULL
+421,Silver Shortsword,NULL
+422,Sky Dragon's Fury,1
+423,Sky Fracture,1
+424,Slap Hand,1
+425,Sleepy Octopod,1
+426,Slime Staff,NULL
+427,Snapthorn,NULL
+428,Sniper Rifle,1
+429,Snowball,NULL
+430,Snowball Cannon,NULL
+431,Snowball Launcher,NULL
+432,Snowman Cannon,1
+433,Solar Eruption,1
+434,Solar Flare Axe,1
+435,Solar Flare Chainsaw,1
+436,Solar Flare Drill,1
+437,Solar Flare Hamaxe,1
+438,Solar Flare Hammer,1
+439,Solar Flare Pickaxe,1
+440,Soul Scythe,NULL
+441,Space Gun,NULL
+442,Spear,NULL
+443,Spectre Hamaxe,1
+444,Spectre Pickaxe,1
+445,Spectre Staff,1
+446,Spider Staff,1
+447,Spiky Ball,NULL
+448,Spinal Tap,NULL
+449,Spirit Flame,1
+450,Staff of Earth,1
+450,Staff of Earth,15
+451,Staff of Regrowth,NULL
+452,Staff of the Frost Hydra,1
+453,Stake Launcher,1
+454,Star Anise,NULL
+455,Star Cannon,NULL
+456,Star Wrath,1
+456,Star Wrath,19
+457,Stardust Axe,1
+458,Stardust Cell Staff,1
+459,Stardust Chainsaw,1
+460,Stardust Dragon Staff,1
+461,Stardust Drill,1
+462,Stardust Hamaxe,1
+463,Stardust Hammer,1
+464,Stardust Pickaxe,1
+465,Starfury,NULL
+466,Starlight,1
+466,Starlight,17
+467,Stellar Tune,1
+467,Stellar Tune,17
+468,Sticky Bomb,NULL
+469,Sticky Dirt Bomb,NULL
+470,Sticky Dynamite,NULL
+471,Sticky Grenade,NULL
+472,Storm Spear,NULL
+473,Stylish Scissors,NULL
+474,Stynger,1
+474,Stynger,15
+475,Sunfury,NULL
+476,Super Star Shooter,1
+477,Swordfish,NULL
+478,Tactical Shotgun,1
+479,Tempest Staff,1
+479,Tempest Staff,16
+480,Tendon Bow,NULL
+481,Tentacle Spike,NULL
+482,Terra Blade,1
+483,Terragrim,NULL
+484,Terraprisma,1
+484,Terraprisma,17
+485,Terrarian,1
+485,Terrarian,19
+486,The Axe,1
+486,The Axe,14
+487,The Bee's Knees,6
+488,The Breaker,NULL
+489,The Eye of Cthulhu,1
+490,The Horseman's Blade,1
+491,The Meatball,NULL
+492,The Rotted Fork,NULL
+493,The Undertaker,NULL
+494,Thorn Chakram,NULL
+495,Throwing Knife,NULL
+496,Thunder Zapper,NULL
+497,Tin Axe,NULL
+498,Tin Bow,NULL
+499,Tin Broadsword,NULL
+500,Tin Hammer,NULL
+501,Tin Pickaxe,NULL
+502,Tin Shortsword,NULL
+503,Titanium Chainsaw,1
+504,Titanium Drill,1
+505,Titanium Pickaxe,1
+506,Titanium Repeater,1
+507,Titanium Sword,1
+508,Titanium Trident,1
+509,Titanium Waraxe,1
+510,Tizona,1
+511,Tome of Infinite Wisdom,1
+512,Tonbogiri,1
+513,Topaz Staff,NULL
+514,Toxic Flask,1
+515,Toxikarp,1
+516,Tragic Umbrella,NULL
+517,Trident,NULL
+518,Trimarang,NULL
+519,True Excalibur,1
+520,True Night's Edge,1
+521,Tsunami,1
+521,Tsunami,16
+522,Tungsten Axe,NULL
+523,Tungsten Bow,NULL
+524,Tungsten Broadsword,NULL
+525,Tungsten Hammer,NULL
+526,Tungsten Pickaxe,NULL
+527,Tungsten Shortsword,NULL
+528,Umbrella,NULL
+529,Unholy Trident,1
+530,Unholy Water,NULL
+531,Uzi,1
+532,Valkyrie Yoyo,1
+533,Valor,NULL
+534,Vampire Frog Staff,NULL
+535,Vampire Knives,1
+536,Venom Staff,1
+537,Venus Magnum,1
+537,Venus Magnum,14
+538,Vilethorn,NULL
+539,Volcano,NULL
+540,Vortex Axe,1
+541,Vortex Beater,1
+542,Vortex Chainsaw,1
+543,Vortex Drill,1
+544,Vortex Hamaxe,1
+545,Vortex Hammer,1
+546,Vortex Pickaxe,1
+547,Vulcan Repeater,1
+548,Waffle's Iron,NULL
+549,Wand of Frosting,NULL
+550,Wand of Sparking,NULL
+551,War Axe of the Night,NULL
+552,Wasp Gun,1
+552,Wasp Gun,14
+553,Water Bolt,NULL
+554,Weather Pain,8
+555,Wet Bomb,NULL
+556,White Paper Airplane,NULL
+557,White Phaseblade,NULL
+558,White Phasesaber,1
+559,Wooden Boomerang,NULL
+560,Wooden Bow,NULL
+561,Wooden Hammer,NULL
+562,Wooden Sword,NULL
+563,Wooden Yoyo,NULL
+564,Xeno Staff,1
+565,Xenopopper,1
+566,Yelets,1
+567,Yellow Phaseblade,NULL
+568,Yellow Phasesaber,1
+569,Zapinator,1
+569,Zapinator,14
+570,Zenith,1
+571,Zombie Arm,NULL
