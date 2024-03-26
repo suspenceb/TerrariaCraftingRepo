@@ -12,7 +12,7 @@ CREATE TABLE Weapon
 (
   WeaponId SERIAL UNIQUE NOT NULL,
   WeaponName VARCHAR(64) NOT NULL,
-  WeaponDesc VARCHAR(64) NOT NULL,
+  WeaponDesc VARCHAR(64),
   ImageURL VARCHAR(128) NOT NULL,
   ObtainMethod VARCHAR(256) NOT NULL,
   StatDamage VARCHAR(8),
@@ -26,7 +26,7 @@ CREATE TABLE Armor
 (
   ArmorId SERIAL UNIQUE NOT NULL,
   ArmorName VARCHAR(64) NOT NULL,
-  ArmorDesc VARCHAR(64) NOT NULL,
+  ArmorDesc VARCHAR(64),
   ImageURL VARCHAR(128) NOT NULL,
   StatDefense INT NOT NULL,
   ObtainMethod VARCHAR(256) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE Accessory
 (
   AccessoryId SERIAL UNIQUE NOT NULL,
   AccessoryName VARCHAR(64) NOT NULL,
-  AccessoryDesc VARCHAR(64) NOT NULL,
+  AccessoryDesc VARCHAR(64),
   StatBonus VARCHAR(256),
   ObtainMethod VARCHAR(256) NOT NULL,
   ImageURL VARCHAR(128) NOT NULL,
