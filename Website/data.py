@@ -298,7 +298,61 @@ def get_advancements():
     return advancements
 
 def post_equipment(characterId, itemType, itemId):
-    print("Hello")
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Ensure the item exists
+    if itemType == "weapon":
+        query = "SELECT WeaponId FROM Weapon WHERE WeaponId = %s"
+    elif itemType == "armor":
+        query = "SELECT ArmorId FROM Armor WHERE ArmorId = %s"
+    elif itemType == "accessory":
+        query = "SELECT AccessoryId FROM Accessory WHERE AccessoryId = %s"
+    cursor.execute(query, (itemId, ))
+    if cursor.fetchone() is None:
+        return False
+    
+    # Ensure armor slots are free
+    if itemType == "armor":
+        # Get the slot of the queried armor
+        query = "SELECT ArmorSlot FROM Armor WHERE ArmorId = %s"
+        cursor.execute(query, (itemId, ))
+        armorSlot = cursor.fetchone()[0]
+        # Check if the slot is already taken
+        query = "SELECT ArmorId FROM Wears WHERE CharId = %s"
+        cursor.execute(query, (characterId, ))
+        equippedArmor = cursor.fetchall()
+        for armor in equippedArmor:
+            query = "SELECT ArmorSlot FROM Armor WHERE ArmorId = %s"
+            cursor.execute(query, (armor[0], ))
+            if cursor.fetchone()[0] == armorSlot:
+                query = "DELETE FROM Wears WHERE CharId = %s AND ArmorId = %s"
+                cursor.execute(query, (characterId, armor[0]))
+                conn.commit()
+
+    # Ensure an accessory slot is free
+    if itemType == "accessory":
+        # Get number of equiped accessories
+        query = "SELECT COUNT(*) FROM Equips WHERE CharId = %s"
+        cursor.execute(query, (characterId, ))
+        accessoryCount = cursor.fetchone()[0]
+        if accessoryCount >= 6:
+            return False
+
+    # Set the item
+    if itemType == "weapon":
+        query = "UPDATE TerrariaCharacter SET WeaponId = %s WHERE CharId = %s"
+    elif itemType == "armor":
+        query = "INSERT INTO Wears (ArmorId, CharId) VALUES (%s, %s)"
+    elif itemType == "accessory":
+        query = "INSERT INTO Equips (AccessoryId, CharId) VALUES (%s, %s)"
+    cursor.execute(query, (itemId, characterId))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
 
 if __name__ == "__main__":
-    print(get_items([4]))
+    print(post_equipment(2,"armor",4))
