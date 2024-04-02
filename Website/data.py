@@ -172,8 +172,109 @@ def delete_character(charId):
     conn.close()
     return True
 
+# Function takes in list of advancement ID's
 def get_items(advancements):
-    print(advancements)
+    accessoryReqs = {}
+    armorReqs = {}
+    weaponReqs = {}
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    query = "SELECT * FROM UnlocksAccessory"
+    cursor.execute(query)
+    accessoryRequirements = cursor.fetchall()
+    for req in accessoryRequirements:
+        accessoryId = req[1]
+        advancementId = req[0]
+        # Check if the accessory is already in accessoryReqs
+        if accessoryId in accessoryReqs:
+            accessoryReqs[accessoryId].append(advancementId)
+        else:
+            accessoryReqs[accessoryId] = [advancementId]
+
+    query = "SELECT * FROM UnlocksArmor"
+    cursor.execute(query)
+    armorRequirements = cursor.fetchall()
+    for req in armorRequirements:
+        armorId = req[0]
+        advancementId = req[1]
+        # Check if the armor is already in armorReqs
+        if armorId in armorReqs:
+            armorReqs[armorId].append(advancementId)
+        else:
+            armorReqs[armorId] = [advancementId]
+
+    query = "SELECT * FROM UnlocksWeapon"
+    cursor.execute(query)
+    weaponRequirements = cursor.fetchall()
+    for req in weaponRequirements:
+        weaponId = req[0]
+        advancementId = req[1]
+        # Check if the weapon is already in weaponReqs
+        if weaponId in weaponReqs:
+            weaponReqs[weaponId].append(advancementId)
+        else:
+            weaponReqs[weaponId] = [advancementId]
+
+    # Get the item ID's we cannot get with current advancements
+    accessoryIds = []
+    armorIds = []
+    weaponIds = []
+    for acc in accessoryReqs:
+        if not set(accessoryReqs[acc]).issubset(advancements):
+            accessoryIds.append(acc)
+    for arm in armorReqs:
+        if not set(armorReqs[arm]).issubset(advancements):
+            armorIds.append(arm)
+    for wep in weaponReqs:
+        if not set(weaponReqs[wep]).issubset(advancements):
+            weaponIds.append(wep)
+
+    # Lookup items in DB
+    query = "SELECT * FROM Accessory"
+    if len(accessoryIds) > 0:
+        i = True
+        for accId in accessoryIds:
+            if i:
+                query += " WHERE AccessoryId = " + str(accId)
+                i = False
+            else:
+                query += " OR AccessoryId = " + str(accId)
+    cursor.execute(query)
+    accessories = cursor.fetchall()
+
+    query = "SELECT * FROM Armor"
+    if len(armorIds) > 0:
+        i = True
+        for armId in armorIds:
+            if i:
+                query += " WHERE ArmorId = " + str(armId)
+                i = False
+            else:
+                query += " OR ArmorId = " + str(armId)
+    cursor.execute(query)
+    armor = cursor.fetchall()
+
+    query = "SELECT * FROM Weapon"
+    if len(weaponIds) > 0:
+        i = True
+        for wepId in weaponIds:
+            if i:
+                query += " WHERE WeaponId = " + str(wepId)
+                i = False
+            else:
+                query += " OR WeaponId = " + str(wepId)
+    cursor.execute(query)
+    weapons = cursor.fetchall()
+
+
+    # Close the connection and return the items
+    conn.close()
+    response = {
+        "accessories": accessories,
+        "armor": armor,
+        "weapons": weapons
+    }
+    return response
 
 def get_advancements():
     # Connect to database and establish cursor
@@ -188,3 +289,6 @@ def get_advancements():
 
 def post_equipment(characterId, itemType, itemId):
     print("Hello")
+
+if __name__ == "__main__":
+    print(get_items([]))
