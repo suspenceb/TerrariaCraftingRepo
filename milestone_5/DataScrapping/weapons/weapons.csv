@@ -1,4 +1,4 @@
-ID,Name,Image URL,Damage,Damage Type,Knockback,Critical Strike Chance,Use Time
+WeaponId,WeaponName,ImageURL,StatDamage,DamageType,StatKnockback,StatCritChance,UseTime
 1,Abigail's Flower,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4e/Abigail%27s_Flower.png/revision/latest?cb=20211118183533&format=original,6,Summon,2,0%,36
 2,Adamantite Chainsaw,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/17/Adamantite_Chainsaw.png/revision/latest?cb=20200516182702&format=original,33,Melee,4.5,4%,15
 3,Adamantite Drill,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/26/Adamantite_Drill.png/revision/latest?cb=20200516182705&format=original,20,Melee,0.5,4%,15
