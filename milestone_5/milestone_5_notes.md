@@ -6,8 +6,8 @@ source ./venv/bin/activate
 pip install -r requirements
 ```
 
-- [ ] Remove the following fields:
+- [X] Remove the following fields:
     - ObtainMethod
     - WeaponDescription
-- [ ] Add the following fields:
-    - WeaponType
+- [X] Add the following fields:
+    - DamageType
