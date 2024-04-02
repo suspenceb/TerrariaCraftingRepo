@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<body>
+
+    <!-- My card here: -->
+    <!-- mb-3 is margin, bottom-border. See https://stackoverflow.com/a/50250902 -->
+    <div class="card mb-3" style="max-width: 30rem;">
+        <div class="row align-items-center g-0">
+            <div class="col text-center">
+                <img src="https://terraria.wiki.gg/images/e/e4/Worm_Scarf.png" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Worm Scarf</h5>
+                    <p class="card-text">Reduces damage taken by 17%</p>
+                    <p class="card-text"><small class="text-body-secondary">Dropped by Eater of Worlds in Master Mode.</small></p>
+                    <button type="button" class="btn btn-primary">Equip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 30rem;">
+        <div class="row align-items-center g-0">
+            <div class="col text-center">
+                <img src="{{ imageURL }}" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ ItemName }} -- {{ ItemType }}</h5>
+                    <p class="card-text">{{ ItemDesc }}</p>
+                    <!-- <p class="card-text"><small class="text-body-secondary"> {{ ItemType }} </small></p> -->
+                    <p class="card-text"><small class="text-body-secondary"> {{ ObtainMethod }} </small></p>
+                    <button type="button" class="btn btn-primary">Equip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
