@@ -176,7 +176,15 @@ def get_items(advancements):
     print(advancements)
 
 def get_advancements():
-    print("Hello")
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT * FROM Advancement"
+    cursor.execute(query)
+    advancements = cursor.fetchall()
+    return advancements
 
 def post_equipment(characterId, itemType, itemId):
     print("Hello")
