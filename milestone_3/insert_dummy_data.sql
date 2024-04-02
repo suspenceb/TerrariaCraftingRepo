@@ -1,57 +1,57 @@
 -- Accessories
 INSERT INTO Accessory
-(AccessoryId, AccessoryName, AccessoryDesc, StatBonus, ObtainMethod, ImageURL)
-VALUES (1, 'Band of Regeneration', 'Slowly regenerates life', 'Regenerate 1 health/second', 'LOOT::Gold Chests in Underground and Cavern and in Living Mahogany Trees in the Underground Jungle.', 'https://terraria.wiki.gg/images/0/0f/Band_of_Regeneration.png');
+(AccessoryId, AccessoryName, StatBonus, ImageURL)
+VALUES (1, 'Band of Regeneration', 'Regenerate 1 health/second', 'https://terraria.wiki.gg/images/0/0f/Band_of_Regeneration.png');
 
 INSERT INTO Accessory
-(AccessoryId, AccessoryName, AccessoryDesc, StatBonus, ObtainMethod, ImageURL)
-VALUES (2, 'Discount Card', 'Shops prices lowered by 20%', 'Shops prices lowered by 20%', 'EVENT:: Pirate Invasion', 'https://terraria.wiki.gg/images/e/ef/Discount_Card.png');
+(AccessoryId, AccessoryName, StatBonus, ImageURL)
+VALUES (2, 'Discount Card', 'Shops prices lowered by 20%', 'https://terraria.wiki.gg/images/e/ef/Discount_Card.png');
 
 INSERT INTO Accessory
-(AccessoryId, AccessoryName, AccessoryDesc, StatBonus, ObtainMethod, ImageURL)
-VALUES (3, 'Yoyo Bag', 'Gives the user master yoyo skills', 'Allows the holder to use two yoyos, similar to the Yoyo Glove along with two Counterweights and also increases the yoyo''s range', 'CRAFTING:: 1x - White String, 1x - Yoyo Gove, 1x - Counterweight', 'https://terraria.wiki.gg/images/8/8d/Yoyo_Bag.png');
+(AccessoryId, AccessoryName, StatBonus, ImageURL)
+VALUES (3, 'Yoyo Bag', 'Allows the holder to use two yoyos, similar to the Yoyo Glove along with two Counterweights and also increases the yoyo''s range', 'https://terraria.wiki.gg/images/8/8d/Yoyo_Bag.png');
 
 -- Armor
 INSERT INTO Armor
-(ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus)
-VALUES (1, 'Meteor Helmet', 'DESCRIPTION', 'https://terraria.wiki.gg/images/3/36/Meteor_Helmet.png', 5, 'Crafting:: 10 Meteorite Bars', 3, '9% increased magic damage');
+(ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot)
+VALUES (1, 'Meteor Helmet', 'https://terraria.wiki.gg/images/3/36/Meteor_Helmet.png', 5, '9% increased magic damage', 3);
 
 INSERT INTO Armor
-(ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus)
-VALUES (2, 'Meteor Suit', 'DESCRIPTION', 'https://terraria.wiki.gg/images/b/be/Meteor_Suit.png', 6, 'Crafting:: 20 Meteorite Bars', 2, '9% increased magic damage');
+(ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot)
+VALUES (2, 'Meteor Suit', 'https://terraria.wiki.gg/images/b/be/Meteor_Suit.png', 6, '9% increased magic damage', 2);
 
 INSERT INTO Armor
-(ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus)
-VALUES (3, 'Meteor Leggings', 'DESCRIPTION', 'https://terraria.wiki.gg/images/e/e5/Meteor_Leggings.png', 5, 'Crafting:: 15 Meteorite Bars', 1, '9% increased magic damage');
+(ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot)
+VALUES (3, 'Meteor Leggings', 'https://terraria.wiki.gg/images/e/e5/Meteor_Leggings.png', 5, '9% increased magic damage', 1);
 
 INSERT INTO Armor
-(ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus)
-VALUES (4, 'Ninja Hood', 'DESCRIPTION', 'https://terraria.wiki.gg/images/c/c4/Ninja_Hood.png', 2, 'BOSS::33.33% chance King Slime', 3, '3% increased critical strike chance');
+(ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot)
+VALUES (4, 'Ninja Hood', 'https://terraria.wiki.gg/images/c/c4/Ninja_Hood.png', 2, '3% increased critical strike chance', 3);
 
 INSERT INTO Armor
-(ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus)
-VALUES (5, 'Ninja Shirt', 'DESCRIPTION', 'https://terraria.wiki.gg/images/f/f9/Ninja_Shirt.png', 4, 'BOSS::33.33% chance King Slime', 2, '3% increased critical strike chance');
+(ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot)
+VALUES (5, 'Ninja Shirt', 'https://terraria.wiki.gg/images/f/f9/Ninja_Shirt.png', 4, '3% increased critical strike chance', 2);
 
 INSERT INTO Armor
-(ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus)
-VALUES (6, 'Ninja Pants', 'DESCRIPTION', 'https://terraria.wiki.gg/images/a/ad/Ninja_Pants.png', 3, 'BOSS::33.33% chance King Slime', 1, '3% increased critical strike chance');
+(ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot)
+VALUES (6, 'Ninja Pants', 'https://terraria.wiki.gg/images/a/ad/Ninja_Pants.png', 3, '3% increased critical strike chance', 1);
 
 -- Weapons
 INSERT INTO Weapon
-(WeaponId, WeaponName, WeaponDesc, ImageURL, ObtainMethod, StatDamage, StatKnockback, StatCritChance, StatUseTime)
-VALUES (1, 'Copper Broadsword', '', 'https://terraria.wiki.gg/images/c/cb/Copper_Broadsword.png', 'Crafting:: 6 Copper Bars', '9 Damage', '5.5 Knockback', '4%', '21');
+(WeaponId, WeaponName, ImageURL, StatDamage, DamageType, StatKnockback, StatCritChance, StatUseTime)
+VALUES (1, 'Copper Broadsword', 'https://terraria.wiki.gg/images/c/cb/Copper_Broadsword.png', '9 Damage', 'melee', '5.5 Knockback', '4%', '21');
 
 INSERT INTO Weapon
-(WeaponId, WeaponName, WeaponDesc, ImageURL, ObtainMethod, StatDamage, StatKnockback, StatCritChance, StatUseTime)
-VALUES (2, 'Meowmere', 'DESCRIPTION', 'https://terraria.wiki.gg/images/6/63/Meowmere.png', 'BOSS:: 22.2% chance Moon Lord', '200', '6.5', '4%', '14');
+(WeaponId, WeaponName, ImageURL, StatDamage, DamageType, StatKnockback, StatCritChance, StatUseTime)
+VALUES (2, 'Meowmere', 'https://terraria.wiki.gg/images/6/63/Meowmere.png', '200', 'melee', '6.5', '4%', '14');
 
 INSERT INTO Weapon
-(WeaponId, WeaponName, WeaponDesc, ImageURL, ObtainMethod, StatDamage, StatKnockback, StatCritChance, StatUseTime)
-VALUES (3, 'Molten Hamaxe', 'DESCRIPTION', 'https://terraria.wiki.gg/images/d/d8/Molten_Hamaxe.png', 'Crafting:: 15 Hellstone bars', '20', '7', '4%', '14');
+(WeaponId, WeaponName, ImageURL, StatDamage, DamageType, StatKnockback, StatCritChance, StatUseTime)
+VALUES (3, 'Molten Hamaxe', 'https://terraria.wiki.gg/images/d/d8/Molten_Hamaxe.png', '20', 'melee', '7', '4%', '14');
 
 INSERT INTO Weapon
-(WeaponId, WeaponName, WeaponDesc, ImageURL, ObtainMethod, StatDamage, StatKnockback, StatCritChance, StatUseTime)
-VALUES (4, 'Nettle Burst', 'Ignores 10 points of enemy Defense', 'https://terraria.wiki.gg/images/9/98/Nettle_Burst.png', 'BOSS: Plantera', '35', '1', '4%', '25');
+(WeaponId, WeaponName, ImageURL, StatDamage, DamageType, StatKnockback, StatCritChance, StatUseTime)
+VALUES (4, 'Nettle Burst', 'https://terraria.wiki.gg/images/9/98/Nettle_Burst.png', '35', 'magic', '1', '4%', '25');
 
 -- Advancements
 INSERT INTO Advancement
