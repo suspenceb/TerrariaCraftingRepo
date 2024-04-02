@@ -359,6 +359,3 @@ def post_equipment(characterId, itemType, itemId):
     # Close the connection and return 1 if successful
     conn.close()
     return True
-
-if __name__ == "__main__":
-    print(post_equipment(2,"accessory",3))
