@@ -171,3 +171,12 @@ def delete_character(charId):
     # Close the connection and return 1 if successful
     conn.close()
     return True
+
+def get_items(advancements):
+    print(advancements)
+
+def get_advancements():
+    print("Hello")
+
+def post_equipment(characterId, itemType, itemId):
+    print("Hello")
