@@ -339,6 +339,12 @@ def post_equipment(characterId, itemType, itemId):
         accessoryCount = cursor.fetchone()[0]
         if accessoryCount >= 6:
             return False
+        
+        # Check if the accessory is already equiped
+        query = "SELECT AccessoryId FROM Equips WHERE CharId = %s AND AccessoryId = %s"
+        cursor.execute(query, (characterId, itemId))
+        if cursor.fetchone() is not None:
+            return False
 
     # Set the item
     if itemType == "weapon":
@@ -355,4 +361,4 @@ def post_equipment(characterId, itemType, itemId):
     return True
 
 if __name__ == "__main__":
-    print(post_equipment(2,"armor",4))
+    print(post_equipment(2,"accessory",3))
