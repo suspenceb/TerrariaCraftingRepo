@@ -27,8 +27,35 @@ def login():
 
 @app.route("/")
 def index():
-    print(request.cookies.get("token"))
+    # print(request.cookies.get("token"))
+    if request.cookies.get("token") is None:
+        return redirect(url_for("login"))
+    
+    # Get the user from the database
+    user = get_loggedin_user(request.cookies.get("token"))
+
+    # Get the user's selected filters (from their cookie?)
+
+    # Acquire the list of items as a result of the filters
+    # filtered_items = get_items(advancementLIst)
+
+    itemCardList = [] # List of Strings
+    # For each item in `filtered_items`
+        # Render an HTML 'card' for that item using the template
+        # Store the card in `itemCardList`
+
+    # For each itemCard in `itemCardList`
+        # Add it as an entry in the table
+    
+    # Insert table into index.html template
     return render_template("index.html")
+
+    if request.method == "POST":
+        # (i.e. if the user has just submitted a new set of filters)
+        # Get the latest filters from the cookie
+        
+        # Acquire the list of items as a result of the filters
+
 
 @app.route("/account", methods=["GET", "POST"])
 def account():
