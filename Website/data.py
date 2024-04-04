@@ -172,8 +172,13 @@ def delete_character(charId):
     conn.close()
     return True
 
-# Function takes in list of advancement ID's
-def get_items(advancements):
+def get_items(advancements: list[int]) -> list[int]:
+    """ 
+    Takes a list of advancement ID's and produces a corresponding list of Item IDs.
+    i.e. Queries the database to find what items can be accessed for given advancements.
+
+    Meant to be used as part of the 'filter' for the Home page.
+    """
     accessoryReqs = {}
     armorReqs = {}
     weaponReqs = {}
