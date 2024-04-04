@@ -1,5 +1,45 @@
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<div class="container text-center">
+  <div>
+    <h3>Advancements</h3>
+    <div id="advancementFilters">
+      <!-- Each advancement gets a checkbox -->
+      {% for adv in advancements %}
+      <input
+        type="checkbox"
+        id="{{ adv[0] }}"
+        name="{{ adv[0] }}"
+        value="{{ adv[0] }}"
+        onChange="updateFilters()"
+      />
+      <label for="{{ adv[0] }}">{{ adv[1] }}</label><br />
+      {% endfor %}
+    </div>
+  </div>
+  <div>
+    
+  </div>
+</div>
 
-{% block title %}Home{% endblock %} {% block content%}
-<p>home</p>
+<script>
+  filters = document.cookie.split("filters=")[1];
+  if (filters) {
+    filters = filters.split(",");
+    for (let i = 0; i < filters.length; i++) {
+      document.getElementById(filters[i]).checked = true;
+    }
+  }
+
+  function updateFilters(event) {
+    advancementFilters = document.getElementById("advancementFilters");
+    let filters = [];
+    for (let i = 0; i < advancementFilters.children.length; i++) {
+      if (advancementFilters.children[i].checked) {
+        filters.push(advancementFilters.children[i].value);
+      }
+    }
+    document.cookie = "filters=" + filters.join(",");
+    window.location.href = "/";
+  }
+</script>
 {% endblock %}
