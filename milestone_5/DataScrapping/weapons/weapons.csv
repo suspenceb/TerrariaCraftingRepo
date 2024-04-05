@@ -63,7 +63,7 @@ WeaponId,WeaponName,ImageURL,StatDamage,DamageType,StatKnockback,StatCritChance,
 62,Boreal Wood Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/27/Boreal_Wood_Sword.png/revision/latest?cb=20200516200627&format=original,8,Melee,6,4%,20
 63,Bouncy Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cd/Bouncy_Bomb.png/revision/latest?cb=20200516200927&format=original,100,-,0,0%,25
 64,Bouncy Dynamite,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/d7/Bouncy_Dynamite.png/revision/latest?cb=20200516200930&format=original,250,-,0,0%,40
-65,Bouncy Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a3/Bouncy_Grenade.png/revision/latest?cb=20200516200935&format=original,65,Ranged/ Throwing,8,4%,40
+65,Bouncy Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a3/Bouncy_Grenade.png/revision/latest?cb=20200516200935&format=original,65,Ranged,8,4%,40
 66,Brand of the Inferno,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4e/Brand_of_the_Inferno.png/revision/latest?cb=20200516201106&format=original,95,Melee,6.5,4%,20
 67,Breaker Blade,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/22/Breaker_Blade.png/revision/latest?cb=20221121020145&format=original,70,Melee,8,4%,35
 68,Breathing Reed,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/91/Breathing_Reed.png/revision/latest?cb=20200516201129&format=original,10,Melee,4,4%,27
@@ -150,7 +150,7 @@ WeaponId,WeaponName,ImageURL,StatDamage,DamageType,StatKnockback,StatCritChance,
 149,Elf Melter,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/de/Elf_Melter.png/revision/latest?cb=20200521003946&format=original,53,Ranged,0.425,4%,30
 150,Emerald Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3b/Emerald_Staff.png/revision/latest?cb=20200516211901&format=original,19,Magic,4.25,4%,32
 151,Enchanted Boomerang,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/05/Enchanted_Boomerang.png/revision/latest?cb=20200516211915&format=original,17,Melee,8,4%,20
-152,Enchanted Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b3/Enchanted_Sword_%28item%29.png/revision/latest?cb=20201004152143&format=original,23,Melee,4.25(Average)5.25(Average),4%,21
+152,Enchanted Sword,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b3/Enchanted_Sword_%28item%29.png/revision/latest?cb=20201004152143&format=original,23,Melee,4.25,4%,21
 153,Eventide,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/24/Eventide.png/revision/latest?cb=20200516211951&format=original,50,Ranged,2,4%,30
 154,Excalibur,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fa/Excalibur.png/revision/latest?cb=20200516211959&format=original,72,Melee,4.5,4%,20
 155,Exotic Scimitar,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/36/Exotic_Scimitar.png/revision/latest?cb=20221122015509&format=original,20,Melee,4.25,4%,18
@@ -202,7 +202,7 @@ WeaponId,WeaponName,ImageURL,StatDamage,DamageType,StatKnockback,StatCritChance,
 201,Gray Zapinator,https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0a/Gray_Zapinator.png/revision/latest?cb=20200516213547&format=original,42,Magic,6,4%,36
 202,Green Phaseblade,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/73/Green_Phaseblade.png/revision/latest?cb=20200516213701&format=original,26,Melee,3,4%,18
 203,Green Phasesaber,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/78/Green_Phasesaber.png/revision/latest?cb=20221122021124&format=original,48,Melee,3,4%,16
-204,Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fb/Grenade.png/revision/latest?cb=20200516213727&format=original,60,Ranged/ Throwing,8,4%,45
+204,Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fb/Grenade.png/revision/latest?cb=20200516213727&format=original,60,Ranged,8,4%,45
 205,Grenade Launcher,https://static.wikia.nocookie.net/terraria_gamepedia/images/6/67/Grenade_Launcher.png/revision/latest?cb=20200516213726&format=original,60,Ranged,4,4%,20
 206,Gungnir,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/5a/Gungnir.png/revision/latest?cb=20200516213746&format=original,61,Melee,6.4,4%,22
 207,Haemorrhaxe,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/18/Haemorrhaxe.png/revision/latest?cb=20221121014004&format=original,30,Melee,7,4%,27
@@ -211,13 +211,13 @@ WeaponId,WeaponName,ImageURL,StatDamage,DamageType,StatKnockback,StatCritChance,
 210,Ham Bat,https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b9/Ham_Bat.png/revision/latest?cb=20211118183600&format=original,57,Melee,6.5,4%,20
 211,Hammush,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/fc/Hammush.png/revision/latest?cb=20200516213827&format=original,26,Melee,7.5,4%,27
 212,Handgun,https://static.wikia.nocookie.net/terraria_gamepedia/images/3/3e/Handgun.png/revision/latest?cb=20200516213830&format=original,26,Ranged,3,4%,15
-213,Happy Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9e/Happy_Grenade.png/revision/latest?cb=20200516213845&format=original,30,Ranged/ Throwing,6,4%,20
+213,Happy Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9e/Happy_Grenade.png/revision/latest?cb=20200516213845&format=original,30,Ranged,6,4%,20
 214,Harpoon,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/dc/Harpoon.png/revision/latest?cb=20200516213858&format=original,25,Ranged,6,4%,30
 215,Heat Ray,https://static.wikia.nocookie.net/terraria_gamepedia/images/1/13/Heat_Ray.png/revision/latest?cb=20200516213918&format=original,90,Magic,3,4%,10
 216,Hel-Fire,https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c3/Hel-Fire.png/revision/latest?cb=20200521003958&format=original,41,Melee,4.5,4%,25
 217,Hellwing Bow,https://static.wikia.nocookie.net/terraria_gamepedia/images/d/df/Hellwing_Bow.png/revision/latest?cb=20200521004000&format=original,22,Ranged,5.5,4%,13
 218,Hive-Five,https://static.wikia.nocookie.net/terraria_gamepedia/images/5/55/HiveFive1.4.4.png/revision/latest?cb=20221004174830&format=original,24,Melee,3.75,4%,25
-219,Holy Hand Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ad/Holy_Hand_Grenade.png/revision/latest?cb=20150206163708&format=original,600,-,?,0%,50
+219,Holy Hand Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/a/ad/Holy_Hand_Grenade.png/revision/latest?cb=20150206163708&format=original,600,-,,0%,50
 220,Holy Water,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/25/Holy_Water.png/revision/latest?cb=20200516214013&format=original,20,-,3,0%,15
 221,Honey Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/f/f0/Honey_Bomb.png/revision/latest?cb=20200516214021&format=original,100,-,0,0%,25
 222,Hornet Staff,https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4f/Hornet_Staff.png/revision/latest?cb=20200516214127&format=original,45,Summon,2,0%,22
@@ -469,7 +469,7 @@ WeaponId,WeaponName,ImageURL,StatDamage,DamageType,StatKnockback,StatCritChance,
 468,Sticky Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/74/Sticky_Bomb.png/revision/latest?cb=20200516222600&format=original,100,-,0,0%,25
 469,Sticky Dirt Bomb,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7c/Sticky_Dirt_Bomb.png/revision/latest?cb=20200516222601&format=original,100,-,0,0%,25
 470,Sticky Dynamite,https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7d/Sticky_Dynamite.png/revision/latest?cb=20200516222602&format=original,250,-,0,0%,40
-471,Sticky Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9d/Sticky_Grenade.png/revision/latest?cb=20200516222604&format=original,60,Ranged/ Throwing,8,4%,45
+471,Sticky Grenade,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9d/Sticky_Grenade.png/revision/latest?cb=20200516222604&format=original,60,Ranged,8,4%,45
 472,Storm Spear,https://static.wikia.nocookie.net/terraria_gamepedia/images/2/2a/Storm_Spear.png/revision/latest?cb=20200516222625&format=original,14,Melee,6,4%,28
 473,Stylish Scissors,https://static.wikia.nocookie.net/terraria_gamepedia/images/9/90/Stylish_Scissors.png/revision/latest?cb=20200516222632&format=original,14,Melee,5,4%,12
 474,Stynger,https://static.wikia.nocookie.net/terraria_gamepedia/images/8/8f/Stynger.png/revision/latest?cb=20200516222635&format=original,45,Ranged,5,4%,22
