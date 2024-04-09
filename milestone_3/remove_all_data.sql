@@ -1,3 +1,5 @@
+DELETE FROM UserSession
+
 DELETE FROM Wears;
 
 DELETE FROM Equips;

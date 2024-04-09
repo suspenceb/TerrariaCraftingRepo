@@ -10,19 +10,19 @@ SELECT CharId, WeaponId FROM TerrariaCharacter
 
 -- 1
 CREATE VIEW accessories_equipped AS
-SELECT Equips.CharId, Accessory.AccessoryId, AccessoryName, AccessoryDesc, StatBonus, ObtainMethod, ImageURL
+SELECT Equips.CharId, Accessory.AccessoryId, AccessoryName, ImageURL, StatBonus
 FROM Accessory
 JOIN Equips ON Accessory.AccessoryId = Equips.AccessoryId;
 
 -- 2
 CREATE VIEW weapons_equipped AS
-SELECT Wields.CharId, Weapon.WeaponId, WeaponName, WeaponDesc, ImageURL, ObtainMethod, StatDamage, StatKnockback, StatCritChance, StatUseTime
+SELECT Wields.CharId, Weapon.WeaponId, WeaponName, ImageURL, StatDamage, DamageType, StatKnockback, StatCritChance, StatUseTime
 FROM Weapon
 JOIN Wields ON Weapon.WeaponId = Wields.WeaponId;
 
 -- 3
 CREATE VIEW armors_equipped AS
-SELECT Wears.CharId, Armor.ArmorId, ArmorName, ArmorDesc, ImageURL, StatDefense, ObtainMethod, ArmorSlot, StatBonus
+SELECT Wears.CharId, Armor.ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot
 FROM Armor
 JOIN Wears ON Armor.ArmorId = Wears.ArmorId;
 
@@ -33,10 +33,9 @@ CREATE VIEW weapons_equipped_unionable AS
         WeaponId AS ItemId,
         'Weapon' AS ItemType,
         WeaponName AS ItemName,
-        WeaponDesc AS ItemDesc,
         ImageURL,
-        ObtainMethod,
         StatDamage,
+        DamageType,
         StatKnockback,
         StatCritChance,
         StatUseTime,
@@ -50,10 +49,9 @@ CREATE VIEW accessories_equipped_unionable AS
         AccessoryId AS ItemId,
         'Accessory' AS ItemType,
         AccessoryName AS ItemName,
-        AccessoryDesc AS ItemDesc,
         ImageURL,
-        ObtainMethod,
         NULL AS StatDamage,
+        NULL AS DamageType,
         NULL AS StatKnockback,
         NULL AS StatCritChance,
         NULL AS StatUseTime,
@@ -67,10 +65,9 @@ CREATE VIEW armors_equipped_unionable AS
         ArmorId AS ItemId,
         'Armor' AS ItemType,
         ArmorName AS ItemName,
-        ArmorDesc AS ItemDesc,
         ImageURL,
-        ObtainMethod,
         NULL AS StatDamage,
+        NULL AS DamageType,
         NULL AS StatKnockback,
         NULL AS StatCritChance,
         NULL AS StatUseTime,

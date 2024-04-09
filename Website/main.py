@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_character, get_armor
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_character, get_armor
 
 
 load_dotenv()
@@ -27,8 +27,39 @@ def login():
 
 @app.route("/")
 def index():
-    print(request.cookies.get("token"))
-    return render_template("index.html")
+    # print(request.cookies.get("token"))
+    if request.cookies.get("token") is None:
+        return redirect(url_for("login"))
+    
+    selectedAdv = str(request.cookies.get("filters"))
+    
+    # Generate dummy data for all advancements
+    advancements = get_advancements()
+
+    # Get the user from the database
+    user = get_loggedin_user(request.cookies.get("token"))
+
+    # Acquire the list of items as a result of the filters
+    # filtered_items = get_items(advancementLIst)
+
+    itemCardList = [] # List of Strings
+    # For each item in `filtered_items`
+        # Render an HTML 'card' for that item using the template
+        # Store the card in `itemCardList`
+
+    # For each itemCard in `itemCardList`
+        # Add it as an entry in the table
+    
+    # Insert table into index.html template
+    return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv)
+
+    if request.method == "POST":
+        # (i.e. if the user has just submitted a new set of filters)
+        # Get the latest filters from the cookie
+        
+        # Acquire the list of items as a result of the filters
+        print()
+
 
 @app.route("/account", methods=["GET", "POST"])
 def account():
@@ -107,4 +138,4 @@ def characters():
     return render_template("character.html", user=user, char=char, armor=armor)
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0", port=8001)
