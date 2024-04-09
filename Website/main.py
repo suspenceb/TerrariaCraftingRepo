@@ -1,7 +1,6 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from dotenv import load_dotenv
-
 from data import *
 import re
 
