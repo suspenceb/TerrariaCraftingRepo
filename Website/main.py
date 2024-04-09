@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
 from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips
-
+import re
 
 load_dotenv()
 app = Flask(__name__)
