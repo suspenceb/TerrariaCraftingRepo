@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips, remove_accessory, remove_armor
+from data import remove_weapon, get_character_weapon, post_login, get_loggedin_user, update_password, delete_login, get_user_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips, remove_accessory, remove_armor, get_weapon
 import re
 
 load_dotenv()
@@ -140,7 +140,7 @@ def account():
 
       
 
-    return render_template("account.html", user=user, characters=get_characters(user["userId"]), selcharacter=str(selcharacter))
+    return render_template("account.html", user=user, characters=get_user_characters(user["userId"]), selcharacter=str(selcharacter))
 
 @app.route("/logout")
 def logout():
@@ -164,6 +164,7 @@ def characters():
         return redirect(url_for("login"))
     
     charID = request.cookies.get("character")
+    charID = str(charID)
     
     if request.method == "POST":
         try:
@@ -176,6 +177,12 @@ def characters():
         try:
             accessoryID = request.form["remove_accessory"]
             remove_accessory(charID, accessoryID)
+        except:
+            pass
+
+        try:
+            weaponID = request.form["remove_weapon"]
+            remove_weapon(charID)
         except:
             pass
     
@@ -191,8 +198,16 @@ def characters():
     accessoryID = get_equips(charID)
     for i in accessoryID:
         accessories.append(get_accessories(i[0]))
+
+    weaponID = str(get_character_weapon(charID))
     
-    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories)
+    if weaponID != "None":
+        weapon = get_weapon(str(weaponID[0]))
+    else:
+        weapon = None
+
+    
+    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories, weapon=weapon)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8001)

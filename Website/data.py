@@ -25,7 +25,7 @@ def get_db_connection():
 # Outputs: token (string) or None
 def post_login(username: str, password: str) -> str | None:
     """
-    Logs in a user. Returns random Session token or `None` if no user is found.
+    Logs in a user. Returns random Session token or None if no user is found.
     """
     # Connect to database and establish cursor
     conn = get_db_connection()
@@ -59,7 +59,7 @@ def post_login(username: str, password: str) -> str | None:
 # Inputs: token (string)
 # Outputs: True if successful, False if not
 def delete_login(token: str) -> bool:
-    """Logs out a user. Returns `true` if successful, `false` otherwise."""
+    """Logs out a user. Returns true if successful, false otherwise."""
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -127,7 +127,7 @@ def update_password(userId: int, password: str):
     return True
 
 
-def get_characters(userId: int):
+def get_user_characters(userId: int):
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -305,7 +305,7 @@ def get_items(advancements: list[int]) -> list[int]:
 
 def get_advancements() -> list[(int, str)]:
     """
-    Returns a `list` of tuples containing (advancementId, advancementName)
+    Returns a list of tuples containing (advancementId, advancementName)
     """
     # Connect to database and establish cursor
     conn = get_db_connection()
@@ -319,9 +319,9 @@ def get_advancements() -> list[(int, str)]:
 
 def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
     """
-    Attempts to equip an item of `itemId` and `itemType` to a given character whose id is `characterId`.
+    Attempts to equip an item of itemId and itemType to a given character whose id is characterId.
     
-    Returns `False` if there are issues (such as the item not existing, or the slot already being occupied), `True` otherwise.
+    Returns False if there are issues (such as the item not existing, or the slot already being occupied), True otherwise.
     """
     # Connect to database and establish cursor
     conn = get_db_connection()
@@ -492,6 +492,59 @@ def remove_accessory(charId, accessoryId):
     # Query the database
     query = "DELETE FROM Equips WHERE CharId = %s AND AccessoryId = %s"
     cursor.execute(query, (charId, accessoryId))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
+
+def get_weapon(weaponId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT WeaponId, WeaponName, ImageURL, StatDamage, DamageType, StatKnockback, StatCritChance, StatUseTime FROM Weapon WHERE WeaponId = %s"
+    cursor.execute(query, (weaponId, ))
+    weapon = cursor.fetchone()
+
+    # Close the connection and return the weapon
+    conn.close()
+    return {
+        "WeaponId": weapon[0],
+        "WeaponName": weapon[1],
+        "ImageURL": re.sub('/revision.*', '', weapon[2]),
+        "StatDamage": weapon[3],
+        "DamageType": weapon[4],
+        "StatKnockback": weapon[5],
+        "StatCritChance": weapon[6],
+        "StatUseTime": weapon[7]
+    }
+
+def get_character_weapon(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT WeaponId FROM TerrariaCharacter WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    weapon = cursor.fetchone()
+
+    # Close the connection and return the weapon
+    conn.close()
+
+    print(weapon[0])
+    return weapon[0]
+
+def remove_weapon(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "UPDATE TerrariaCharacter SET WeaponId = NULL WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
     conn.commit()
 
     # Close the connection and return 1 if successful
