@@ -23,7 +23,7 @@ When you want to query the database, you need to start with the code `conn = get
 4. Values should always be a tuple, and you should have a comma after your last value in the tuple. This is shown in the example.
 5. When your query requires user supplied values, you will need to store these values in a tuple (as shown in 4.). Then, execute the statement with the query string first, followed by the values `(query, values)`. If you don't need to supply any values to your query, then you only need to do `cursor.execute(query)`.
 6. You only need to commit changes when you change the database. If you are performing a SELECT statement, you don't need to do this. However, if you are doing an INSERT, UPDATE, or DELETE, then you will need to commit changes.
-7. If you desire to retrieve information from a query, you will need to fetch the results. For example, if you performed a SELECT, you would need to use fetch to retrieve the results. On the other hand, if you had performed a DELETE, you wonuldn't need to use a fetch.
+7. If you desire to retrieve information from a query, you will need to fetch the results. For example, if you performed a SELECT, you would need to use fetch to retrieve the results. On the other hand, if you had performed a DELETE, you wouldn't need to use a fetch.
 8. Once you have completed your query, you should ALWAYS close the connection. Failure to do so may result in errors about the database being locked.
 
 
