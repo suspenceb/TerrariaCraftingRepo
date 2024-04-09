@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips, post_equipment
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips, post_equipment, remove_armor, remove_accessory
 import re
 
 load_dotenv()
@@ -170,18 +170,33 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/character")
+@app.route("/character", methods=["GET", "POST"])
 def characters():
     # Check if the user is logged in
     if request.cookies.get("token") is None:
         # Redirect to the login page if the user is not logged in
         return redirect(url_for("login"))
     
+    charID = request.cookies.get("character")
+    
+    if request.method == "POST":
+        try:
+            armorID = request.form["remove_armor"]
+            remove_armor(charID, armorID)
+            
+        except:
+            pass
+
+        try:
+            accessoryID = request.form["remove_accessory"]
+            remove_accessory(charID, accessoryID)
+        except:
+            pass
+    
     armor = []
     accessories= []
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
-    charID = request.cookies.get("character")
     char = get_character(charID)
     armorID = get_character_armor(charID)
     for i in armorID:

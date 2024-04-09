@@ -17,7 +17,7 @@
                 <div><p class=" mx-2 mt-2">{{armor.ArmorName}}</p></div>
                 <div><form method="post" class="">
                     <button class="btn"><i class="fa-solid fa-circle-xmark text-danger"></i></button>
-                    <input type="hidden" name="delete" value="{{armor.ArmorID}}">
+                    <input type="hidden" name="remove_armor" value="{{armor.ArmorID}}">
                 </form></div>
             </div>
             {% endfor %}
@@ -28,7 +28,7 @@
                 <div><p class=" mx-2 mt-2">{{a.AccessoryName}}</p></div>
                 <div><form method="post" class="">
                     <button class="btn"><i class="fa-solid fa-circle-xmark text-danger"></i></button>
-                    <input type="hidden" name="delete" value="{{a.AccessoryID}}">
+                    <input type="hidden" name="remove_accessory" value="{{a.AccessoryID}}">
                 </form></div>
             </div>
             {% endfor %}
