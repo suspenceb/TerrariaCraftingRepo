@@ -328,18 +328,18 @@ def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
     cursor = conn.cursor()
 
     # Ensure the item exists
-    if itemType == "weapon":
+    if itemType.lower() == "weapon":
         query = "SELECT WeaponId FROM Weapon WHERE WeaponId = %s"
-    elif itemType == "armor":
+    elif itemType.lower() == "armor":
         query = "SELECT ArmorId FROM Armor WHERE ArmorId = %s"
-    elif itemType == "accessory":
+    elif itemType.lower() == "accessory":
         query = "SELECT AccessoryId FROM Accessory WHERE AccessoryId = %s"
     cursor.execute(query, (itemId, ))
     if cursor.fetchone() is None:
         return False
     
     # Ensure armor slots are free
-    if itemType == "armor":
+    if itemType.lower() == "armor":
         # Get the slot of the queried armor
         query = "SELECT ArmorSlot FROM Armor WHERE ArmorId = %s"
         cursor.execute(query, (itemId, ))
@@ -357,7 +357,7 @@ def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
                 conn.commit()
 
     # Ensure an accessory slot is free
-    if itemType == "accessory":
+    if itemType.lower() == "accessory":
         # Get number of equiped accessories
         query = "SELECT COUNT(*) FROM Equips WHERE CharId = %s"
         cursor.execute(query, (characterId, ))
@@ -372,13 +372,15 @@ def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
             return False
 
     # Set the item
-    if itemType == "weapon":
+    if itemType.lower() == "weapon":
         query = "UPDATE TerrariaCharacter SET WeaponId = %s WHERE CharId = %s"
-    elif itemType == "armor":
+        cursor.execute(query, (itemId, characterId))
+    elif itemType.lower() == "armor":
         query = "INSERT INTO Wears (ArmorId, CharId) VALUES (%s, %s)"
-    elif itemType == "accessory":
+        cursor.execute(query, (itemId, characterId))
+    elif itemType.lower() == "accessory":
         query = "INSERT INTO Equips (AccessoryId, CharId) VALUES (%s, %s)"
-    cursor.execute(query, (itemId, characterId))
+        cursor.execute(query, (itemId, characterId))
     conn.commit()
 
     # Close the connection and return 1 if successful

@@ -70,5 +70,21 @@
     document.cookie = "filters=" + filters.join(",");
     window.location.href = "/";
   }
+
+  function equipItem(itemid, itemtype) {
+    fetch("/equipItem", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ itemid: itemid, itemtype: itemtype }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data["success"]) {
+          alert(data["message"]);
+        }
+      });
+  }
 </script>
 {% endblock %}
