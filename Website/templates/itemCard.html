@@ -9,8 +9,8 @@
                 <h5 class="card-title">{{ item["name"] }} -- {{ item["type"] }}</h5>
                 <p class="card-text">{{ item["description"] }}</p>
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ ItemType }} </small></p> -->
-                <p class="card-text"><small class="text-body-secondary"> {{ StatisticsTable }} </small></p>
-                <button type="button" class="btn btn-primary">Equip</button>
+                <!-- <p class="card-text"><small class="text-body-secondary"> {{ StatisticsTable }} </small></p> -->
+                <button type="button" onClick="equipItem('{{ item["id"] }}', '{{ item["type"] }}');" class="btn btn-primary">Equip</button>
             </div>
         </div>
     </div>
