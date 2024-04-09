@@ -1,7 +1,7 @@
 import mysql.connector
 from dotenv import load_dotenv
-import os
-import hashlib
+import os, hashlib, re
+
 
 # ----------------- Begin Helper Functions ----------------- #
 
@@ -384,3 +384,88 @@ def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
     # Close the connection and return 1 if successful
     conn.close()
     return True
+
+def get_character(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT CharName, WeaponId FROM TerrariaCharacter WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    character = cursor.fetchone()
+
+    # Close the connection and return the character
+    conn.close()
+    return {
+        "Name": character[0],
+        "weaponId": character[1]
+    }
+
+def get_armor(armorId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot, ArmorID FROM Armor WHERE ArmorId = %s"
+    cursor.execute(query, (armorId, ))
+    armor = cursor.fetchone()
+
+
+
+    # Close the connection and return the armor
+    conn.close()
+    return {
+        "ArmorName": armor[0],
+        "ImageURL": re.sub('/revision.*', '', armor[1]),
+        "StatDefense": armor[2],
+        "StatBonus": armor[3],
+        "ArmorSlot": armor[4],
+        "ArmorID": armor[5]
+    }
+
+def get_character_armor(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT ArmorId FROM Wears WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    armor = cursor.fetchall()
+
+    # Close the connection and return the armor
+    conn.close()
+    return armor
+
+def get_equips(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT AccessoryId FROM Equips WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    accessories = cursor.fetchall()
+
+    # Close the connection and return the accessories
+    conn.close()
+    return accessories
+
+def get_accessories(accessoryID):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    query = "SELECT AccessoryName, ImageURL, StatBonus, AccessoryID FROM Accessory WHERE AccessoryId = %s"
+    cursor.execute(query, (accessoryID, ))
+    accessory = cursor.fetchone()
+
+    conn.close()
+
+    return {
+        "AccessoryName": accessory[0],
+        "ImageURL": re.sub('/revision.*', '', accessory[1]),
+        "StatBonus": accessory[2],
+        "AccessoryID": accessory[3]
+    }

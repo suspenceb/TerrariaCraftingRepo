@@ -1,8 +1,8 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items
-import re
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips
+
 
 load_dotenv()
 app = Flask(__name__)
@@ -104,6 +104,7 @@ def account():
         return redirect(url_for("login"))
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
+    selcharacter = request.cookies.get("character")
     
     if request.method == "POST":
         try:
@@ -137,7 +138,9 @@ def account():
         except:
             pass
 
-    return render_template("account.html", user=user, characters=get_characters(user["userId"]))
+      
+
+    return render_template("account.html", user=user, characters=get_characters(user["userId"]), selcharacter=str(selcharacter))
 
 @app.route("/logout")
 def logout():
@@ -151,6 +154,30 @@ def logout():
     
     # Redirect to the login page
     return redirect(url_for("login"))
+
+
+@app.route("/character")
+def characters():
+    # Check if the user is logged in
+    if request.cookies.get("token") is None:
+        # Redirect to the login page if the user is not logged in
+        return redirect(url_for("login"))
+    
+    armor = []
+    accessories= []
+    # Get the user from the database
+    user = get_loggedin_user(request.cookies.get("token"))
+    charID = request.cookies.get("character")
+    char = get_character(charID)
+    armorID = get_character_armor(charID)
+    for i in armorID:
+        armor.append(get_armor(i[0]))
+
+    accessoryID = get_equips(charID)
+    for i in accessoryID:
+        accessories.append(get_accessories(i[0]))
+    
+    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8001)

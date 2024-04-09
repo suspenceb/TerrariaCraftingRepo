@@ -32,7 +32,8 @@
               <tr>
                 <td>{{ char.charName }}</td>
                 <td>{{ char.weaponId }}</td>
-                <td><form method="post"><button class="btn"><i class="fa-regular fa-square-check"></i></button><input type="hidden" name="select" value="{{char.charId}}"></form></td>
+                
+                <td><button class="btn" onclick="setChar({{char.charId}})"> {% if selcharacter | int == char.charId | int %} <i class="fa-solid fa-square-check"></i> {% else %} <i class="fa-regular fa-square-check"></i> {% endif %}</button></td>
                 <td><form method="post"><button class="btn"><i class="fa-solid fa-trash-can"></i></button><input type="hidden" name="delete" value="{{char.charId}}"></form></td>
               </tr>
             {% endfor %}
@@ -63,4 +64,10 @@
         </div>
       </div>
     </div>
+    <script>
+      function setChar(charId) {
+        document.cookie = "character=" + charId;
+        location.reload();
+      }
+    </script>
 {% endblock %}
