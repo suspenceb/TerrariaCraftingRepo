@@ -17,7 +17,36 @@
     </div>
   </div>
   <div>
-    
+    <div>
+      <h3>Accessories</h3>
+      <div>
+        {% for accessory in accessories %}
+          {% with item=accessory %}
+            {% include "itemCard.html" %}
+          {% endwith %}
+        {% endfor %}
+      </div>
+      <div>
+        <h3>Weapons</h3>
+        <div>
+          {% for weapon in weapons %}
+            {% with item=weapon %}
+              {% include "itemCard.html" %}
+            {% endwith %}
+          {% endfor %}
+        </div>
+      </div>
+      <div>
+        <h3>Armor</h3>
+        <div>
+          {% for armor in armor %}
+            {% with item=armor %}
+              {% include "itemCard.html" %}
+            {% endwith %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

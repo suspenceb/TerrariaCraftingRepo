@@ -1,8 +1,8 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements
-
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items
+import re
 
 load_dotenv()
 app = Flask(__name__)
@@ -42,16 +42,52 @@ def index():
     # Acquire the list of items as a result of the filters
     # filtered_items = get_items(advancementLIst)
 
-    itemCardList = [] # List of Strings
-    # For each item in `filtered_items`
-        # Render an HTML 'card' for that item using the template
-        # Store the card in `itemCardList`
+    filteredItems = get_items(selectedAdv)
 
-    # For each itemCard in `itemCardList`
-        # Add it as an entry in the table
+    accessoriesRaw = filteredItems["accessories"]
+    weaponsRaw = filteredItems["weapons"]
+    armorRaw = filteredItems["armor"]
+
+    accessories = []
+    weapons = []
+    armor = []
+
+    # Convert the list of tuples to a list of dictionaries
+    for i in range(len(accessoriesRaw)):
+        fixedImage = re.sub('/revision.*', '', accessoriesRaw[i][2])
+        accessory = {
+            "id": accessoriesRaw[i][0],
+            "name": accessoriesRaw[i][1],
+            "image": fixedImage,
+            "description": accessoriesRaw[i][3],
+            "type": "Accessory"
+        }
+        accessories.append(accessory)
+
+    for i in range(len(weaponsRaw)):
+        fixedImage = re.sub('/revision.*', '', weaponsRaw[i][2])
+        weapon = {
+            "id": weaponsRaw[i][0],
+            "name": weaponsRaw[i][1],
+            "image": fixedImage,
+            "description": weaponsRaw[i][3],
+            "type": "Weapon"
+        }
+        weapons.append(weapon)
+
+    for i in range(len(armorRaw)):
+        fixedImage = re.sub('/revision.*', '', armorRaw[i][2])
+        armorPiece = {
+            "id": armorRaw[i][0],
+            "name": armorRaw[i][1],
+            "image": fixedImage,
+            "description": armorRaw[i][3],
+            "type": "Armor"
+        }
+        armor.append(armorPiece)
     
     # Insert table into index.html template
-    return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv)
+    return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv, accessories=accessories, weapons=weapons, armor=armor)
 
     if request.method == "POST":
         # (i.e. if the user has just submitted a new set of filters)

@@ -187,8 +187,13 @@ def get_items(advancements: list[int]) -> list[int]:
     armorReqs = {}
     weaponReqs = {}
 
-    if advancements == "None":
-        advancements = []
+    if advancements == "None" or advancements == "":
+        advancements = [0]
+    else:
+        advancements = list(map(int, advancements.split(",")))
+
+    if 0 not in advancements:
+        advancements.append(0)
 
     # Get all accessory requirements, armor requirements, and weapon requirements
     # Store in accessoryReqs, armorReqs, and weaponReqs respectively
