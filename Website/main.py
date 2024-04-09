@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_character, get_armor
 
 
 load_dotenv()
@@ -37,6 +37,7 @@ def account():
         return redirect(url_for("login"))
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
+    selcharacter = request.cookies.get("character")
     
     if request.method == "POST":
         try:
@@ -70,7 +71,9 @@ def account():
         except:
             pass
 
-    return render_template("account.html", user=user, characters=get_characters(user["userId"]))
+      
+
+    return render_template("account.html", user=user, characters=get_characters(user["userId"]), selcharacter=str(selcharacter))
 
 @app.route("/logout")
 def logout():
@@ -84,6 +87,24 @@ def logout():
     
     # Redirect to the login page
     return redirect(url_for("login"))
+
+
+@app.route("/character")
+def characters():
+    # Check if the user is logged in
+    if request.cookies.get("token") is None:
+        # Redirect to the login page if the user is not logged in
+        return redirect(url_for("login"))
+    
+    # Get the user from the database
+    user = get_loggedin_user(request.cookies.get("token"))
+    char = request.cookies.get("character")
+    char = get_character(char)
+    armor = []
+    armor.append(get_armor('1'))
+    armor.append(get_armor('36'))
+
+    return render_template("character.html", user=user, char=char, armor=armor)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")

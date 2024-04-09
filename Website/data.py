@@ -1,7 +1,7 @@
 import mysql.connector
 from dotenv import load_dotenv
-import os
-import hashlib
+import os, hashlib, re
+
 
 # ----------------- Begin Helper Functions ----------------- #
 
@@ -171,3 +171,43 @@ def delete_character(charId):
     # Close the connection and return 1 if successful
     conn.close()
     return True
+
+def get_character(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT CharName, WeaponId FROM TerrariaCharacter WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    character = cursor.fetchone()
+
+    # Close the connection and return the character
+    conn.close()
+    return {
+        "Name": character[0],
+        "weaponId": character[1]
+    }
+
+def get_armor(armorId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot FROM Armor WHERE ArmorId = %s"
+    cursor.execute(query, (armorId, ))
+    armor = cursor.fetchone()
+
+
+
+    # Close the connection and return the armor
+    conn.close()
+    print(type(re.sub('/revision.*', '', armor[1])))
+    return {
+        "ArmorName": armor[0],
+        "ImageURL": re.sub('/revision.*', '', armor[1]),
+        "StatDefense": armor[2],
+        "StatBonus": armor[3],
+        "ArmorSlot": armor[4]
+    }
