@@ -469,3 +469,31 @@ def get_accessories(accessoryID):
         "StatBonus": accessory[2],
         "AccessoryID": accessory[3]
     }
+
+def remove_armor(charId, armorId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "DELETE FROM Wears WHERE CharId = %s AND ArmorId = %s"
+    cursor.execute(query, (charId, armorId))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
+
+def remove_accessory(charId, accessoryId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "DELETE FROM Equips WHERE CharId = %s AND AccessoryId = %s"
+    cursor.execute(query, (charId, accessoryId))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
