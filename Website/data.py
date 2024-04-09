@@ -183,6 +183,9 @@ def get_items(advancements: list[int]) -> list[int]:
     armorReqs = {}
     weaponReqs = {}
 
+    if advancements == "None":
+        advancements = []
+
     # Get all accessory requirements, armor requirements, and weapon requirements
     # Store in accessoryReqs, armorReqs, and weaponReqs respectively
     conn = get_db_connection()
