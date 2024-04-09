@@ -10,7 +10,7 @@
                 <p class="card-text">{{ item["description"] }}</p>
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ ItemType }} </small></p> -->
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ StatisticsTable }} </small></p> -->
-                <button type="button" onClick="equipItem('{{ item["id"] }}', '{{ item["type"] }}');" class="btn btn-primary">Equip</button>
+                <button type="button" onClick="equipItem('{{ item["id"] }}', '{{ item["type"] }}');" id="ItemButton{{ item['type'] }}{{ item['id'] }}" class="btn btn-primary">Equip</button>
             </div>
         </div>
     </div>

@@ -107,7 +107,9 @@ def equipItem():
         return jsonify({"error": "Character not owned by user"})
 
     result = post_equipment(charId, item_type, item_id)
-    print(result)
+    if type(result) == str:
+        return jsonify({"error": result, "success": False})
+    return jsonify({"success": True})
 
 
 

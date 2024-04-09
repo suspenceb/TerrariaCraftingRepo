@@ -82,7 +82,11 @@
       .then((response) => response.json())
       .then((data) => {
         if (!data["success"]) {
-          alert(data["message"]);
+          alert(data["error"]);
+        }
+        else {
+          document.getElementById("ItemButton" + itemtype + itemid).disabled = true;
+          document.getElementById("ItemButton" + itemtype + itemid).innerText = "Equipped";
         }
       });
   }

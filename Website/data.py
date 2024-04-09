@@ -336,7 +336,7 @@ def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
         query = "SELECT AccessoryId FROM Accessory WHERE AccessoryId = %s"
     cursor.execute(query, (itemId, ))
     if cursor.fetchone() is None:
-        return False
+        return "Item does not exist."
     
     # Ensure armor slots are free
     if itemType.lower() == "armor":
@@ -363,13 +363,13 @@ def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
         cursor.execute(query, (characterId, ))
         accessoryCount = cursor.fetchone()[0]
         if accessoryCount >= 6:
-            return False
+            return "Character already has 6 accessories equipped."
         
         # Check if the accessory is already equiped
         query = "SELECT AccessoryId FROM Equips WHERE CharId = %s AND AccessoryId = %s"
         cursor.execute(query, (characterId, itemId))
         if cursor.fetchone() is not None:
-            return False
+            return "Accessory already equipped."
 
     # Set the item
     if itemType.lower() == "weapon":
@@ -403,6 +403,27 @@ def get_character(charId):
         "Name": character[0],
         "weaponId": character[1]
     }
+
+def get_characters(userId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT CharId, CharName, WeaponId FROM TerrariaCharacter WHERE UserId = %s"
+    cursor.execute(query, (userId, ))
+    characters = cursor.fetchall()
+
+    # Close the connection and return the characters
+    conn.close()
+    returnCharacters = []
+    for i in characters:
+        returnCharacters.append({
+            "charId": i[0],
+            "charName": i[1],
+            "weaponId": i[2]
+        })
+    return returnCharacters
 
 def get_armor(armorId):
     # Connect to database and establish cursor
