@@ -535,8 +535,6 @@ def get_character_weapon(charId):
 
     # Close the connection and return the weapon
     conn.close()
-
-    print(weapon[0])
     return weapon[0]
 
 def remove_weapon(charId):

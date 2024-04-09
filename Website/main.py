@@ -98,7 +98,7 @@ def equipItem():
     userId = get_loggedin_user(request.cookies.get("token"))["userId"]
     
     # Ensure that the character is owned by the user
-    ownedCharacters = get_characters(userId)
+    ownedCharacters = get_user_characters(userId)
     ownedCharacterIds = []
     for i in ownedCharacters:
         ownedCharacterIds.append(i["charId"])
@@ -178,6 +178,9 @@ def characters():
         return redirect(url_for("login"))
     
     charID = request.cookies.get("character")
+    if charID is None:
+        flash("Please select a character")
+        return redirect(url_for("account"))
     charID = str(charID)
     
     if request.method == "POST":
@@ -214,11 +217,11 @@ def characters():
         accessories.append(get_accessories(i[0]))
 
     weaponID = str(get_character_weapon(charID))
-    
     if weaponID != "None":
-        weapon = get_weapon(str(weaponID[0]))
+        weapon = get_weapon(str(weaponID))
     else:
         weapon = None
+
 
     
     return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories, weapon=weapon)
