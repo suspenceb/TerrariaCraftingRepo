@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_character, get_armor
+from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_character, get_armor, get_character_armor, get_equips, get_accessories
 
 
 load_dotenv()
@@ -127,15 +127,21 @@ def characters():
         # Redirect to the login page if the user is not logged in
         return redirect(url_for("login"))
     
+    armor = []
+    accessories= []
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
-    char = request.cookies.get("character")
-    char = get_character(char)
-    armor = []
-    armor.append(get_armor('1'))
-    armor.append(get_armor('36'))
+    charID = request.cookies.get("character")
+    char = get_character(charID)
+    armorID = get_character_armor(charID)
+    for i in armorID:
+        armor.append(get_armor(i[0]))
 
-    return render_template("character.html", user=user, char=char, armor=armor)
+    accessoryID = get_equips(charID)
+    for i in accessoryID:
+        accessories.append(get_accessories(i[0]))
+    
+    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8001)

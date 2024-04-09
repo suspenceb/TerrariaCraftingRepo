@@ -403,7 +403,7 @@ def get_armor(armorId):
     cursor = conn.cursor()
 
     # Query the database
-    query = "SELECT ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot FROM Armor WHERE ArmorId = %s"
+    query = "SELECT ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot, ArmorID FROM Armor WHERE ArmorId = %s"
     cursor.execute(query, (armorId, ))
     armor = cursor.fetchone()
 
@@ -411,11 +411,56 @@ def get_armor(armorId):
 
     # Close the connection and return the armor
     conn.close()
-    print(type(re.sub('/revision.*', '', armor[1])))
     return {
         "ArmorName": armor[0],
         "ImageURL": re.sub('/revision.*', '', armor[1]),
         "StatDefense": armor[2],
         "StatBonus": armor[3],
-        "ArmorSlot": armor[4]
+        "ArmorSlot": armor[4],
+        "ArmorID": armor[5]
+    }
+
+def get_character_armor(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT ArmorId FROM Wears WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    armor = cursor.fetchall()
+
+    # Close the connection and return the armor
+    conn.close()
+    return armor
+
+def get_equips(charId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT AccessoryId FROM Equips WHERE CharId = %s"
+    cursor.execute(query, (charId, ))
+    accessories = cursor.fetchall()
+
+    # Close the connection and return the accessories
+    conn.close()
+    return accessories
+
+def get_accessories(accessoryID):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    query = "SELECT AccessoryName, ImageURL, StatBonus, AccessoryID FROM Accessory WHERE AccessoryId = %s"
+    cursor.execute(query, (accessoryID, ))
+    accessory = cursor.fetchone()
+
+    conn.close()
+
+    return {
+        "AccessoryName": accessory[0],
+        "ImageURL": re.sub('/revision.*', '', accessory[1]),
+        "StatBonus": accessory[2],
+        "AccessoryID": accessory[3]
     }

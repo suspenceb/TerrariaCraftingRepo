@@ -8,15 +8,27 @@
     <div class="col">
         <div class="text-center">
             <h3 class="mt-3">{{char.Name}}'s Information</h3>
-            <h4 class="mt-5">Armor</h4>
+            
         </div>
+        <h4 class="mt-5">Armor</h4>
             {% for armor in armor %}
             <div class="border rounded p-2 w-50 d-flex justify-content-between">
                 <div><img class=" mx-2 mt-2" style="max-height: 44px;" src="{{armor.ImageURL}}"></img></div>
                 <div><p class=" mx-2 mt-2">{{armor.ArmorName}}</p></div>
                 <div><form method="post" class="">
                     <button class="btn"><i class="fa-solid fa-circle-xmark text-danger"></i></button>
-                    <input type="hidden" name="delete" value="{{char.charId}}">
+                    <input type="hidden" name="delete" value="{{armor.ArmorID}}">
+                </form></div>
+            </div>
+            {% endfor %}
+        <h4 class="mt-5">Accessories</h4>
+            {% for a in accessories %}
+            <div class="border rounded p-2 w-50 d-flex justify-content-between">
+                <div><img class=" mx-2 mt-2" style="max-height: 44px;" src="{{a.ImageURL}}"></img></div>
+                <div><p class=" mx-2 mt-2">{{a.AccessoryName}}</p></div>
+                <div><form method="post" class="">
+                    <button class="btn"><i class="fa-solid fa-circle-xmark text-danger"></i></button>
+                    <input type="hidden" name="delete" value="{{a.AccessoryID}}">
                 </form></div>
             </div>
             {% endfor %}
