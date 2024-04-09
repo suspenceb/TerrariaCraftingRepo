@@ -1,8 +1,8 @@
 # Instructions
 1. Install and set up an Ubuntu Server (make sure to include Docker).
-2. Clone the our repository into a folder with appropriate permissions.
+2. Clone this repository into a folder with appropriate permissions.
     - Change the ownership of the folder to belong to the 'docker' group. For convenience, add your own user to that group.
-3. Use the `docker-compose.yml` script in our repo. This should create:
+3. Use the `docker-compose.yml` script in this repo. This will create:
     - A MySQL server using the latest version of MySQL
     - a PHPMyAdmin server
 4. Log into the PHPMyAdmin client at `http://<ip-address-of-machine>:8000` in your browser
