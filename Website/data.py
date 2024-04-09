@@ -404,6 +404,27 @@ def get_character(charId):
         "weaponId": character[1]
     }
 
+def get_characters(userId):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query the database
+    query = "SELECT CharId, CharName, WeaponId FROM TerrariaCharacter WHERE UserId = %s"
+    cursor.execute(query, (userId, ))
+    characters = cursor.fetchall()
+
+    # Close the connection and return the characters
+    conn.close()
+    returnCharacters = []
+    for i in characters:
+        returnCharacters.append({
+            "charId": i[0],
+            "charName": i[1],
+            "weaponId": i[2]
+        })
+    return returnCharacters
+
 def get_armor(armorId):
     # Connect to database and establish cursor
     conn = get_db_connection()
