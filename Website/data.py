@@ -23,7 +23,10 @@ def get_db_connection():
 # Post Login Function - Use this to log in a user
 # Inputs: username (string), password (string)
 # Outputs: token (string) or None
-def post_login(username, password):
+def post_login(username: str, password: str) -> str | None:
+    """
+    Logs in a user. Returns random Session token or `None` if no user is found.
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -55,7 +58,8 @@ def post_login(username, password):
 # Delete Login Function - Use this to log out a user
 # Inputs: token (string)
 # Outputs: True if successful, False if not
-def delete_login(token):
+def delete_login(token: str) -> bool:
+    """Logs out a user. Returns `true` if successful, `false` otherwise."""
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -78,7 +82,7 @@ def delete_login(token):
 
 # Gets the current logged in uses from the token. Returns dictionary with user id and username.
 # Returns None if the token does not exist in the datebase
-def get_loggedin_user(token) -> dict:
+def get_loggedin_user(token: str) -> dict:
 
     # Connect to database and establish cursor
     conn = get_db_connection()
@@ -105,7 +109,7 @@ def get_loggedin_user(token) -> dict:
     return user 
 
 
-def update_password(userId, password):
+def update_password(userId: int, password: str):
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -123,7 +127,7 @@ def update_password(userId, password):
     return True
 
 
-def get_characters(userId):
+def get_characters(userId: int):
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -158,7 +162,7 @@ def add_character(userId, charName):
     conn.close()
     return True
 
-def delete_character(charId):
+def delete_character(charId: int):
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -294,7 +298,10 @@ def get_items(advancements: list[int]) -> list[int]:
     }
     return response
 
-def get_advancements():
+def get_advancements() -> list[(int, str)]:
+    """
+    Returns a `list` of tuples containing (advancementId, advancementName)
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -305,7 +312,12 @@ def get_advancements():
     advancements = cursor.fetchall()
     return advancements
 
-def post_equipment(characterId, itemType, itemId):
+def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
+    """
+    Attempts to equip an item of `itemId` and `itemType` to a given character whose id is `characterId`.
+    
+    Returns `False` if there are issues (such as the item not existing, or the slot already being occupied), `True` otherwise.
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
