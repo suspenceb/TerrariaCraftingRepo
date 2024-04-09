@@ -1,11 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from dotenv import load_dotenv
-<<<<<<< HEAD
-from data import remove_weapon, get_character_weapon, post_login, get_loggedin_user, update_password, delete_login, get_user_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips, remove_accessory, remove_armor, get_weapon
-=======
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips, post_equipment, remove_armor, remove_accessory
->>>>>>> 48ac7fc1f0a24097254891f89a219d80a42b6508
+from data import *
 import re
 
 load_dotenv()
