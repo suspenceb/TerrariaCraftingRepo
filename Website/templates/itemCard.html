@@ -3,12 +3,12 @@
 <div class="card mb-3" style="max-width: 30rem;">
     <div class="row align-items-center g-0">
         <div class="col text-center">
-            <img src="{{ imageURL }}" class="img-fluid rounded">
+            <img src="{{ item.imageURL }}" class="img-fluid rounded">
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title">{{ ItemName }} -- {{ ItemType }}</h5>
-                <p class="card-text">{{ ItemDesc }}</p>
+                <h5 class="card-title">{{ item.ItemName }} -- {{ item.ItemType }}</h5>
+                <p class="card-text">{{ item.ItemDesc }}</p>
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ ItemType }} </small></p> -->
                 <p class="card-text"><small class="text-body-secondary"> {{ StatisticsTable }} </small></p>
                 <button type="button" class="btn btn-primary">Equip</button>
