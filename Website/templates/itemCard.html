@@ -1,5 +1,5 @@
 {% block content %}
-<div class="card mb-3" style="max-width: 30rem; min-height: 18rem;">
+<div class="card mb-3" style="max-width: 30rem; min-height: 18rem;" id="card{{ item["id"] }}{{ item["type"] }}">
     <div class="row align-items-center g-0">
         <div class="col text-center">
             <img src="{{ item["image"] }}" class="img-fluid rounded" style="height:69px;">
@@ -7,12 +7,26 @@
         <div class="col-md-8">
             <div class="card-body">
                 <h5 class="card-title">{{ item["name"] }}</h5>
-                <p class="card-text">{{ item["description"] }}</p>
+                <p class="card-text" id="textFor{{ item["id"] }}{{ item["type"] }}"></p><p id="readMore{{ item["id"] }}{{ item["type"] }}" style="display:None; cursor:pointer; color:#0d6efd;" onClick="showMore{{ item["id"] }}{{ item["type"] }}()">Expand</p>
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ ItemType }} </small></p> -->
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ StatisticsTable }} </small></p> -->
                 <button type="button" onClick="equipItem('{{ item["id"] }}', '{{ item["type"] }}');" id="ItemButton{{ item['type'] }}{{ item['id'] }}" class="btn btn-primary">Equip</button>
             </div>
         </div>
+        <script>
+            let fullDescription{{ item["id"] }}{{ item["type"] }} = "{{ item['description'] }}";
+            let shortDescription{{ item["id"] }}{{ item["type"] }} = fullDescription{{ item["id"] }}{{ item["type"] }}.substring(0, 75) + "...";
+            document.getElementById("textFor{{ item["id"] }}{{ item["type"] }}").innerHTML = fullDescription{{ item["id"] }}{{ item["type"] }};
+            let cardHeight{{ item["id"] }}{{ item["type"] }} = document.getElementById("card{{ item["id"] }}{{ item["type"] }}").clientHeight;
+            function showMore{{ item["id"] }}{{ item["type"] }}() {
+                document.getElementById("textFor{{ item["id"] }}{{ item["type"] }}").innerHTML = fullDescription{{ item["id"] }}{{ item["type"] }};
+                document.getElementById("readMore{{ item["id"] }}{{ item["type"] }}").style.display = "None";
+            }
+            if (cardHeight{{ item["id"] }}{{ item["type"] }} > 286) {
+                document.getElementById("readMore{{ item["id"] }}{{ item["type"] }}").style.display = "block";
+                document.getElementById("textFor{{ item["id"] }}{{ item["type"] }}").innerHTML = shortDescription{{ item["id"] }}{{ item["type"] }};
+            }
+        </script>
     </div>
 </div>
 {% endblock %}
