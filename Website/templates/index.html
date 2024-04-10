@@ -33,10 +33,13 @@
           id="{{ adv[0] }}"
           name="{{ adv[0] }}"
           value="{{ adv[0] }}"
-          onChange="updateFilters()"
+          {% if adv[1] == "Normal" %}
+          checked
+          {% endif %}
         />
         <label for="{{ adv[0] }}">{{ adv[1] }}</label><br />
         {% endfor %}
+        <button onclick="updateFilters()" class="btn btn-primary" style="margin-top:15px;">Apply Filters</button>
       </div>
     </div>
   </div>
