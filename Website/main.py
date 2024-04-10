@@ -31,13 +31,16 @@ def index():
     if request.cookies.get("token") is None:
         return redirect(url_for("login"))
     
+    if get_loggedin_user(request.cookies.get("token")) is None:
+        return redirect(url_for("login"))
+    
     selectedAdv = str(request.cookies.get("filters"))
     
     # Generate dummy data for all advancements
     advancements = get_advancements()
 
     # Get the user from the database
-    user = get_loggedin_user(request.cookies.get("token"))
+    #user = get_loggedin_user(request.cookies.get("token"))
 
     # Acquire the list of items as a result of the filters
     filteredItems = get_items(selectedAdv)
@@ -116,6 +119,9 @@ def account():
     # Check if the user is logged in
     if request.cookies.get("token") is None:
         return redirect(url_for("login"))
+    
+    if get_loggedin_user(request.cookies.get("token")) is None:
+        return redirect(url_for("login"))
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
     selcharacter = request.cookies.get("character")
@@ -167,7 +173,7 @@ def logout():
     delete_login(request.cookies.get("token"))
     
     # Redirect to the login page
-    return redirect(url_for("login"))
+    return render_template("clearTokens.html")
 
 
 @app.route("/character", methods=["GET", "POST"])
@@ -175,6 +181,9 @@ def characters():
     # Check if the user is logged in
     if request.cookies.get("token") is None:
         # Redirect to the login page if the user is not logged in
+        return redirect(url_for("login"))
+    
+    if get_loggedin_user(request.cookies.get("token")) is None:
         return redirect(url_for("login"))
     
     charID = request.cookies.get("character")
@@ -227,6 +236,28 @@ def characters():
         defence += a["StatDefense"]
     
     return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories, weapon=weapon, defence=defence)
+
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+        confirm_password = request.form["confirm_password"]
+        if password != confirm_password:
+            flash("Passwords do not match")
+            return redirect(url_for("register"))
+        
+        result = post_register(username, password)
+        if type(result) == str:
+            flash(result)
+            return redirect(url_for("register"))
+        return redirect(url_for("login"))
+    
+    return render_template("register.html")
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8001)

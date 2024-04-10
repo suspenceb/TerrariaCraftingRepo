@@ -91,12 +91,17 @@ def get_loggedin_user(token: str) -> dict:
     # Ensure the token exists
     query = "SELECT UserId FROM UserSession WHERE Token = %s"
     cursor.execute(query, (token, ))
+    if cursor.fetchone() is None:
+        return None
     userid = cursor.fetchone()[0]
     if userid is None:
         return None
 
     query = "SELECT Username FROM Account WHERE UserId = %s"
     cursor.execute(query, (userid, ))
+    print(cursor.fetchone())
+    if cursor.fetchone() is None:
+        return None
     username = cursor.fetchone()[0]
 
     user = {
@@ -572,3 +577,19 @@ def remove_weapon(charId):
     conn.close()
     return True
 
+def post_register(username, password):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Hash the password
+    hashed_password = hashlib.sha256(password.encode()).hexdigest()
+
+    # Query the database
+    query = "INSERT INTO Account (Username, PasswordHash) VALUES (%s, %s)"
+    cursor.execute(query, (username, hashed_password))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
