@@ -571,3 +571,4 @@ def remove_weapon(charId):
     # Close the connection and return 1 if successful
     conn.close()
     return True
+

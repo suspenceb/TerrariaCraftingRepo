@@ -224,6 +224,13 @@ def characters():
     else:
         weapon = None
 
+    defence = 0
+    for a in armor:
+        defence += a["StatDefense"]
+
+    
+
+
 
     
     return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories, weapon=weapon)
