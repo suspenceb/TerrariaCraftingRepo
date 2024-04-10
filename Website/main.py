@@ -31,6 +31,9 @@ def index():
     if request.cookies.get("token") is None:
         return redirect(url_for("login"))
     
+    if get_loggedin_user(request.cookies.get("token")) is None:
+        return redirect(url_for("login"))
+    
     selectedAdv = str(request.cookies.get("filters"))
     
     # Generate dummy data for all advancements
@@ -116,6 +119,9 @@ def account():
     # Check if the user is logged in
     if request.cookies.get("token") is None:
         return redirect(url_for("login"))
+    
+    if get_loggedin_user(request.cookies.get("token")) is None:
+        return redirect(url_for("login"))
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
     selcharacter = request.cookies.get("character")
@@ -175,6 +181,9 @@ def characters():
     # Check if the user is logged in
     if request.cookies.get("token") is None:
         # Redirect to the login page if the user is not logged in
+        return redirect(url_for("login"))
+    
+    if get_loggedin_user(request.cookies.get("token")) is None:
         return redirect(url_for("login"))
     
     charID = request.cookies.get("character")
