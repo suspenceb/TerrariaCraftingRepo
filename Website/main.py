@@ -71,7 +71,7 @@ def index():
             "id": weaponsRaw[i][0],
             "name": weaponsRaw[i][1],
             "image": fixedImage,
-            "description": weaponsRaw[i][3],
+            "description": "Type: " + weaponsRaw[i][4] + " | Damage: " + weaponsRaw[i][3] + " | Knockback: " + weaponsRaw[i][5] + " | Crit: " + weaponsRaw[i][6] + " | Time: " + weaponsRaw[i][7],
             "type": "Weapon"
         }
         weapons.append(weapon)
@@ -82,7 +82,7 @@ def index():
             "id": armorRaw[i][0],
             "name": armorRaw[i][1],
             "image": fixedImage,
-            "description": armorRaw[i][3],
+            "description": "Defense: " + str(armorRaw[i][3]) + " | " + armorRaw[i][4],
             "type": "Armor"
         }
         armor.append(armorPiece)
@@ -91,7 +91,7 @@ def index():
     return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv, accessories=accessories, weapons=weapons, armor=armor, numCols=4)
 
 @app.route("/equipItem", methods=["POST"])
-def equipItem():
+def equipItem(): 
     data = request.json
     item_id = int(data.get('itemid'))
     item_type = data.get('itemtype')
