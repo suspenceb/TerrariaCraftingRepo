@@ -31,8 +31,8 @@ def index():
     if request.cookies.get("token") is None:
         return redirect(url_for("login"))
     
-    if get_loggedin_user(request.cookies.get("token")) is None:
-        return redirect(url_for("login"))
+    #if get_loggedin_user(request.cookies.get("token")) is None:
+    #    return redirect(url_for("login"))
     
     selectedAdv = str(request.cookies.get("filters"))
     
@@ -120,8 +120,8 @@ def account():
     if request.cookies.get("token") is None:
         return redirect(url_for("login"))
     
-    if get_loggedin_user(request.cookies.get("token")) is None:
-        return redirect(url_for("login"))
+    #if get_loggedin_user(request.cookies.get("token")) is None:
+    #    return redirect(url_for("login"))
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
     selcharacter = request.cookies.get("character")
@@ -183,8 +183,8 @@ def characters():
         # Redirect to the login page if the user is not logged in
         return redirect(url_for("login"))
     
-    if get_loggedin_user(request.cookies.get("token")) is None:
-        return redirect(url_for("login"))
+    #if get_loggedin_user(request.cookies.get("token")) is None:
+    #    return redirect(url_for("login"))
     
     charID = request.cookies.get("character")
     if charID is None:

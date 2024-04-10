@@ -91,9 +91,10 @@ def get_loggedin_user(token: str) -> dict:
     # Ensure the token exists
     query = "SELECT UserId FROM UserSession WHERE Token = %s"
     cursor.execute(query, (token, ))
-    if cursor.fetchone() is None:
-        return None
-    userid = cursor.fetchone()[0]
+    print(cursor.fetchone())
+    #if cursor.fetchone() is None:
+    #    return None
+    userid = cursor.fetchone()
     if userid is None:
         return None
 
