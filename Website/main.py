@@ -225,13 +225,8 @@ def characters():
     defence = 0
     for a in armor:
         defence += a["StatDefense"]
-
     
-
-
-
-    
-    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories, weapon=weapon)
+    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories, weapon=weapon, defence=defence)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8001)

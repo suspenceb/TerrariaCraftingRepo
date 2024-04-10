@@ -21,7 +21,7 @@
                 </form></div>
             </div>
         {% else %}
-        <div class="border rounded p-2 w-50 d-flex justify-content-between">
+        <div class="border rounded p-2 w-50 d-flex justify-content-between ">
             <div><img class=" mx-2 mt-2" style="max-height: 44px;" src=""></img></div>
             <div><p class=" mx-2 mt-2"></p></div>
             <div>
@@ -40,7 +40,7 @@
             </div>
             {% else %}
             {% for armor in armor %}
-            <div class="border rounded p-2 w-50 d-flex justify-content-between">
+            <div class="border rounded p-2 w-50 d-flex justify-content-between mb-1">
                 <div><img class=" mx-2 mt-2" style="max-height: 44px;" src="{{armor.ImageURL}}"></img></div>
                 <div><p class=" mx-2 mt-2">{{armor.ArmorName}}</p></div>
                 <div><form method="post" class="">
@@ -61,7 +61,7 @@
             </div>
             {% else %}
             {% for a in accessories %}
-            <div class="border rounded p-2 w-50 d-flex justify-content-between">
+            <div class="border rounded p-2 w-50 d-flex justify-content-between mb-1">
                 <div><img class=" mx-2 mt-2" style="max-height: 44px;" src="{{a.ImageURL}}"></img></div>
                 <div><p class=" mx-2 mt-2">{{a.AccessoryName}}</p></div>
                 <div><form method="post" class="">
@@ -74,13 +74,74 @@
     </div>
     <div class="col">
         <div class="row mt-5">
-            <div class="col">
-                <i class="fa-solid fa-shield"></i> Attack
+            <div class="col" style="font-size: 32px;">
+                <i class="fa-solid fa-burst fa-2x" style="color: rgb(184, 0, 0);"></i> Attack: {% if weapon %}{{weapon.StatDamage}}{% else %}0{% endif %}
             </div>
-            <div class="col">
-                Defence
+            <div class="col" style="font-size: 32px;">
+                <i class="fa-solid fa-shield fa-2x" style="color: rgb(75, 90, 221)"></i> Defence: {{defence}}
             </div>
         </div>
+
+        <h4 class="mt-5">Weapon</h4>
+
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Knockback</th>
+                    <th>Crit Chance</th>
+                    <th>Use Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{weapon.WeaponName}}</td>
+                    <td>{{weapon.DamageType}}</td>
+                    <td>{{weapon.StatKnockback}}</td>
+                    <td>{{weapon.StatCritChance}}</td>
+                    <td>{{weapon.StatUseTime}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="mt-5">Armor</h4>
+
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Defense</th>
+                    <th>Stats</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for a in armor %}
+                <tr>
+                    <td>{{a.ArmorName}}</td>
+                    <td>{{a.StatDefense}}</td>
+                    <td>{{a.StatBonus}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <h4 class="mt-5">Accessories</h4>
+
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Stats</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for a in accessories %}
+                <tr>
+                    <td>{{a.AccessoryName}}</td>
+                    <td>{{a.StatBonus}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </div>
 
