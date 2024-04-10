@@ -20,30 +20,24 @@
     <div>
       <h3>Accessories</h3>
       <div>
-        {% for accessory in accessories %}
-          {% with item=accessory %}
-            {% include "itemCard.html" %}
-          {% endwith %}
-        {% endfor %}
+        {% with items=accessories %}
+            {% include "itemTable.html" %}
+        {% endwith %}
       </div>
       <div>
         <h3>Weapons</h3>
         <div>
-          {% for weapon in weapons %}
-            {% with item=weapon %}
-              {% include "itemCard.html" %}
+            {% with items=weapons %}
+                {% include "itemTable.html" %}
             {% endwith %}
-          {% endfor %}
         </div>
       </div>
       <div>
         <h3>Armor</h3>
         <div>
-          {% for armor in armor %}
-            {% with item=armor %}
-              {% include "itemCard.html" %}
+            {% with items=armor %}
+                {% include "itemTable.html" %}
             {% endwith %}
-          {% endfor %}
         </div>
       </div>
     </div>

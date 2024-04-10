@@ -40,8 +40,6 @@ def index():
     user = get_loggedin_user(request.cookies.get("token"))
 
     # Acquire the list of items as a result of the filters
-    # filtered_items = get_items(advancementLIst)
-
     filteredItems = get_items(selectedAdv)
 
     accessoriesRaw = filteredItems["accessories"]
@@ -87,7 +85,7 @@ def index():
         armor.append(armorPiece)
     
     # Insert table into index.html template
-    return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv, accessories=accessories, weapons=weapons, armor=armor)
+    return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv, accessories=accessories, weapons=weapons, armor=armor, numCols=4)
 
     if request.method == "POST":
         # (i.e. if the user has just submitted a new set of filters)

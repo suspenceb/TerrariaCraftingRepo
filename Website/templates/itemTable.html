@@ -1,0 +1,20 @@
+<!-- Renders a table, given a list of `items` and a `numCols` 
+Each `item` in `items` must have an item["name"], item["type"], item["description"], item["image"] (as required by "itemCard.html")
+-->
+{% block content %}
+<table>
+    <tbody>
+        {% for row in items|batch(numCols) %}
+        <tr>
+            {% for col in row %}
+                    {% with item=col %}
+                        <td>
+                            {% include "itemCard.html" %}
+                        </td>
+                    {% endwith %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
