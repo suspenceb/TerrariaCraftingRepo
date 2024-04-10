@@ -572,3 +572,19 @@ def remove_weapon(charId):
     conn.close()
     return True
 
+def post_register(username, password):
+    # Connect to database and establish cursor
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Hash the password
+    hashed_password = hashlib.sha256(password.encode()).hexdigest()
+
+    # Query the database
+    query = "INSERT INTO Account (Username, PasswordHash) VALUES (%s, %s)"
+    cursor.execute(query, (username, hashed_password))
+    conn.commit()
+
+    # Close the connection and return 1 if successful
+    conn.close()
+    return True
