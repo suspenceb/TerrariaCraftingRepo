@@ -18,23 +18,23 @@
   </div>
   <div>
     <div>
-      <h3>Accessories</h3>
-      <div>
+      <div class="titleDiv" onclick="toggleAccessories()"><h3>Accessories</h3><i class="fa-solid fa-angle-up colapseArrow" id="hideAccessoriesButton"></i><i class="fa-solid fa-angle-down colapseArrow" id="showAccessoriesButton"></i></div>
+      <div id="accessoriesDiv">
         {% with items=accessories %}
             {% include "itemTable.html" %}
         {% endwith %}
       </div>
       <div>
-        <h3>Weapons</h3>
-        <div>
+        <div class="titleDiv" onclick="toggleWeapons()"><h3>Weapons</h3><i class="fa-solid fa-angle-up colapseArrow" id="hideWeaponsButton"></i><i class="fa-solid fa-angle-down colapseArrow" id="showWeaponsButton"></i></div>
+        <div id="weaponsDiv">
             {% with items=weapons %}
                 {% include "itemTable.html" %}
             {% endwith %}
         </div>
       </div>
       <div>
-        <h3>Armor</h3>
-        <div>
+        <div class="titleDiv" onclick="toggleArmor()"><h3>Armor</h3><i class="fa-solid fa-angle-up colapseArrow" id="hideArmorButton"></i><i class="fa-solid fa-angle-down colapseArrow" id="showArmorButton"></i></div>
+        <div id="armorDiv">
             {% with items=armor %}
                 {% include "itemTable.html" %}
             {% endwith %}
@@ -84,5 +84,67 @@
         }
       });
   }
+
+  function toggleAccessories() {
+    accessoriesDiv = document.getElementById("accessoriesDiv");
+    hideAccessoriesButton = document.getElementById("hideAccessoriesButton");
+    showAccessoriesButton = document.getElementById("showAccessoriesButton");
+    if (accessoriesDiv.style.display === "none") {
+      accessoriesDiv.style.display = "block";
+      hideAccessoriesButton.style.display = "block";
+      showAccessoriesButton.style.display = "none";
+    } else {
+      accessoriesDiv.style.display = "none";
+      hideAccessoriesButton.style.display = "none";
+      showAccessoriesButton.style.display = "block";
+    }
+  }
+
+  function toggleWeapons() {
+    weaponsDiv = document.getElementById("weaponsDiv");
+    hideWeaponsButton = document.getElementById("hideWeaponsButton");
+    showWeaponsButton = document.getElementById("showWeaponsButton");
+    if (weaponsDiv.style.display === "none") {
+      weaponsDiv.style.display = "block";
+      hideWeaponsButton.style.display = "block";
+      showWeaponsButton.style.display = "none";
+    } else {
+      weaponsDiv.style.display = "none";
+      hideWeaponsButton.style.display = "none";
+      showWeaponsButton.style.display = "block";
+    }
+  }
+
+  function toggleArmor() {
+    armorDiv = document.getElementById("armorDiv");
+    hideArmorButton = document.getElementById("hideArmorButton");
+    showArmorButton = document.getElementById("showArmorButton");
+    if (armorDiv.style.display === "none") {
+      armorDiv.style.display = "block";
+      hideArmorButton.style.display = "block";
+      showArmorButton.style.display = "none";
+    } else {
+      armorDiv.style.display = "none";
+      hideArmorButton.style.display = "none";
+      showArmorButton.style.display = "block";
+    }
+  }
+
+  toggleAccessories();
+  toggleWeapons();
+  toggleArmor();
 </script>
+<style>
+  .titleDiv {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .colapseArrow {
+    font-size: 2em;
+    margin-left: 10px;
+  }
+</style>
 {% endblock %}
