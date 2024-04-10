@@ -1,7 +1,7 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from dotenv import load_dotenv
-from data import post_login, get_loggedin_user, update_password, delete_login, get_characters, add_character, delete_character, get_advancements, get_items, get_character, get_character_armor, get_armor, get_accessories, get_equips
+from data import *
 import re
 
 load_dotenv()
@@ -87,12 +87,28 @@ def index():
     # Insert table into index.html template
     return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv, accessories=accessories, weapons=weapons, armor=armor, numCols=4)
 
-    if request.method == "POST":
-        # (i.e. if the user has just submitted a new set of filters)
-        # Get the latest filters from the cookie
-        
-        # Acquire the list of items as a result of the filters
-        print()
+@app.route("/equipItem", methods=["POST"])
+def equipItem():
+    data = request.json
+    item_id = int(data.get('itemid'))
+    item_type = data.get('itemtype')
+    charId = int(request.cookies.get("character"))
+    userId = get_loggedin_user(request.cookies.get("token"))["userId"]
+    
+    # Ensure that the character is owned by the user
+    ownedCharacters = get_user_characters(userId)
+    ownedCharacterIds = []
+    for i in ownedCharacters:
+        ownedCharacterIds.append(i["charId"])
+    if charId not in ownedCharacterIds:
+        print("error")
+        return jsonify({"error": "Character not owned by user"})
+
+    result = post_equipment(charId, item_type, item_id)
+    if type(result) == str:
+        return jsonify({"error": result, "success": False})
+    return jsonify({"success": True})
+
 
 
 @app.route("/account", methods=["GET", "POST"])
@@ -138,7 +154,7 @@ def account():
 
       
 
-    return render_template("account.html", user=user, characters=get_characters(user["userId"]), selcharacter=str(selcharacter))
+    return render_template("account.html", user=user, characters=get_user_characters(user["userId"]), selcharacter=str(selcharacter))
 
 @app.route("/logout")
 def logout():
@@ -154,18 +170,43 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/character")
+@app.route("/character", methods=["GET", "POST"])
 def characters():
     # Check if the user is logged in
     if request.cookies.get("token") is None:
         # Redirect to the login page if the user is not logged in
         return redirect(url_for("login"))
     
+    charID = request.cookies.get("character")
+    if charID is None:
+        flash("Please select a character")
+        return redirect(url_for("account"))
+    charID = str(charID)
+    
+    if request.method == "POST":
+        try:
+            armorID = request.form["remove_armor"]
+            remove_armor(charID, armorID)
+            
+        except:
+            pass
+
+        try:
+            accessoryID = request.form["remove_accessory"]
+            remove_accessory(charID, accessoryID)
+        except:
+            pass
+
+        try:
+            weaponID = request.form["remove_weapon"]
+            remove_weapon(charID)
+        except:
+            pass
+    
     armor = []
     accessories= []
     # Get the user from the database
     user = get_loggedin_user(request.cookies.get("token"))
-    charID = request.cookies.get("character")
     char = get_character(charID)
     armorID = get_character_armor(charID)
     for i in armorID:
@@ -174,8 +215,16 @@ def characters():
     accessoryID = get_equips(charID)
     for i in accessoryID:
         accessories.append(get_accessories(i[0]))
+
+    weaponID = str(get_character_weapon(charID))
+    if weaponID != "None":
+        weapon = get_weapon(str(weaponID))
+    else:
+        weapon = None
+
+
     
-    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories)
+    return render_template("character.html", user=user, char=char, armor=armor, accessories=accessories, weapon=weapon)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8001)

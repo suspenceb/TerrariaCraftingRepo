@@ -10,32 +10,77 @@
             <h3 class="mt-3">{{char.Name}}'s Information</h3>
             
         </div>
+        <h4 class="mt-5">Weapon</h4>
+        {% if weapon %}
+            <div class="border rounded p-2 w-50 d-flex justify-content-between">
+                <div><img class=" mx-2 mt-2" style="max-height: 44px;" src="{{weapon.ImageURL}}"></img></div>
+                <div><p class=" mx-2 mt-2">{{weapon.WeaponName}}</p></div>
+                <div><form method="post" class="">
+                    <button class="btn"><i class="fa-solid fa-circle-xmark text-danger"></i></button>
+                    <input type="hidden" name="remove_weapon" value="{{weapon.WeaponID}}">
+                </form></div>
+            </div>
+        {% else %}
+        <div class="border rounded p-2 w-50 d-flex justify-content-between">
+            <div><img class=" mx-2 mt-2" style="max-height: 44px;" src=""></img></div>
+            <div><p class=" mx-2 mt-2"></p></div>
+            <div>
+                <button class="btn btn-primary" onclick="movePage()">Equip</button>
+            </div>
+        </div>
+        {% endif %}
         <h4 class="mt-5">Armor</h4>
+            {% if armor == [] %}
+            <div class="border rounded p-2 w-50 d-flex justify-content-between">
+                <div><img class=" mx-2 mt-2" style="max-height: 44px;" src=""></img></div>
+                <div><p class=" mx-2 mt-2"></p></div>
+                <div>
+                    <button class="btn btn-primary" onclick="movePage()">Equip</button>
+                </div>
+            </div>
+            {% else %}
             {% for armor in armor %}
             <div class="border rounded p-2 w-50 d-flex justify-content-between">
                 <div><img class=" mx-2 mt-2" style="max-height: 44px;" src="{{armor.ImageURL}}"></img></div>
                 <div><p class=" mx-2 mt-2">{{armor.ArmorName}}</p></div>
                 <div><form method="post" class="">
                     <button class="btn"><i class="fa-solid fa-circle-xmark text-danger"></i></button>
-                    <input type="hidden" name="delete" value="{{armor.ArmorID}}">
+                    <input type="hidden" name="remove_armor" value="{{armor.ArmorID}}">
                 </form></div>
             </div>
             {% endfor %}
+            {% endif %}
         <h4 class="mt-5">Accessories</h4>
+            {% if accessories == [] %}
+            <div class="border rounded p-2 w-50 d-flex justify-content-between">
+                <div><img class=" mx-2 mt-2" style="max-height: 44px;" src=""></img></div>
+                <div><p class=" mx-2 mt-2"></p></div>
+                <div>
+                    <button class="btn btn-primary" onclick="movePage()">Equip</button>
+                </div>
+            </div>
+            {% else %}
             {% for a in accessories %}
             <div class="border rounded p-2 w-50 d-flex justify-content-between">
                 <div><img class=" mx-2 mt-2" style="max-height: 44px;" src="{{a.ImageURL}}"></img></div>
                 <div><p class=" mx-2 mt-2">{{a.AccessoryName}}</p></div>
                 <div><form method="post" class="">
                     <button class="btn"><i class="fa-solid fa-circle-xmark text-danger"></i></button>
-                    <input type="hidden" name="delete" value="{{a.AccessoryID}}">
+                    <input type="hidden" name="remove_accessory" value="{{a.AccessoryID}}">
                 </form></div>
             </div>
             {% endfor %}
+            {% endif %}
     </div>
     <div class="col">
         <p>World</p>
     </div>
 </div>
+
+<script>
+    function movePage(){
+        window.location.href = "/";
+    }
+</script>
 
 {% endblock %}

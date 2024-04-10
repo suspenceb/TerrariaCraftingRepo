@@ -64,5 +64,25 @@
     document.cookie = "filters=" + filters.join(",");
     window.location.href = "/";
   }
+
+  function equipItem(itemid, itemtype) {
+    fetch("/equipItem", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ itemid: itemid, itemtype: itemtype }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data["success"]) {
+          alert(data["error"]);
+        }
+        else {
+          document.getElementById("ItemButton" + itemtype + itemid).disabled = true;
+          document.getElementById("ItemButton" + itemtype + itemid).innerText = "Equipped";
+        }
+      });
+  }
 </script>
 {% endblock %}
