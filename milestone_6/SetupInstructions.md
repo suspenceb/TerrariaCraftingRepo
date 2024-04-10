@@ -28,7 +28,9 @@ docker compose up -d
 # 4. Log into PHPMyAdmin and complete database setup (not shown here)
 
 # 5. Start up the web server
-
+# (in the folder containing the `Dockerfile`)
+docker build -t <name-of-image> .
+docker run -d -p 8001:8001 <name-of-image>
 ```
 
 (Services can be turned off with `docker compose down`)
