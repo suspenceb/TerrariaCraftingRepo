@@ -1,12 +1,12 @@
 {% block content %}
-<div class="card mb-3" style="max-width: 30rem;">
+<div class="card mb-3" style="max-width: 30rem; min-height: 18rem;">
     <div class="row align-items-center g-0">
         <div class="col text-center">
             <img src="{{ item["image"] }}" class="img-fluid rounded" style="height:69px;">
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title">{{ item["name"] }} -- {{ item["type"] }}</h5>
+                <h5 class="card-title">{{ item["name"] }}</h5>
                 <p class="card-text">{{ item["description"] }}</p>
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ ItemType }} </small></p> -->
                 <!-- <p class="card-text"><small class="text-body-secondary"> {{ StatisticsTable }} </small></p> -->
