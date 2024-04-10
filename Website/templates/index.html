@@ -1,46 +1,42 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
 <div class="container text-center">
   <div>
-    <h3>Advancements</h3>
-    <div id="advancementFilters">
-      <!-- Each advancement gets a checkbox -->
-      {% for adv in advancements %}
-      <input
-        type="checkbox"
-        id="{{ adv[0] }}"
-        name="{{ adv[0] }}"
-        value="{{ adv[0] }}"
-        onChange="updateFilters()"
-      />
-      <label for="{{ adv[0] }}">{{ adv[1] }}</label><br />
-      {% endfor %}
-    </div>
+    <h3 class="homepageTitle">Items</h3>
   </div>
   <div>
     <div id="tabsDiv">
       <button class="tablink" id="accessoriesTab" onclick="openAccessories()">Accessories</button>
       <button class="tablink" id="weaponsTab" onclick="openWeapons()">Weapons</button>
       <button class="tablink" id="armorTab" onclick="openArmor()">Armor</button>
+      <button class="tablink" id="filtersTab" onclick="openFilters()"><i class="fa-solid fa-filter"></i></button>
     </div>
     <div>
       <div id="accessoriesDiv">
         {% with items=accessories %}
-            {% include "itemTable.html" %}
+          {% include "itemTable.html" %}
         {% endwith %}
       </div>
-      <div>
-        <div id="weaponsDiv">
-            {% with items=weapons %}
-                {% include "itemTable.html" %}
-            {% endwith %}
-        </div>
+      <div id="weaponsDiv">
+        {% with items=weapons %}
+          {% include "itemTable.html" %}
+        {% endwith %}
       </div>
-      <div>
-        <div id="armorDiv">
-            {% with items=armor %}
-                {% include "itemTable.html" %}
-            {% endwith %}
-        </div>
+      <div id="armorDiv">
+        {% with items=armor %}
+          {% include "itemTable.html" %}
+        {% endwith %}
+      </div>
+      <div id="advancementFilters">
+        {% for adv in advancements %}
+        <input
+          type="checkbox"
+          id="{{ adv[0] }}"
+          name="{{ adv[0] }}"
+          value="{{ adv[0] }}"
+          onChange="updateFilters()"
+        />
+        <label for="{{ adv[0] }}">{{ adv[1] }}</label><br />
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -91,27 +87,44 @@
     document.getElementById("accessoriesDiv").style.display = "block";
     document.getElementById("weaponsDiv").style.display = "none";
     document.getElementById("armorDiv").style.display = "none";
+    document.getElementById("advancementFilters").style.display = "none";
     document.getElementById("accessoriesTab").classList.add("selectedtab");
     document.getElementById("weaponsTab").classList.remove("selectedtab");
     document.getElementById("armorTab").classList.remove("selectedtab");
+    document.getElementById("filtersTab").classList.remove("selectedtab");
   }
 
   function openWeapons() {
     document.getElementById("accessoriesDiv").style.display = "none";
     document.getElementById("weaponsDiv").style.display = "block";
     document.getElementById("armorDiv").style.display = "none";
+    document.getElementById("advancementFilters").style.display = "none";
     document.getElementById("accessoriesTab").classList.remove("selectedtab");
     document.getElementById("weaponsTab").classList.add("selectedtab");
     document.getElementById("armorTab").classList.remove("selectedtab");
+    document.getElementById("filtersTab").classList.remove("selectedtab");
   }
 
   function openArmor() {
     document.getElementById("accessoriesDiv").style.display = "none";
     document.getElementById("weaponsDiv").style.display = "none";
     document.getElementById("armorDiv").style.display = "block";
+    document.getElementById("advancementFilters").style.display = "none";
     document.getElementById("accessoriesTab").classList.remove("selectedtab");
     document.getElementById("weaponsTab").classList.remove("selectedtab");
     document.getElementById("armorTab").classList.add("selectedtab");
+    document.getElementById("filtersTab").classList.remove("selectedtab");
+  }
+
+  function openFilters() {
+    document.getElementById("accessoriesDiv").style.display = "none";
+    document.getElementById("weaponsDiv").style.display = "none";
+    document.getElementById("armorDiv").style.display = "none";
+    document.getElementById("advancementFilters").style.display = "block";
+    document.getElementById("accessoriesTab").classList.remove("selectedtab");
+    document.getElementById("weaponsTab").classList.remove("selectedtab");
+    document.getElementById("armorTab").classList.remove("selectedtab");
+    document.getElementById("filtersTab").classList.add("selectedtab");
   }
 
   openAccessories();
@@ -130,7 +143,7 @@
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 33.33%;
+    width: 25%;
   }
   .selectedtab {
     background-color: #0d6efd;
