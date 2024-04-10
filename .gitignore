@@ -3,3 +3,4 @@ secrets.txt
 .venv/
 Website/.env
 Website/__pycache__/
+Website/activate.sh
