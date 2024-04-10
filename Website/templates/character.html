@@ -25,7 +25,7 @@
             <div><img class=" mx-2 mt-2" style="max-height: 44px;" src=""></img></div>
             <div><p class=" mx-2 mt-2"></p></div>
             <div>
-                <button class="btn btn-primary" onclick="movePage()">Equip</button>
+                <button class="btn btn-primary" onclick="movePage('#Weapons')">Equip</button>
             </div>
         </div>
         {% endif %}
@@ -35,7 +35,7 @@
                 <div><img class=" mx-2 mt-2" style="max-height: 44px;" src=""></img></div>
                 <div><p class=" mx-2 mt-2"></p></div>
                 <div>
-                    <button class="btn btn-primary" onclick="movePage()">Equip</button>
+                    <button class="btn btn-primary" onclick="movePage('#Armor')">Equip</button>
                 </div>
             </div>
             {% else %}
@@ -56,7 +56,7 @@
                 <div><img class=" mx-2 mt-2" style="max-height: 44px;" src=""></img></div>
                 <div><p class=" mx-2 mt-2"></p></div>
                 <div>
-                    <button class="btn btn-primary" onclick="movePage()">Equip</button>
+                    <button class="btn btn-primary" onclick="movePage('#Accessories')">Equip</button>
                 </div>
             </div>
             {% else %}
@@ -146,8 +146,8 @@
 </div>
 
 <script>
-    function movePage(){
-        window.location.href = "/";
+    function movePage(loc){
+        window.location.href = "/" + loc;
     }
 </script>
 
