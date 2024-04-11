@@ -130,7 +130,17 @@
     document.getElementById("filtersTab").classList.add("selectedtab");
   }
 
-  openAccessories();
+  // Get the value after the # in the URL and render the appropriate tab
+  let tab = window.location.hash;
+  if (tab == "#Weapons" | tab == "#weapons") {
+    openWeapons();
+  }
+  else if (tab == "#Armor" | tab == "#armor") {
+    openArmor();
+  }
+  else {
+    openAccessories();
+  }
 </script>
 <style>
   .tabsDiv{
