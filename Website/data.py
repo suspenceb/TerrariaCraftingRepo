@@ -91,19 +91,16 @@ def get_loggedin_user(token: str) -> dict:
     # Ensure the token exists
     query = "SELECT UserId FROM UserSession WHERE Token = %s"
     cursor.execute(query, (token, ))
-    print(cursor.fetchone())
-    #if cursor.fetchone() is None:
-    #    return None
-    userid = cursor.fetchone()
+    userid = cursor.fetchone()[0]
     if userid is None:
         return None
 
     query = "SELECT Username FROM Account WHERE UserId = %s"
     cursor.execute(query, (userid, ))
-    print(cursor.fetchone())
-    if cursor.fetchone() is None:
+    response = cursor.fetchone()
+    if response is None:
         return None
-    username = cursor.fetchone()[0]
+    username = response[0]
 
     user = {
         "userId": userid,
@@ -112,7 +109,7 @@ def get_loggedin_user(token: str) -> dict:
 
     # Close the connection and return the user id
     conn.close()
-    return user 
+    return user
 
 
 def update_password(userId: int, password: str):
