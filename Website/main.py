@@ -86,9 +86,25 @@ def index():
             "type": "Armor"
         }
         armor.append(armorPiece)
+
+    # Check if the user has selected a character
+    equippedWeapon = ""
+    equippedArmor = []
+    equippedAccessories = []
+    charId = request.cookies.get("character")
+    if charId is not None and charId is not "":
+        charId = int(charId)
+        equippedWeapon = get_character_weapon(charId)
+        equippedArmorRaw = get_character_armor(charId)
+        for i in equippedArmorRaw:
+            equippedArmor.append(i[0])
+        equippedAccessoriesRaw = get_equips(charId)
+        for i in equippedAccessoriesRaw:
+            equippedAccessories.append(i[0])
+
     
     # Insert table into index.html template
-    return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv, accessories=accessories, weapons=weapons, armor=armor, numCols=4)
+    return render_template("index.html", advancements=advancements, selectedAdv=selectedAdv, accessories=accessories, weapons=weapons, armor=armor, numCols=4, equippedWeapon=equippedWeapon, equippedArmor=equippedArmor, equippedAccessories=equippedAccessories)
 
 @app.route("/equipItem", methods=["POST"])
 def equipItem(): 

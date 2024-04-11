@@ -82,6 +82,14 @@
         else {
           document.getElementById("ItemButton" + itemtype + itemid).disabled = true;
           document.getElementById("ItemButton" + itemtype + itemid).innerText = "Equipped";
+          if (itemtype == "Weapon"){
+            window.location.hash = "#Weapons";
+            location.reload();
+          }
+          else if (itemtype == "Armor"){
+            window.location.hash = "#Armor";
+            location.reload();
+          }
         }
       });
   }
@@ -141,7 +149,27 @@
   else {
     openAccessories();
   }
+
+function setEquips(){
+  equipButtons = document.getElementsByClassName("equipButton");
+  for (let i = 0; i < equipButtons.length; i++) {
+    equipButtons[i].disabled = false;
+    equipButtons[i].innerText = "Equip";
+  }
+  {% for equippedAccessory in equippedAccessories %}
+    document.getElementById("ItemButtonAccessory{{equippedAccessory}}").disabled = true;
+    document.getElementById("ItemButtonAccessory{{equippedAccessory}}").innerText = "Equipped";
+  {% endfor %}
+  document.getElementById("ItemButtonWeapon{{equippedWeapon}}").disabled = true;
+  document.getElementById("ItemButtonWeapon{{equippedWeapon}}").innerText = "Equipped";
+  {% for equippedArmor in equippedArmor %}
+    document.getElementById("ItemButtonArmor{{equippedArmor}}").disabled = true;
+    document.getElementById("ItemButtonArmor{{equippedArmor}}").innerText = "Equipped";
+  {% endfor %}
+}
+setEquips();
 </script>
+
 <style>
   .tabsDiv{
     display: flex;
