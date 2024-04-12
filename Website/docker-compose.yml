@@ -1,0 +1,25 @@
+version: '3.3'
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db' # Ensure that this matches line 4 of your .env file
+      MYSQL_ROOT_PASSWORD: 'changeme' # Change this to something secure. Ensure that this matches line 3 of your .env file
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ../data:/var/lib/mysql
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: terrariaRepo
+    restart: always
+    ports:
+      - '80:8001'
+    depends_on:
+      - db
