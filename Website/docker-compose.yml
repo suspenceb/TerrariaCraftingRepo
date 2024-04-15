@@ -15,7 +15,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: terrariaRepo
+    image: terrariarepo
     restart: always
     ports:
       - '80:8001'
