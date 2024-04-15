@@ -62,6 +62,16 @@ def populateTables():
     populateFromCSV(advCsv, "Advancements")
 
 def init():
+    # Check if the database is already created
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SHOW DATABASES")
+    databases = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    for database in databases:
+        if database[0] == os.getenv("DB_DATABASE"):
+            return
     createDatabase()
     createTables()
     createView()

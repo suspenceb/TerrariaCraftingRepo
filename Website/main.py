@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash, jso
 from dotenv import load_dotenv
 from data import *
 import re
+import init
 
 load_dotenv()
 app = Flask(__name__)
@@ -276,4 +277,5 @@ def register():
 
 
 if __name__ == "__main__":
+    init()
     app.run(debug=True, host="0.0.0.0", port=8001)
