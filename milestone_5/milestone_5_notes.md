@@ -11,3 +11,27 @@ pip install -r requirements
     - WeaponDescription
 - [X] Add the following fields:
     - DamageType
+
+```mermaid
+---
+title: Site Architecture Overview
+---
+
+flowchart LR
+    user[User Browser]
+    admin[Admin Browser]
+    subgraph flask[Flask App]
+        main[Main.py]
+        data[Data.py]
+    end
+    subgraph db["Database (Docker)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"]
+        sql[MySQL Database]
+        phpmyadmin[PHPMyAdmin Console]
+    end
+
+    user <-.-> main
+    main <-.-> data
+    data <-.-> sql
+    phpmyadmin <-.-> sql
+    admin <-.-> phpmyadmin
+```
