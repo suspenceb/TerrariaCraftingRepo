@@ -113,6 +113,9 @@ def get_loggedin_user(token: str) -> dict:
 
 
 def update_password(userId: int, password: str):
+    """
+    For the given userId, hashes the new `password`, storing in the DB.
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -130,7 +133,11 @@ def update_password(userId: int, password: str):
     return True
 
 
-def get_user_characters(userId: int):
+def get_user_characters(userId: int) -> list[dict]:
+    """
+    For a given `userId`, looks up all characters associated with that ID.
+    Returns a list of characters, where each list item has the following keys: `charId`, `charName`, `weaponId`
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -152,6 +159,9 @@ def get_user_characters(userId: int):
     return returnCharacters
 
 def add_character(userId, charName):
+    """
+    Creates a new TerrariaCharacter, with the provided `userId` and `charName`
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -166,6 +176,9 @@ def add_character(userId, charName):
     return True
 
 def delete_character(charId: int):
+    """
+    Deletes the TerrariaCharacter corresponding to `charId`.
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -390,7 +403,11 @@ def post_equipment(characterId: int, itemType: str, itemId: int) -> bool:
     conn.close()
     return True
 
-def get_character(charId):
+def get_character(charId: int) -> dict:
+    """
+    Gets the single character associated with `charId`
+    Returns a dict with keys "Name" and "weaponId"
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -408,6 +425,9 @@ def get_character(charId):
     }
 
 def get_characters(userId):
+    """
+    TODO: Basically a duplicate of `get_user_characters()`. We should delete one and keep the other.
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -428,7 +448,12 @@ def get_characters(userId):
         })
     return returnCharacters
 
-def get_armor(armorId):
+def get_armor(armorId: int) -> dict:
+    """
+    Gets the Armor for a particular `armorId`.
+
+    Returns a tuple with keys `ArmorName`, `ImageURL`, `StatDefense`, `StatBonus`, `ArmorSlot`, and `ArmorID`
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -466,6 +491,9 @@ def get_character_armor(charId):
     return armor
 
 def get_equips(charId):
+    """
+    Gets the AccessoryId's of all accessories currently equipped to `charId`
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -479,7 +507,12 @@ def get_equips(charId):
     conn.close()
     return accessories
 
-def get_accessories(accessoryID):
+def get_accessories(accessoryID) -> dict:
+    """
+    Gets the accessory associated with `accessoryID`
+    
+    Returns a dictionary with keys `AccessoryName`, `ImageURL`, `StatBonus`, and `AccessoryID`
+    """
     conn = get_db_connection()
     cursor = conn.cursor()
 
@@ -497,6 +530,9 @@ def get_accessories(accessoryID):
     }
 
 def remove_armor(charId, armorId):
+    """
+    Unequips a given `armorId` from a given `charId`
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -525,6 +561,11 @@ def remove_accessory(charId, accessoryId):
     return True
 
 def get_weapon(weaponId):
+    """
+    Gets the weapon associated with `weaponId`
+
+    Returns a dictionary with keys: `WeaponId`, `WeaponName`, `ImageURL`, `StatDamage`, `DamageType`, `StatKnockback`, `StatCritChance`, and `StatUseTime`
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -547,7 +588,10 @@ def get_weapon(weaponId):
         "StatUseTime": weapon[7]
     }
 
-def get_character_weapon(charId):
+def get_character_weapon(charId) -> int:
+    """
+    Gets the `weaponId` of the weapon currently equipped to the character of `charId`
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -576,6 +620,9 @@ def remove_weapon(charId):
     return True
 
 def post_register(username, password):
+    """
+    Registers a new user in the database, storing their `username` and a hashed version of `password`.
+    """
     # Connect to database and establish cursor
     conn = get_db_connection()
     cursor = conn.cursor()
