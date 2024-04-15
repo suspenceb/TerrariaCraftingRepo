@@ -6,12 +6,20 @@ import os, hashlib, re
 # ----------------- Begin Helper Functions ----------------- #
 
 def get_db_connection():
+    #Check if .env has port
+    dbport = "3306"
+    envPort = os.getenv("DB_PORT")
+    if envPort is not None:
+        dbport = envPort
+
+    print(dbport)
     load_dotenv()
     conn = mysql.connector.connect(
         host=os.getenv("DB_HOST"),
         user=os.getenv("DB_USER"),
         password=os.getenv("DB_PASSWORD"),
-        database=os.getenv("DB_DATABASE")
+        database=os.getenv("DB_DATABASE"),
+        port=dbport
     )
     return conn
 
