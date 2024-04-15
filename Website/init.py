@@ -65,13 +65,15 @@ def init():
     # Check if the database is already created
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SHOW DATABASES")
-    databases = cursor.fetchall()
+    cursor.execute("SHOW TABLES")
+    tables = cursor.fetchall()
     cursor.close()
     conn.close()
-    for database in databases:
-        if database[0] == os.getenv("DB_DATABASE"):
-            return
+    # Ensure that tables includes the tables we are looking for
+    tables = [table[0] for table in tables]
+    expectedTables = ["Armor", "UnlocksArmor", "Accessory", "UnlocksAccessory", "Weapon", "UnlocksWeapon", "Advancements"]
+    if all([table in tables for table in expectedTables]):
+        return
     createDatabase()
     createTables()
     createView()
