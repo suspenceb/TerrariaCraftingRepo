@@ -1,122 +1,90 @@
--- Some relations have "SERIAL UNIQUE" to make Primary key increment by 1
--- Others don't have "SERIAL UNIQUE" b/c primary key is a composite key made of foreign keys
-CREATE TABLE Account
-(
-  UserId SERIAL UNIQUE NOT NULL,
-  Username VARCHAR(20) NOT NULL CHECK (LENGTH(Username) < 20),
-  PasswordHash VARCHAR(96) NOT NULL,
-  PRIMARY KEY (UserId)
-);
+-- Statements 0-7 exist to create view #7, which is a table of all the items that have been equipped
+-- This table helps us to create the 'My Character' view, since we can query it by the player's ID
+--      to get a list of all the items that the player has.
 
-CREATE TABLE Weapon
-(
-  WeaponId SERIAL UNIQUE NOT NULL,
-  WeaponName VARCHAR(64) NOT NULL,
-  ImageURL VARCHAR(256) NOT NULL,
-  StatDamage VARCHAR(8),
-  DamageType VARCHAR(10),
-  StatKnockback VARCHAR(24),
-  StatCritChance VARCHAR(8),
-  StatUseTime VARCHAR(8),
-  PRIMARY KEY (WeaponId)
-);
 
-CREATE TABLE Armor
-(
-  ArmorId SERIAL UNIQUE NOT NULL,
-  ArmorName VARCHAR(64) NOT NULL,
-  ImageURL VARCHAR(256) NOT NULL,
-  StatDefense INT NOT NULL,
-  StatBonus VARCHAR(128),
-  ArmorSlot INT NOT NULL,
-  PRIMARY KEY (ArmorId)
-);
+-- The VIEWs that JOIN the tables of existing items with the tables of what's actually equipped
+-- 0
 
-CREATE TABLE Accessory
-(
-  AccessoryId SERIAL UNIQUE NOT NULL,
-  AccessoryName VARCHAR(64) NOT NULL,
-  ImageURL VARCHAR(256) NOT NULL,
-  StatBonus VARCHAR(1024),
-  PRIMARY KEY (AccessoryId)
-);
+-- 1
+CREATE VIEW accessories_equipped AS
+SELECT Equips.CharId, Accessory.AccessoryId, AccessoryName, ImageURL, StatBonus
+FROM Accessory
+JOIN Equips ON Accessory.AccessoryId = Equips.AccessoryId;
 
-CREATE TABLE Advancement
-(
-  AdvancementId SERIAL UNIQUE NOT NULL,
-  Name VARCHAR(64) NOT NULL,
-  PRIMARY KEY (AdvancementId)
-);
+-- 2
+CREATE VIEW weapons_equipped AS
+SELECT Wields.CharId, Weapon.WeaponId, WeaponName, ImageURL, StatDamage, DamageType, StatKnockback, StatCritChance, StatUseTime
+FROM Weapon
+JOIN Wields ON Weapon.WeaponId = Wields.WeaponId;
 
-CREATE TABLE UnlocksWeapon
-(
-  AdvancementId BIGINT UNSIGNED NOT NULL,
-  WeaponId BIGINT UNSIGNED NOT NULL,
-  PRIMARY KEY (AdvancementId, WeaponId),
-  FOREIGN KEY (AdvancementId) REFERENCES Advancement(AdvancementId),
-  FOREIGN KEY (WeaponId) REFERENCES Weapon(WeaponId)
-);
+-- 3
+CREATE VIEW armors_equipped AS
+SELECT Wears.CharId, Armor.ArmorId, ArmorName, ImageURL, StatDefense, StatBonus, ArmorSlot
+FROM Armor
+JOIN Wears ON Armor.ArmorId = Wears.ArmorId;
 
-CREATE TABLE UnlocksAccessory
-(
-  AdvancementId BIGINT UNSIGNED NOT NULL,
-  AccessoryId BIGINT UNSIGNED NOT NULL,
-  PRIMARY KEY (AdvancementId, AccessoryId),
-  FOREIGN KEY (AdvancementId) REFERENCES Advancement(AdvancementId),
-  FOREIGN KEY (AccessoryId) REFERENCES Accessory(AccessoryId)
-);
+-- The VIEWs that Rename everything to be Union Compatible
+-- 4
+CREATE VIEW weapons_equipped_unionable AS
+    SELECT CharId,
+        WeaponId AS ItemId,
+        'Weapon' AS ItemType,
+        WeaponName AS ItemName,
+        ImageURL,
+        StatDamage,
+        DamageType,
+        StatKnockback,
+        StatCritChance,
+        StatUseTime,
+        NULL AS StatBonus,
+        NULL AS StatDefense
+    FROM weapons_equipped;
 
-CREATE TABLE UnlocksArmor
-(
-  AdvancementId BIGINT UNSIGNED NOT NULL,
-  ArmorId BIGINT UNSIGNED NOT NULL,
-  PRIMARY KEY (AdvancementId, ArmorId),
-  FOREIGN KEY (AdvancementId) REFERENCES Advancement(AdvancementId),
-  FOREIGN KEY (ArmorId) REFERENCES Armor(ArmorId)
-);
+-- 5
+CREATE VIEW accessories_equipped_unionable AS
+    SELECT CharId,
+        AccessoryId AS ItemId,
+        'Accessory' AS ItemType,
+        AccessoryName AS ItemName,
+        ImageURL,
+        NULL AS StatDamage,
+        NULL AS DamageType,
+        NULL AS StatKnockback,
+        NULL AS StatCritChance,
+        NULL AS StatUseTime,
+        StatBonus,
+        NULL AS StatDefense
+    FROM accessories_equipped;
 
-CREATE TABLE TerrariaCharacter
-(
-  CharId SERIAL UNIQUE NOT NULL,
-  CharName VARCHAR(20) NOT NULL CHECK (LENGTH(CharName) < 20),
-  UserId BIGINT UNSIGNED NOT NULL,
-  WeaponId BIGINT UNSIGNED,
-  PRIMARY KEY (CharId),
-  FOREIGN KEY (UserId) REFERENCES Account(UserId),
-  FOREIGN KEY (WeaponId) REFERENCES Weapon(WeaponId)
-);
+-- 6
+CREATE VIEW armors_equipped_unionable AS
+    SELECT CharId,
+        ArmorId AS ItemId,
+        'Armor' AS ItemType,
+        ArmorName AS ItemName,
+        ImageURL,
+        NULL AS StatDamage,
+        NULL AS DamageType,
+        NULL AS StatKnockback,
+        NULL AS StatCritChance,
+        NULL AS StatUseTime,
+        NULL AS StatBonus,
+        StatDefense
+    FROM armors_equipped;
 
-CREATE TABLE Completes
-(
-  CharId BIGINT UNSIGNED NOT NULL,
-  AdvancementId BIGINT UNSIGNED NOT NULL,
-  PRIMARY KEY (CharId, AdvancementId),
-  FOREIGN KEY (CharId) REFERENCES TerrariaCharacter(CharId),
-  FOREIGN KEY (AdvancementId) REFERENCES Advancement(AdvancementId)
-);
 
-CREATE TABLE Equips
-(
-  CharId BIGINT UNSIGNED NOT NULL,
-  AccessoryId BIGINT UNSIGNED NOT NULL,
-  PRIMARY KEY (CharId, AccessoryId),
-  FOREIGN KEY (CharId) REFERENCES TerrariaCharacter(CharId),
-  FOREIGN KEY (AccessoryId) REFERENCES Accessory(AccessoryId)
-);
+-- The VIEW that UNIONs all the items into a single table
 
-CREATE TABLE Wears
-(
-  CharId BIGINT UNSIGNED NOT NULL,
-  ArmorId BIGINT UNSIGNED NOT NULL,
-  PRIMARY KEY (CharId, ArmorId),
-  FOREIGN KEY (CharId) REFERENCES TerrariaCharacter(CharId),
-  FOREIGN KEY (ArmorId) REFERENCES Armor(ArmorId)
-);
+-- 7
+CREATE VIEW items_equipped AS
+    SELECT * FROM weapons_equipped_unionable
+    UNION ALL
+    SELECT * FROM accessories_equipped_unionable
+    UNION ALL
+    SELECT * FROM armors_equipped_unionable;
 
-CREATE TABLE UserSession
-(
-  Token VARCHAR(256) UNIQUE NOT NULL,
-  UserId BIGINT UNSIGNED NOT NULL,
-  PRIMARY KEY (Token),
-  FOREIGN KEY (UserId) REFERENCES Account(UserId)
-);
+-- The API query that will get the items equipped to a particular character.
+
+-- 8
+-- SELECT * FROM items_equipped WHERE items_equipped.CharId = {selected_character_ID_from_API}

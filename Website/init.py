@@ -1,81 +1,58 @@
 import mysql.connector
 from dotenv import load_dotenv
 import os
+import time
+
+load_dotenv()
 
 def get_db_connection():
+    #Check if .env has port
+    dbport = "3306"
+    envPort = os.getenv("DB_PORT")
+    if envPort is not None:
+        dbport = envPort
+
     load_dotenv()
     conn = mysql.connector.connect(
         host=os.getenv("DB_HOST"),
         user=os.getenv("DB_USER"),
         password=os.getenv("DB_PASSWORD"),
-        database=os.getenv("DB_DATABASE")
+        database=os.getenv("DB_DATABASE"),
+        port=dbport
     )
     return conn
-
-def populateFromCSV(csvPath, tableName):
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    with open(csvPath, "r") as file:
-        cursor.execute("LOAD DATA LOCAL INFILE '" + csvPath + "' INTO TABLE " + tableName + " FIELDS TERMINATED BY ',' ENCLOSED BY '\"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;")
-    cursor.close()
-    conn.close()
-
-def createDatabase():
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute("CREATE DATABASE IF NOT EXISTS " + os.getenv("DB_DATABASE"))
-    cursor.close()
-    conn.close()
-
-def createTables():
-    sqlPath = os.path.join(os.path.dirname(__file__), "tables.sql")
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    with open(sqlPath, "r") as file:
-        cursor.execute(file.read())
-    cursor.close()
-    conn.close()
-
-def createView():
-    sqlPath = os.path.join(os.path.dirname(__file__), "views.sql")
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    with open(sqlPath, "r") as file:
-        cursor.execute(file.read())
-    cursor.close()
-    conn.close()
-
-def populateTables():
-    armorCsv = os.path.join(os.path.dirname(__file__), "armor.csv")
-    armorAdvCsv = os.path.join(os.path.dirname(__file__), "armorAdvance.csv")
-    itemsCsv = os.path.join(os.path.dirname(__file__), "items.csv")
-    itemsAdvCsv = os.path.join(os.path.dirname(__file__), "itemsAdvancement.csv")
-    weaponsCsv = os.path.join(os.path.dirname(__file__), "weapons.csv")
-    weaponsAdvCsv = os.path.join(os.path.dirname(__file__), "weaponsAdvance.csv")
-    advCsv = os.path.join(os.path.dirname(__file__), "advancements.csv")
-    populateFromCSV(armorCsv, "Armor")
-    populateFromCSV(armorAdvCsv, "UnlocksArmor")
-    populateFromCSV(itemsCsv, "Accessory")
-    populateFromCSV(itemsAdvCsv, "UnlocksAccessory")
-    populateFromCSV(weaponsCsv, "Weapon")
-    populateFromCSV(weaponsAdvCsv, "UnlocksWeapon")
-    populateFromCSV(advCsv, "Advancements")
 
 def init():
     # Check if the database is already created
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SHOW DATABASES")
-    databases = cursor.fetchall()
+    cursor.execute("SHOW TABLES")
+    tables = cursor.fetchall()
     cursor.close()
     conn.close()
-    for database in databases:
-        if database[0] == os.getenv("DB_DATABASE"):
-            return
-    createDatabase()
-    createTables()
-    createView()
-    populateTables()
+    if len(tables) > 0:
+        return
+    
+    # Create the database from the TerrariaDB.sql file
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    with open("TerrariaDB.sql", "r") as file:
+        cursor.execute(file.read(), multi=True)
+    try:
+        conn.commit()
+    except:
+        print("Creating despite error")
+    cursor.close()
+    time.sleep(1)
+    # Create views from views.sql
+    conn2 = get_db_connection()
+    cursor = conn2.cursor()
+    with open("views.sql", "r") as file:
+        cursor.execute(file.read(), multi=True)
+    try:
+        conn2.commit()
+    except:
+        print("Creating despite error")
 
 if __name__ == "__main__":
     init()
